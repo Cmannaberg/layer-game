@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layer Game – Clue Detective</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ─────────────────────────────────────────────────────────────────────────
+     START SCREEN
+────────────────────────────────────────────────────────────────────────── -->
+<div id="start-screen" class="screen active">
+    <div class="container">
+        <h1 class="game-title">🔍 Layer Game</h1>
+        <p class="game-subtitle">Uncover clues and guess the answer — the sooner, the richer!</p>
+
+        <div class="rules-box">
+            <h2>How to Play</h2>
+            <ul>
+                <li>You'll be shown clues one at a time, each more specific than the last.</li>
+                <li>Type your guess and hit <strong>Submit Guess</strong> at any point.</li>
+                <li>The fewer clues you need, the more prize money you win.</li>
+                <li>Click <strong>Reveal Next Clue</strong> if you need more help.</li>
+                <li>Click <strong>Skip</strong> to give up on a question and see the answer.</li>
+            </ul>
+
+            <div class="prize-ladder" aria-label="Prize ladder">
+                <div class="prize-rung">Clue 1 → $10,000</div>
+                <div class="prize-rung">Clue 2 → $7,500</div>
+                <div class="prize-rung">Clue 3 → $5,000</div>
+                <div class="prize-rung">Clue 4 → $2,500</div>
+                <div class="prize-rung">Clue 5 → $1,000</div>
+            </div>
+        </div>
+
+        <button id="start-btn" class="btn btn-primary">▶ Start Game</button>
+    </div>
+</div>
+
+
+<!-- ─────────────────────────────────────────────────────────────────────────
+     GAME SCREEN
+────────────────────────────────────────────────────────────────────────── -->
+<div id="game-screen" class="screen">
+    <div class="container">
+
+        <!-- Header bar -->
+        <div class="game-header">
+            <div class="score-display">
+                Total: $<span id="total-score">0</span>
+            </div>
+            <div class="question-counter">
+                Question <span id="question-num">1</span> of <span id="total-questions">5</span>
+            </div>
+            <div class="prize-display">
+                Prize: $<span id="current-prize">10,000</span>
+            </div>
+        </div>
+
+        <!-- Category -->
+        <div class="category-badge">
+            Category: <span id="category">—</span>
+        </div>
+
+        <!-- Clue cards appear here -->
+        <div class="clues-area" id="clues-area" aria-live="polite"></div>
+
+        <!-- Guess input -->
+        <div class="guess-area">
+            <input
+                type="text"
+                id="guess-input"
+                placeholder="Type your guess here…"
+                autocomplete="off"
+                aria-label="Guess input"
+            >
+            <button id="guess-btn" class="btn btn-success">Submit Guess</button>
+        </div>
+
+        <!-- Reveal / Skip buttons -->
+        <div class="action-btns">
+            <button id="next-clue-btn" class="btn btn-secondary">Reveal Next Clue</button>
+            <button id="skip-btn" class="btn btn-neutral">Skip</button>
+        </div>
+
+        <!-- Feedback message -->
+        <div id="feedback" class="feedback hidden" role="status"></div>
+
+    </div>
+</div>
+
+
+<!-- ─────────────────────────────────────────────────────────────────────────
+     RESULTS SCREEN
+────────────────────────────────────────────────────────────────────────── -->
+<div id="results-screen" class="screen">
+    <div class="container">
+        <h1>Game Over!</h1>
+        <p class="results-subtitle">Here's how you did across all 5 questions.</p>
+
+        <div class="final-score-box">
+            <p>Your final score</p>
+            <div class="big-score">$<span id="final-score">0</span></div>
+        </div>
+
+        <div id="round-results" class="round-results" aria-label="Round results"></div>
+
+        <button id="play-again-btn" class="btn btn-primary">▶ Play Again</button>
+    </div>
+</div>
+
+
+<script src="questions.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
