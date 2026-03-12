@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <!-- Spotlight gradient -->
+    <radialGradient id="spotlight" cx="50%" cy="0%" r="80%" fx="50%" fy="0%">
+      <stop offset="0%"   stop-color="#ffe066" stop-opacity="1"/>
+      <stop offset="40%"  stop-color="#ffaa00" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#1a0a2e" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Face glow -->
+    <radialGradient id="faceglow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#fff5cc" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ffaa00" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Background gradient -->
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#0d0521"/>
+      <stop offset="100%" stop-color="#1a0a3e"/>
+    </linearGradient>
+    <!-- Light beam clip -->
+    <clipPath id="beamClip">
+      <polygon points="200,0 90,220 310,220"/>
+    </clipPath>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bg)" rx="18"/>
+
+  <!-- Spotlight beam -->
+  <polygon points="200,8 78,228 322,228" fill="url(#spotlight)" opacity="0.85"/>
+
+  <!-- Beam edge lines -->
+  <line x1="200" y1="8" x2="78"  y2="228" stroke="#ffe066" stroke-width="1" opacity="0.3"/>
+  <line x1="200" y1="8" x2="322" y2="228" stroke="#ffe066" stroke-width="1" opacity="0.3"/>
+
+  <!-- Light source (lamp/bulb at top) -->
+  <circle cx="200" cy="14" r="12" fill="#ffe066" filter="url(#glow)"/>
+  <circle cx="200" cy="14" r="7"  fill="#fff5cc"/>
+
+  <!-- Face glow halo -->
+  <ellipse cx="200" cy="185" rx="55" ry="55" fill="url(#faceglow)" opacity="0.6"/>
+
+  <!-- Face silhouette -->
+  <!-- Head -->
+  <ellipse cx="200" cy="168" rx="38" ry="44" fill="#2a1240"/>
+  <!-- Illuminated face overlay -->
+  <ellipse cx="200" cy="168" rx="34" ry="40" fill="#3d1f5e" opacity="0.7"/>
+
+  <!-- Eyes (lit up) -->
+  <ellipse cx="187" cy="162" rx="5" ry="6" fill="#ffe066" filter="url(#glow)" opacity="0.95"/>
+  <ellipse cx="213" cy="162" rx="5" ry="6" fill="#ffe066" filter="url(#glow)" opacity="0.95"/>
+  <!-- Pupils -->
+  <circle cx="187" cy="163" r="2.5" fill="#1a0a2e"/>
+  <circle cx="213" cy="163" r="2.5" fill="#1a0a2e"/>
+
+  <!-- Nose -->
+  <path d="M200 170 Q196 178 192 180 Q200 183 208 180 Q204 178 200 170"
+        fill="#2a1240" opacity="0.6"/>
+
+  <!-- Mouth (slight smile, illuminated) -->
+  <path d="M188 186 Q200 194 212 186" stroke="#ffe066" stroke-width="2.5"
+        fill="none" stroke-linecap="round" opacity="0.85"/>
+
+  <!-- Hair (top) -->
+  <ellipse cx="200" cy="128" rx="38" ry="18" fill="#1a0a2e"/>
+
+  <!-- Neck -->
+  <rect x="190" y="206" width="20" height="18" rx="6" fill="#2a1240"/>
+
+  <!-- Shoulders -->
+  <ellipse cx="200" cy="232" rx="52" ry="16" fill="#1a0a2e"/>
+
+  <!-- Sparkle particles in beam -->
+  <circle cx="160" cy="80"  r="2" fill="#ffe066" opacity="0.7" filter="url(#glow)"/>
+  <circle cx="240" cy="100" r="1.5" fill="#fff5cc" opacity="0.8" filter="url(#glow)"/>
+  <circle cx="185" cy="130" r="1.5" fill="#ffe066" opacity="0.6"/>
+  <circle cx="220" cy="60"  r="1"   fill="#fff5cc" opacity="0.9"/>
+  <circle cx="175" cy="50"  r="1.5" fill="#ffe066" opacity="0.5"/>
+  <circle cx="225" cy="145" r="1"   fill="#fff5cc" opacity="0.7"/>
+
+  <!-- Title text -->
+  <text x="200" y="270"
+        font-family="Georgia, serif"
+        font-size="28"
+        font-weight="bold"
+        letter-spacing="6"
+        text-anchor="middle"
+        fill="#ffe066"
+        filter="url(#glow)">ILLUMINATE</text>
+
+  <!-- Subtitle -->
+  <text x="200" y="290"
+        font-family="Georgia, serif"
+        font-size="9"
+        letter-spacing="3"
+        text-anchor="middle"
+        fill="#aa8833"
+        opacity="0.8">THE CLUE GUESSING GAME</text>
+</svg>
