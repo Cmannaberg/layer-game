@@ -171,6 +171,23 @@ Ideas discussed for future development, roughly in order of priority:
 - Hear the word / audio pronunciation
 - Root identification (given an inflected form, identify the shoresh)
 
+**Root identification (Shoresh)**
+- Show a long inflected word from the Bible (e.g. וַיִּכְתְּבֵהוּ)
+- Student identifies the 3-letter root (shoresh) from multiple choice
+- Then defines the root
+- Teaches the most important Biblical Hebrew skill
+
+**Prefix and suffix morphology**
+- Show a root word, then add a prefix or suffix (e.g. ב, ל, ו, ים, ות, ה)
+- Student guesses the new meaning or grammatical form
+- Covers: definite article, prepositions, conjunctions, plurals, gender endings
+- Builds reading skill by teaching how words change in context
+
+**Noun gender**
+- Show a Hebrew noun, student guesses masculine or feminine
+- Hint mode: teach the patterns (ה- and ת- endings are usually feminine)
+- Could also include dual and plural forms
+
 **Classroom management**
 - Reset leaderboard at start of each semester: `rm players.json`
 - Per-class leaderboards (multiple `players_period1.json` etc.)
