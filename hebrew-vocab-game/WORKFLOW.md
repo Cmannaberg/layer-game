@@ -44,6 +44,15 @@ Leave the Terminal window open for the entire class.
 
 To stop the server: press `Ctrl+C` in Terminal.
 
+**Connecting your phone on the same WiFi:**
+- Make sure your phone is on the same WiFi network as your Mac
+- Open Safari (iPhone) or Chrome (Android)
+- Type `http://[your-ip]:5050` using the same IP address
+- The game loads just like on a Chromebook
+
+> **Note:** Your Mac's local IP can change when it reconnects to WiFi.
+> If it stops working, re-run `ipconfig getifaddr en0` to get the new IP.
+
 ---
 
 ## Adding New Books to the Vocab Data
