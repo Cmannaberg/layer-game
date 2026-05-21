@@ -81,11 +81,36 @@ Regenerate any time you add new books.
 
 ---
 
-## Editing Definitions
+## Editing Definitions and Removing Words
 
-Open `hebrew_vocab.json` in VS Code.
-Find the word, edit the `"english"` value, save.
-In VS Code: `Shift+Option+F` to auto-format the file before editing.
+```bash
+code ~/layer-game/hebrew-vocab-game/hebrew_vocab.json
+```
+
+First, auto-format the file so it's easy to read: `Shift+Option+F`
+
+Each word entry looks like this:
+```json
+{
+  "hebrew": "אֶרֶץ",
+  "english": "land, earth",
+  "frequency": 304
+}
+```
+
+**Fix a definition** — edit the `"english"` value and save.
+
+**Remove a word** — delete the entire `{ }` block for that entry,
+including the comma after the previous entry. VS Code will underline
+in red if the JSON structure is broken.
+
+When done, push your changes to GitHub:
+```bash
+cd ~/layer-game
+git add hebrew-vocab-game/hebrew_vocab.json
+git commit -m "clean up vocab definitions"
+git push
+```
 
 ---
 
