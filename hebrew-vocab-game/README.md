@@ -1,47 +1,28 @@
-# Hebrew Vocab Challenge
+# Hebrew Vocab Challenge ✡
 
 A Biblical Hebrew vocabulary game for classroom use. Students pick a book of Tanach,
-get tested on the 10 most frequent words, and compete on a shared leaderboard.
+are tested on the 10 most frequent words via multiple choice, and compete on a
+shared year-long leaderboard.
 
-## Setup
+**→ See [WORKFLOW.md](WORKFLOW.md) for complete setup and day-to-day instructions.**
 
-```bash
-pip install -r requirements.txt
-```
+---
 
-## Build vocabulary data
-
-```bash
-python3 hebrew_vocab_builder.py --section Torah      # build one section
-python3 hebrew_vocab_builder.py --book Genesis       # build one book
-```
-
-## Run the game server
+## Quick Start
 
 ```bash
+cd ~/layer-game/hebrew-vocab-game
+source myenv/bin/activate
 python3 hebrew_vocab_app.py
 ```
 
-Open `http://localhost:5050` in a browser.
+Open `http://localhost:5050` — or share your local IP with students on Chromebooks.
 
-**Classroom use:** The server runs on your Mac and students connect via your local IP:
-```bash
-ipconfig getifaddr en0   # find your IP
-```
-Write `http://[your-ip]:5050` on the board. Students open it in Chrome on Chromebooks.
+## Features
 
-## Generate a dictionary
-
-```bash
-python3 hebrew_vocab_dict.py    # outputs hebrew_vocab_dictionary.html
-```
-
-## Files
-
-| File | Purpose |
-|------|---------|
-| `hebrew_vocab_app.py` | Flask game server |
-| `hebrew_vocab_builder.py` | Builds vocab JSON from Sefaria API |
-| `hebrew_vocab_dict.py` | Exports vocab as an HTML dictionary |
-| `hebrew_vocab.json` | Generated vocabulary data (committed) |
-| `players.json` | Leaderboard scores — local only, not committed |
+- Pick any book of Tanach (Torah, Nevi'im, Ketuvim)
+- Hebrew → English or English → Hebrew multiple choice
+- Bonus fill-in-the-blank round for scores of 8/10 or higher (+50 points)
+- Persistent leaderboard across all class sessions
+- Hebrew word lookup tool at `/lookup`
+- Export a printable dictionary with `python3 hebrew_vocab_dict.py`
