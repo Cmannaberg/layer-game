@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hebrew Word Lookup</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;700;900&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --blue: #1a3a6b; --gold: #c8962a; --light: #f5f0e8; --rule: #d4c9b0; --grey: #7a7a7a; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Nunito', sans-serif; background: var(--light); min-height: 100vh; }
+
+    header {
+      background: var(--blue); color: white;
+      padding: 16px 24px; display: flex; align-items: center; gap: 16px;
+    }
+    header h1 { font-size: 1.3rem; font-weight: 800; }
+    header a { color: rgba(255,255,255,.7); text-decoration: none; font-size: .9rem; margin-left: auto; }
+    header a:hover { color: white; }
+
+    .container { max-width: 680px; margin: 0 auto; padding: 40px 16px; }
+
+    .search-box {
+      display: flex; gap: 10px; margin-bottom: 32px;
+    }
+    .word-input {
+      flex: 1;
+      font-family: 'Frank Ruhl Libre', serif;
+      font-size: 1.6rem;
+      direction: rtl;
+      border: 2px solid #ddd;
+      border-radius: 12px;
+      padding: 12px 18px;
+      background: white;
+      outline: none;
+      transition: border-color .15s;
+    }
+    .word-input:focus { border-color: var(--blue); }
+    .word-input::placeholder { color: #bbb; font-size: 1.1rem; }
+    .search-btn {
+      background: var(--blue); color: white; border: none;
+      border-radius: 12px; padding: 12px 22px;
+      font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 1rem;
+      cursor: pointer; transition: background .15s; white-space: nowrap;
+    }
+    .search-btn:hover { background: #122b52; }
+
+    .hint { color: var(--grey); font-size: .85rem; margin-bottom: 28px; text-align: center; }
+
+    /* Results */
+    .result-card {
+      background: white; border-radius: 14px;
+      box-shadow: 0 4px 20px rgba(0,0,0,.08);
+      padding: 28px; margin-bottom: 16px;
+    }
+    .result-headword {
+      font-family: 'Frank Ruhl Libre', serif;
+      font-size: 3rem; font-weight: 900;
+      color: var(--blue); direction: rtl;
+      margin-bottom: 4px;
+    }
+    .result-meta {
+      display: flex; gap: 10px; margin-bottom: 18px; flex-wrap: wrap;
+    }
+    .meta-tag {
+      background: #f0f0f0; border-radius: 6px;
+      padding: 3px 10px; font-size: .78rem; font-weight: 700;
+      color: var(--grey); text-transform: uppercase; letter-spacing: .5px;
+    }
+    .meta-tag.lexicon { background: #e8f0fb; color: var(--blue); }
+
+    .senses-label {
+      font-size: .75rem; font-weight: 800; letter-spacing: 1.5px;
+      text-transform: uppercase; color: var(--gold);
+      margin-bottom: 10px;
+    }
+    .sense {
+      padding: 6px 0 6px;
+      border-bottom: 1px solid var(--rule);
+      font-size: 1rem; color: #222;
+      display: flex; gap: 8px; align-items: baseline;
+    }
+    .sense:last-child { border-bottom: none; }
+    .sense-depth-0 { font-weight: 700; }
+    .sense-depth-1 { color: #444; padding-left: 16px; font-size: .95rem; }
+    .sense-depth-2 { color: var(--grey); padding-left: 32px; font-size: .9rem; }
+    .sense-bullet { color: var(--gold); flex-shrink: 0; }
+
+    .error-msg { text-align: center; color: #b03030; padding: 32px; font-size: 1rem; }
+    .loading    { text-align: center; color: var(--grey); padding: 32px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <span>✡</span>
+  <h1>Hebrew Word Lookup</h1>
+  <a href="/vocab">← Back to Game</a>
+</header>
+
+<div class="container">
+  <div class="search-box">
+    <input class="word-input" id="word-input" type="text"
+           placeholder="הקלד מילה בעברית…"
+           dir="rtl" autofocus
+           onkeydown="if(event.key==='Enter') lookup()">
+    <button class="search-btn" onclick="lookup()">Look up</button>
+  </div>
+  <p class="hint">Type any Biblical Hebrew word (with or without vowels) and press Enter</p>
+  <div id="results"></div>
+</div>
+
+<script>
+  async function lookup() {
+    const word = document.getElementById('word-input').value.trim();
+    if (!word) return;
+
+    const out = document.getElementById('results');
+    out.innerHTML = '<div class="loading">Looking up…</div>';
+
+    const res  = await fetch(`/lookup/api/${encodeURIComponent(word)}`);
+    const data = await res.json();
+
+    if (!res.ok || data.error) {
+      out.innerHTML = `<div class="error-msg">No entry found for <strong>${word}</strong>.<br>Try a different spelling or remove vowel points.</div>`;
+      return;
+    }
+
+    out.innerHTML = data.map(entry => {
+      const morph = entry.morphology
+        ? `<span class="meta-tag">${entry.morphology}</span>` : '';
+      const senses = entry.senses.map(s => {
+        const bullets = ['▪', '–', '·'];
+        const bullet  = bullets[Math.min(s.depth, 2)];
+        return `<div class="sense sense-depth-${s.depth}">
+          <span class="sense-bullet">${bullet}</span>
+          <span>${s.definition}</span>
+        </div>`;
+      }).join('');
+
+      return `
+        <div class="result-card">
+          <div class="result-headword" dir="rtl">${entry.headword}</div>
+          <div class="result-meta">
+            <span class="meta-tag lexicon">${entry.lexicon}</span>
+            ${morph}
+          </div>
+          <div class="senses-label">Definitions</div>
+          <div class="senses">${senses || '<div class="sense">No definitions found</div>'}</div>
+        </div>`;
+    }).join('');
+  }
+</script>
+
+</body>
+</html>

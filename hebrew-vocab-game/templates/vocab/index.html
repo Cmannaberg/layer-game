@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hebrew Vocab Challenge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;700;900&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --blue:   #1a3a6b;
+      --gold:   #c8962a;
+      --light:  #f5f0e8;
+      --white:  #ffffff;
+      --green:  #2d7a47;
+      --red:    #b03030;
+      --grey:   #8a8a8a;
+      --radius: 14px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: var(--light);
+      color: #1a1a1a;
+      min-height: 100vh;
+    }
+    header {
+      background: var(--blue);
+      color: var(--white);
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    header h1 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: .5px;
+    }
+    header .star { font-size: 1.8rem; }
+    .container { max-width: 760px; margin: 0 auto; padding: 32px 16px; }
+
+    /* ── BOOK SELECTION ── */
+    #screen-books h2 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--blue);
+      margin-bottom: 6px;
+    }
+    #screen-books p { color: var(--grey); margin-bottom: 28px; font-size: .95rem; }
+
+    .section-label {
+      font-size: .8rem;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin: 20px 0 10px;
+    }
+    .book-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+      gap: 10px;
+      margin-bottom: 6px;
+    }
+    .book-btn {
+      background: var(--white);
+      border: 2px solid #ddd;
+      border-radius: var(--radius);
+      padding: 14px 12px;
+      cursor: pointer;
+      text-align: center;
+      font-family: 'Nunito', sans-serif;
+      font-size: .9rem;
+      font-weight: 700;
+      color: var(--blue);
+      transition: border-color .15s, transform .1s, box-shadow .15s;
+    }
+    .book-btn:hover {
+      border-color: var(--blue);
+      box-shadow: 0 3px 12px rgba(26,58,107,.15);
+      transform: translateY(-2px);
+    }
+    .book-btn.selected {
+      border-color: var(--gold);
+      background: #fffbf0;
+    }
+    .book-btn .he-name { font-family: 'Frank Ruhl Libre', serif; direction: rtl; font-size: 1.05rem; display: block; margin-bottom: 4px; color: #333; }
+
+    /* ── LANGUAGE SELECTION ── */
+    #screen-lang { display: none; text-align: center; }
+    #screen-lang h2 { font-size: 1.4rem; color: var(--blue); margin-bottom: 8px; font-weight: 800; }
+    #screen-lang .selected-book { color: var(--gold); font-weight: 700; font-size: 1.1rem; margin-bottom: 28px; display: block; }
+    .lang-options { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .lang-btn {
+      background: var(--white);
+      border: 2px solid #ddd;
+      border-radius: var(--radius);
+      padding: 24px 32px;
+      cursor: pointer;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--blue);
+      transition: all .15s;
+      min-width: 200px;
+    }
+    .lang-btn:hover { border-color: var(--blue); box-shadow: 0 4px 16px rgba(26,58,107,.15); }
+    .lang-btn .icon { font-size: 2rem; display: block; margin-bottom: 8px; }
+    .lang-btn .hebrew-sample { font-family: 'Frank Ruhl Libre', serif; direction: rtl; font-size: 1.3rem; color: var(--gold); display: block; margin-top: 6px; }
+
+    /* ── GAME SCREEN ── */
+    #screen-game { display: none; }
+    .game-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .game-book { font-size: .9rem; color: var(--grey); font-weight: 600; }
+    .score-display {
+      background: var(--blue);
+      color: var(--white);
+      border-radius: 40px;
+      padding: 6px 18px;
+      font-weight: 800;
+      font-size: 1.1rem;
+    }
+    .progress-bar {
+      background: #ddd;
+      border-radius: 99px;
+      height: 8px;
+      margin-bottom: 28px;
+      overflow: hidden;
+    }
+    .progress-fill {
+      background: linear-gradient(90deg, var(--blue), var(--gold));
+      height: 100%;
+      border-radius: 99px;
+      transition: width .4s ease;
+    }
+
+    .question-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 36px 28px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,.08);
+      margin-bottom: 24px;
+    }
+    .question-label { font-size: .85rem; color: var(--grey); font-weight: 600; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 1px; }
+    .question-word {
+      font-size: 3.2rem;
+      font-weight: 900;
+      color: var(--blue);
+      line-height: 1.2;
+    }
+    .question-word.hebrew { font-family: 'Frank Ruhl Libre', serif; direction: rtl; font-size: 3.8rem; }
+    .question-freq { font-size: .8rem; color: var(--grey); margin-top: 10px; }
+
+    .choices { display: grid; gap: 12px; }
+    .choice-btn {
+      background: var(--white);
+      border: 2px solid #ddd;
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      cursor: pointer;
+      font-family: 'Nunito', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      text-align: center;
+      transition: all .15s;
+    }
+    .choice-btn.hebrew { font-family: 'Frank Ruhl Libre', serif; direction: rtl; font-size: 1.5rem; }
+    .choice-btn:hover:not(:disabled) { border-color: var(--blue); background: #f0f4fb; }
+    .choice-btn.correct { border-color: var(--green); background: #edf7f1; color: var(--green); }
+    .choice-btn.wrong   { border-color: var(--red);   background: #fdf0f0; color: var(--red);   }
+    .choice-btn:disabled { cursor: default; }
+
+    .feedback {
+      text-align: center;
+      margin-top: 16px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      min-height: 28px;
+    }
+    .feedback.correct { color: var(--green); }
+    .feedback.wrong   { color: var(--red); }
+
+    .next-btn {
+      display: block;
+      width: 100%;
+      margin-top: 20px;
+      background: var(--blue);
+      color: var(--white);
+      border: none;
+      border-radius: var(--radius);
+      padding: 16px;
+      font-family: 'Nunito', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 800;
+      cursor: pointer;
+      transition: background .15s;
+    }
+    .next-btn:hover { background: #122b52; }
+
+    /* ── RESULTS SCREEN ── */
+    #screen-results { display: none; text-align: center; padding: 20px 0; }
+    .result-star { font-size: 4rem; margin-bottom: 16px; }
+    #screen-results h2 { font-size: 2rem; color: var(--blue); font-weight: 900; margin-bottom: 12px; }
+    .final-score {
+      font-size: 3.5rem;
+      font-weight: 900;
+      color: var(--gold);
+      margin: 16px 0;
+    }
+    .final-score span { font-size: 1.5rem; color: var(--grey); font-weight: 600; }
+    .result-msg { color: var(--grey); font-size: 1rem; margin-bottom: 32px; }
+
+    .result-review { background: var(--white); border-radius: var(--radius); padding: 20px; margin-bottom: 28px; text-align: left; }
+    .result-review h3 { font-size: .85rem; font-weight: 800; color: var(--grey); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; }
+    .review-row {
+      display: flex;
+      align-items: center;
+      padding: 8px 0;
+      border-bottom: 1px solid #f0f0f0;
+      gap: 12px;
+    }
+    .review-row:last-child { border-bottom: none; }
+    .review-check { font-size: 1rem; flex-shrink: 0; }
+    .review-he { font-family: 'Frank Ruhl Libre', serif; direction: rtl; font-size: 1.3rem; font-weight: 700; color: var(--blue); min-width: 100px; text-align: right; }
+    .review-en { font-size: .9rem; color: #444; flex: 1; }
+
+    .action-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .action-btn {
+      border-radius: var(--radius);
+      padding: 14px 28px;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: 1rem;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: all .15s;
+    }
+    .action-btn.primary { background: var(--blue); color: var(--white); }
+    .action-btn.primary:hover { background: #122b52; }
+    .action-btn.secondary { background: var(--white); color: var(--blue); border-color: #ddd; }
+    .action-btn.secondary:hover { border-color: var(--blue); }
+
+    /* ── NAME ENTRY SCREEN ── */
+    #screen-name { display: none; text-align: center; padding: 40px 0; }
+    #screen-name .logo { font-size: 3.5rem; margin-bottom: 12px; }
+    #screen-name h1 { font-size: 2rem; font-weight: 900; color: var(--blue); margin-bottom: 6px; }
+    #screen-name .tagline { color: var(--grey); margin-bottom: 36px; font-size: 1rem; }
+    .name-input-row { display: flex; gap: 10px; max-width: 380px; margin: 0 auto; }
+    .name-input {
+      flex: 1;
+      border: 2px solid #ddd;
+      border-radius: var(--radius);
+      padding: 14px 16px;
+      font-family: 'Nunito', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      outline: none;
+      transition: border-color .15s;
+    }
+    .name-input:focus { border-color: var(--blue); }
+    .name-submit {
+      background: var(--blue);
+      color: var(--white);
+      border: none;
+      border-radius: var(--radius);
+      padding: 14px 22px;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background .15s;
+      white-space: nowrap;
+    }
+    .name-submit:hover { background: #122b52; }
+
+    /* ── LEADERBOARD SCREEN ── */
+    #screen-leaderboard { display: none; }
+    .lb-header { text-align: center; margin-bottom: 24px; }
+    .lb-header h2 { font-size: 1.5rem; font-weight: 900; color: var(--blue); margin-bottom: 4px; }
+    .lb-header p  { color: var(--grey); font-size: .95rem; }
+    .lb-round-score {
+      background: var(--blue);
+      color: var(--white);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 1rem;
+    }
+    .lb-round-score strong { font-size: 1.6rem; display: block; }
+    .lb-table {
+      background: var(--white);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,.08);
+      margin-bottom: 24px;
+    }
+    .lb-row {
+      display: flex;
+      align-items: center;
+      padding: 13px 18px;
+      border-bottom: 1px solid #f0f0f0;
+      gap: 12px;
+      transition: background .15s;
+    }
+    .lb-row:last-child { border-bottom: none; }
+    .lb-row.current-player { background: #fffbf0; border-left: 4px solid var(--gold); }
+    .lb-rank { font-size: 1.2rem; width: 32px; text-align: center; flex-shrink: 0; }
+    .lb-name { flex: 1; font-weight: 700; font-size: 1rem; }
+    .lb-name.current-player { color: var(--gold); }
+    .lb-score { font-weight: 800; color: var(--blue); font-size: 1.05rem; }
+    .lb-you-tag {
+      font-size: .7rem;
+      background: var(--gold);
+      color: var(--white);
+      border-radius: 99px;
+      padding: 2px 8px;
+      font-weight: 800;
+      margin-left: 6px;
+    }
+    .lb-empty { text-align: center; padding: 32px; color: var(--grey); font-size: .95rem; }
+
+    /* ── BONUS SCREEN ── */
+    #screen-bonus { display: none; text-align: center; }
+    .bonus-badge {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--white);
+      font-weight: 800;
+      font-size: .85rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 6px 18px;
+      border-radius: 99px;
+      margin-bottom: 16px;
+    }
+    #screen-bonus h2 { font-size: 1.8rem; color: var(--blue); font-weight: 900; margin-bottom: 6px; }
+    #screen-bonus .sub { color: var(--grey); margin-bottom: 28px; font-size: .95rem; }
+    .bonus-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 32px 24px;
+      box-shadow: 0 4px 20px rgba(0,0,0,.08);
+      margin-bottom: 20px;
+    }
+    .bonus-prompt { font-size: .85rem; color: var(--grey); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px; font-weight: 600; }
+    .bonus-hebrew { font-family: 'Frank Ruhl Libre', serif; direction: rtl; font-size: 4rem; font-weight: 900; color: var(--blue); }
+    .bonus-input-row { display: flex; gap: 10px; margin-top: 24px; }
+    .bonus-input {
+      flex: 1;
+      border: 2px solid #ddd;
+      border-radius: var(--radius);
+      padding: 14px 16px;
+      font-family: 'Nunito', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      outline: none;
+      transition: border-color .15s;
+    }
+    .bonus-input:focus { border-color: var(--blue); }
+    .bonus-input.correct { border-color: var(--green); background: #edf7f1; }
+    .bonus-input.wrong   { border-color: var(--red);   background: #fdf0f0; }
+    .bonus-submit {
+      background: var(--gold);
+      color: var(--white);
+      border: none;
+      border-radius: var(--radius);
+      padding: 14px 24px;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background .15s;
+    }
+    .bonus-submit:hover { background: #a87820; }
+    .bonus-submit:disabled { opacity: .4; cursor: default; }
+    .bonus-feedback { min-height: 28px; margin-top: 14px; font-size: 1rem; font-weight: 700; }
+    .bonus-feedback.correct { color: var(--green); }
+    .bonus-feedback.wrong   { color: var(--red); }
+    .bonus-feedback.info    { color: var(--grey); }
+    .bonus-attempts { font-size: .85rem; color: var(--grey); margin-top: 6px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <span class="star">✡</span>
+  <h1>Hebrew Vocab Challenge</h1>
+</header>
+
+<div class="container">
+
+  <!-- SCREEN 0: Name Entry -->
+  <div id="screen-name">
+    <div class="logo">✡</div>
+    <h1>Hebrew Vocab Challenge</h1>
+    <p class="tagline">Learn Biblical Hebrew one book at a time</p>
+    <div class="name-input-row">
+      <input class="name-input" id="name-input" type="text" placeholder="Enter your name…"
+             maxlength="30" onkeydown="if(event.key==='Enter') submitName()">
+      <button class="name-submit" onclick="submitName()">Let's Go →</button>
+    </div>
+  </div>
+
+  <!-- SCREEN: Leaderboard (used after login and after game) -->
+  <div id="screen-leaderboard">
+    <div class="lb-header">
+      <h2 id="lb-title">🏆 Leaderboard</h2>
+      <p id="lb-subtitle"></p>
+    </div>
+    <div id="lb-round-score-box" class="lb-round-score" style="display:none">
+      This round you earned <strong id="lb-round-pts"></strong>
+      <span id="lb-total-line"></span>
+    </div>
+    <div class="lb-table" id="lb-table"></div>
+    <div style="text-align:center">
+      <button class="action-btn primary" id="lb-cta" onclick="showScreen('books')">Start Playing</button>
+    </div>
+  </div>
+
+  <!-- SCREEN 1: Book Selection -->
+  <div id="screen-books">
+    <h2>Choose a Book of Tanach</h2>
+    <p>You'll be tested on the 10 most frequent words in that book.</p>
+    <div id="book-list">
+      <p style="color:var(--grey);">Loading books…</p>
+    </div>
+  </div>
+
+  <!-- SCREEN 2: Language Preference -->
+  <div id="screen-lang">
+    <h2>How do you want to play?</h2>
+    <span class="selected-book" id="selected-book-name"></span>
+    <div class="lang-options">
+      <button class="lang-btn" onclick="startGame('he-en')">
+        <span class="icon">👁</span>
+        See Hebrew<br>Guess English
+        <span class="hebrew-sample">שָׁלוֹם → ?</span>
+      </button>
+      <button class="lang-btn" onclick="startGame('en-he')">
+        <span class="icon">✍</span>
+        See English<br>Guess Hebrew
+        <span class="hebrew-sample">? → שָׁלוֹם</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- SCREEN 3: Game -->
+  <div id="screen-game">
+    <div class="game-header">
+      <span class="game-book" id="game-book-label"></span>
+      <span class="score-display">⭐ <span id="score">0</span></span>
+    </div>
+    <div class="progress-bar">
+      <div class="progress-fill" id="progress-fill" style="width:0%"></div>
+    </div>
+    <div class="question-card">
+      <div class="question-label" id="question-label">What does this mean?</div>
+      <div class="question-word" id="question-word"></div>
+      <div class="question-freq" id="question-freq"></div>
+    </div>
+    <div class="choices" id="choices"></div>
+    <div class="feedback" id="feedback"></div>
+    <button class="next-btn" id="next-btn" onclick="nextWord()" style="display:none">
+      Next Word →
+    </button>
+  </div>
+
+  <!-- SCREEN 4: Bonus Round -->
+  <div id="screen-bonus">
+    <div class="bonus-badge">⭐ Bonus Round</div>
+    <h2>You earned a bonus!</h2>
+    <p class="sub">You got <strong id="bonus-correct-count"></strong>/10 correct.<br>Type the English meaning to earn <strong>+50 points</strong>.</p>
+    <div class="bonus-card">
+      <div class="bonus-prompt">What does this Hebrew word mean?</div>
+      <div class="bonus-hebrew" id="bonus-hebrew"></div>
+      <div class="bonus-input-row">
+        <input class="bonus-input" id="bonus-input" type="text"
+               placeholder="Type the English meaning…"
+               onkeydown="if(event.key==='Enter') submitBonus()">
+        <button class="bonus-submit" id="bonus-submit" onclick="submitBonus()">Submit</button>
+      </div>
+      <div class="bonus-feedback" id="bonus-feedback"></div>
+      <div class="bonus-attempts" id="bonus-attempts"></div>
+    </div>
+  </div>
+
+  <!-- SCREEN 5: Results -->
+  <div id="screen-results">
+    <div class="result-star" id="result-star">🏆</div>
+    <h2>Round Complete!</h2>
+    <div class="final-score" id="final-score-display"></div>
+    <p class="result-msg" id="result-msg"></p>
+    <div class="result-review" id="result-review"></div>
+    <div class="action-btns">
+      <button class="action-btn primary" onclick="showScreen('books')">Play Again</button>
+    </div>
+  </div>
+
+</div><!-- /container -->
+
+<script>
+  // ── State ──────────────────────────────────────────────────────────────────
+  let allWords   = [];
+  let gameWords  = [];
+  let mode       = 'he-en';
+  let wordIndex  = 0;
+  let score      = 0;
+  let results    = [];
+  let selectedBookId   = null;
+  let selectedBookName = null;
+  let bonusWord     = null;
+  let bonusAttempts = 0;
+  let playerName    = '';
+  let roundScore    = 0;   // points earned this round (for leaderboard display)
+
+  // ── Screen management ───────────────────────────────────────────────────────
+  function showScreen(name) {
+    ['name','leaderboard','books','lang','game','bonus','results'].forEach(s =>
+      document.getElementById(`screen-${s}`).style.display = 'none');
+    document.getElementById(`screen-${name}`).style.display = 'block';
+  }
+
+  // ── Name entry ──────────────────────────────────────────────────────────────
+  function submitName() {
+    const val = document.getElementById('name-input').value.trim();
+    if (!val) { document.getElementById('name-input').focus(); return; }
+    playerName = val;
+    showLeaderboard('welcome');
+  }
+
+  // ── Leaderboard ─────────────────────────────────────────────────────────────
+  async function showLeaderboard(context) {
+    const res   = await fetch('/vocab/api/leaderboard');
+    const board = await res.json();
+
+    if (context === 'welcome') {
+      document.getElementById('lb-title').textContent    = '🏆 Leaderboard';
+      document.getElementById('lb-subtitle').textContent = `Welcome, ${playerName}!`;
+      document.getElementById('lb-round-score-box').style.display = 'none';
+      document.getElementById('lb-cta').textContent = 'Start Playing →';
+      document.getElementById('lb-cta').onclick = () => showScreen('books');
+    } else {
+      // post-game context — score already submitted, board already updated
+      document.getElementById('lb-title').textContent    = '🏆 Leaderboard';
+      document.getElementById('lb-subtitle').textContent = `Great round, ${playerName}!`;
+      const box = document.getElementById('lb-round-score-box');
+      box.style.display = 'block';
+      document.getElementById('lb-round-pts').textContent = `${roundScore} points`;
+      const me = board.find(p => p.name === playerName);
+      document.getElementById('lb-total-line').textContent =
+        me ? ` · Total: ${me.score} pts` : '';
+      document.getElementById('lb-cta').textContent = 'Play Again →';
+      document.getElementById('lb-cta').onclick = () => showScreen('books');
+    }
+
+    const medals = ['🥇','🥈','🥉'];
+    let html = '';
+    if (board.length === 0) {
+      html = '<div class="lb-empty">No scores yet — you\'ll be first!</div>';
+    } else {
+      board.forEach((p, i) => {
+        const isMe  = p.name === playerName;
+        const rank  = medals[i] || `${i + 1}.`;
+        html += `
+          <div class="lb-row${isMe ? ' current-player' : ''}">
+            <span class="lb-rank">${rank}</span>
+            <span class="lb-name${isMe ? ' current-player' : ''}">${p.name}${isMe ? '<span class="lb-you-tag">YOU</span>' : ''}</span>
+            <span class="lb-score">${p.score.toLocaleString()} pts</span>
+          </div>`;
+      });
+    }
+    document.getElementById('lb-table').innerHTML = html;
+
+    // Append word review below the leaderboard in postgame context
+    const reviewEl = document.getElementById('lb-word-review');
+    if (reviewEl) reviewEl.remove();
+    if (context === 'postgame') {
+      const div = document.createElement('div');
+      div.id = 'lb-word-review';
+      div.innerHTML = buildWordReview();
+      document.getElementById('lb-table').after(div);
+    }
+
+    showScreen('leaderboard');
+  }
+
+  // ── Submit score to server ───────────────────────────────────────────────────
+  async function submitScore(points) {
+    roundScore = points;
+    await fetch('/vocab/api/score', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({ name: playerName, points })
+    });
+  }
+
+  // ── Load books ──────────────────────────────────────────────────────────────
+  async function loadBooks() {
+    const res  = await fetch('/vocab/api/books');
+    const data = await res.json();
+    const container = document.getElementById('book-list');
+
+    const hebrewBookNames = {
+      'Genesis': 'בְּרֵאשִׁית', 'Exodus': 'שְׁמוֹת', 'Leviticus': 'וַיִּקְרָא',
+      'Numbers': 'בַּמִּדְבָּר', 'Deuteronomy': 'דְּבָרִים',
+      'Joshua': 'יְהוֹשֻׁעַ', 'Judges': 'שׁוֹפְטִים',
+      'I Samuel': 'שְׁמוּאֵל א', 'II Samuel': 'שְׁמוּאֵל ב',
+      'I Kings': 'מְלָכִים א', 'II Kings': 'מְלָכִים ב',
+      'Isaiah': 'יְשַׁעְיָהוּ', 'Jeremiah': 'יִרְמְיָהוּ', 'Ezekiel': 'יְחֶזְקֵאל',
+      'Hosea': 'הוֹשֵׁעַ', 'Joel': 'יוֹאֵל', 'Amos': 'עָמוֹס',
+      'Obadiah': 'עֹבַדְיָה', 'Jonah': 'יוֹנָה', 'Micah': 'מִיכָה',
+      'Nahum': 'נַחוּם', 'Habakkuk': 'חֲבַקּוּק', 'Zephaniah': 'צְפַנְיָה',
+      'Haggai': 'חַגַּי', 'Zechariah': 'זְכַרְיָה', 'Malachi': 'מַלְאָכִי',
+      'Psalms': 'תְּהִלִּים', 'Proverbs': 'מִשְׁלֵי', 'Job': 'אִיּוֹב',
+      'Song of Songs': 'שִׁיר הַשִּׁירִים', 'Ruth': 'רוּת',
+      'Lamentations': 'אֵיכָה', 'Ecclesiastes': 'קֹהֶלֶת', 'Esther': 'אֶסְתֵּר',
+      'Daniel': 'דָּנִיֵּאל', 'Ezra': 'עֶזְרָא', 'Nehemiah': 'נְחֶמְיָה',
+      'I Chronicles': 'דִּבְרֵי הַיָּמִים א', 'II Chronicles': 'דִּבְרֵי הַיָּמִים ב',
+    };
+
+    let html = '';
+    for (const section of data.order) {
+      const books = data.sections[section];
+      if (!books || books.length === 0) continue;
+      html += `<div class="section-label">${section}</div><div class="book-grid">`;
+      for (const book of books) {
+        const he = hebrewBookNames[book.id] || '';
+        const shortName = book.display_name.split('/')[0].trim();
+        html += `
+          <button class="book-btn" id="btn-${book.id.replace(/ /g,'_')}"
+                  onclick="selectBook('${book.id}', this)">
+            <span class="he-name">${he}</span>
+            ${shortName}
+          </button>`;
+      }
+      html += '</div>';
+    }
+
+    if (!html) {
+      html = '<p style="color:var(--red);">No books built yet. Run <code>python3 hebrew_vocab_builder.py --section Torah</code> first.</p>';
+    }
+    container.innerHTML = html;
+  }
+
+  // ── Book selection ──────────────────────────────────────────────────────────
+  function selectBook(bookId, btn) {
+    document.querySelectorAll('.book-btn').forEach(b => b.classList.remove('selected'));
+    btn.classList.add('selected');
+    selectedBookId = bookId;
+
+    const shortName = btn.innerText.trim().split('\n').pop().trim();
+    selectedBookName = shortName;
+    document.getElementById('selected-book-name').textContent = shortName;
+    showScreen('lang');
+  }
+
+  // ── Start game ──────────────────────────────────────────────────────────────
+  async function startGame(gameMode) {
+    mode = gameMode;
+    wordIndex = 0;
+    score     = 0;
+    results   = [];
+
+    const res  = await fetch(`/vocab/api/words/${encodeURIComponent(selectedBookId)}`);
+    const data = await res.json();
+    if (data.error) { alert(data.error); return; }
+
+    allWords  = data.words;
+    gameWords = shuffle([...allWords]).slice(0, 10);
+
+    document.getElementById('game-book-label').textContent = data.display_name;
+    document.getElementById('score').textContent = '0';
+
+    showScreen('game');
+    renderWord();
+  }
+
+  function replayGame() {
+    wordIndex = 0;
+    score     = 0;
+    results   = [];
+    gameWords = shuffle([...allWords]).slice(0, 10);
+    document.getElementById('score').textContent = '0';
+    showScreen('game');
+    renderWord();
+  }
+
+  // ── Render current word ─────────────────────────────────────────────────────
+  function renderWord() {
+    const word    = gameWords[wordIndex];
+    const pct     = (wordIndex / 10) * 100;
+    document.getElementById('progress-fill').style.width = pct + '%';
+    document.getElementById('feedback').textContent = '';
+    document.getElementById('feedback').className   = 'feedback';
+    document.getElementById('next-btn').style.display = 'none';
+
+    // Question display
+    const qWord  = document.getElementById('question-word');
+    const qLabel = document.getElementById('question-label');
+    const qFreq  = document.getElementById('question-freq');
+
+    if (mode === 'he-en') {
+      qWord.textContent  = word.hebrew;
+      qWord.className    = 'question-word hebrew';
+      qLabel.textContent = 'What does this mean?';
+    } else {
+      qWord.textContent  = word.english;
+      qWord.className    = 'question-word';
+      qLabel.textContent = 'Which Hebrew word?';
+    }
+    qFreq.textContent = `appears ${word.frequency.toLocaleString()}× in this book`;
+
+    // Build choices: correct + 2 random wrong from other game words
+    const others   = gameWords.filter((_, i) => i !== wordIndex);
+    const wrongs   = shuffle(others).slice(0, 2);
+    const choices  = shuffle([word, ...wrongs]);
+
+    const choicesEl = document.getElementById('choices');
+    choicesEl.innerHTML = '';
+    choices.forEach(choice => {
+      const btn = document.createElement('button');
+      btn.className = 'choice-btn' + (mode === 'en-he' ? ' hebrew' : '');
+      btn.textContent = mode === 'he-en' ? choice.english : choice.hebrew;
+      btn.onclick = () => handleAnswer(choice, word, btn);
+      choicesEl.appendChild(btn);
+    });
+  }
+
+  // ── Answer handling ─────────────────────────────────────────────────────────
+  function handleAnswer(chosen, correct, clickedBtn) {
+    const isCorrect = chosen === correct;
+
+    // Disable all buttons, highlight
+    document.querySelectorAll('.choice-btn').forEach(btn => {
+      btn.disabled = true;
+      const btnText = btn.textContent;
+      const correctText = mode === 'he-en' ? correct.english : correct.hebrew;
+      if (btnText === correctText) btn.classList.add('correct');
+    });
+    if (!isCorrect) clickedBtn.classList.add('wrong');
+
+    // Feedback
+    const fb = document.getElementById('feedback');
+    if (isCorrect) {
+      score += 10;
+      document.getElementById('score').textContent = score;
+      fb.textContent = '✓ Correct! +10 points';
+      fb.className   = 'feedback correct';
+    } else {
+      fb.textContent = `✗ The answer was: ${mode === 'he-en' ? correct.english : correct.hebrew}`;
+      fb.className   = 'feedback wrong';
+    }
+
+    results.push({ word: correct, correct: isCorrect });
+
+    // Next button or auto-finish
+    if (wordIndex < 9) {
+      document.getElementById('next-btn').style.display = 'block';
+    } else {
+      const correctCount = results.filter(r => r.correct).length;
+      if (correctCount >= 8) {
+        setTimeout(() => showBonus(correctCount), 900);
+      } else {
+        setTimeout(finishGame, 900);
+      }
+    }
+  }
+
+  // ── End of game (no bonus) ───────────────────────────────────────────────────
+  async function finishGame() {
+    await submitScore(score);
+    showLeaderboard('postgame');
+  }
+
+  // ── Next word ───────────────────────────────────────────────────────────────
+  function nextWord() {
+    wordIndex++;
+    renderWord();
+  }
+
+  // ── Bonus round ─────────────────────────────────────────────────────────────
+  function showBonus(correctCount) {
+    bonusWord     = gameWords[Math.floor(Math.random() * gameWords.length)];
+    bonusAttempts = 0;
+    document.getElementById('bonus-correct-count').textContent = correctCount;
+    document.getElementById('bonus-hebrew').textContent = bonusWord.hebrew;
+    document.getElementById('bonus-input').value = '';
+    document.getElementById('bonus-input').className = 'bonus-input';
+    document.getElementById('bonus-input').disabled = false;
+    document.getElementById('bonus-submit').disabled = false;
+    document.getElementById('bonus-feedback').textContent = '';
+    document.getElementById('bonus-feedback').className = 'bonus-feedback';
+    document.getElementById('bonus-attempts').textContent = '';
+    showScreen('bonus');
+    document.getElementById('bonus-input').focus();
+  }
+
+  function isCorrectAnswer(typed, definition) {
+    typed      = typed.trim().toLowerCase().replace(/[.,;!?]/g, '');
+    definition = definition.toLowerCase().replace(/[.,;!?]/g, '');
+    if (!typed || typed.length < 2) return false;
+    // Whole-word match anywhere in the definition
+    const escaped = typed.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    if (new RegExp(`\\b${escaped}\\b`).test(definition)) return true;
+    // Also accept if a key definition word appears in the typed answer
+    const keyWords = definition.split(/[\s,;]+/)
+      .filter(w => w.length >= 3 && !['the','and','for','with','from','that','this','its'].includes(w));
+    return keyWords.some(w => new RegExp(`\\b${w}\\b`).test(typed));
+  }
+
+  function submitBonus() {
+    const typed = document.getElementById('bonus-input').value;
+    const input = document.getElementById('bonus-input');
+    const fb    = document.getElementById('bonus-feedback');
+    const att   = document.getElementById('bonus-attempts');
+
+    if (isCorrectAnswer(typed, bonusWord.english)) {
+      const pts = bonusAttempts === 0 ? 50 : 25;
+      score += pts;
+      input.className = 'bonus-input correct';
+      input.disabled  = true;
+      document.getElementById('bonus-submit').disabled = true;
+      fb.textContent  = `🎉 Correct! +${pts} bonus points!`;
+      fb.className    = 'bonus-feedback correct';
+      att.textContent = `The answer: ${bonusWord.english}`;
+      setTimeout(async () => { await submitScore(score); showLeaderboard('postgame'); }, 1800);
+    } else {
+      bonusAttempts++;
+      input.className = 'bonus-input wrong';
+      if (bonusAttempts >= 2) {
+        input.disabled = true;
+        document.getElementById('bonus-submit').disabled = true;
+        fb.textContent  = 'Not this time — no bonus points.';
+        fb.className    = 'bonus-feedback wrong';
+        att.textContent = `The answer was: ${bonusWord.english}`;
+        setTimeout(async () => { await submitScore(score); showLeaderboard('postgame'); }, 2000);
+      } else {
+        fb.textContent  = 'Not quite — one more try!';
+        fb.className    = 'bonus-feedback wrong';
+        att.textContent = 'Second chance: +25 points if you get it';
+        setTimeout(() => { input.className = 'bonus-input'; input.select(); }, 600);
+      }
+    }
+  }
+
+  // ── Build word-review HTML (injected into leaderboard screen postgame) ───────
+  function buildWordReview() {
+    const correct = results.filter(r => r.correct).length;
+    let html = `<div class="result-review" style="margin:20px 0">
+      <h3 style="font-size:.85rem;font-weight:800;color:var(--grey);text-transform:uppercase;letter-spacing:1px;margin-bottom:12px">
+        This round: ${correct}/10 correct
+      </h3>`;
+    results.forEach(r => {
+      html += `
+        <div class="review-row">
+          <span class="review-check">${r.correct ? '✅' : '❌'}</span>
+          <span class="review-he">${r.word.hebrew}</span>
+          <span class="review-en">${r.word.english}</span>
+        </div>`;
+    });
+    return html + '</div>';
+  }
+
+  // ── Utils ───────────────────────────────────────────────────────────────────
+  function shuffle(arr) {
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }
+
+  // ── Init ────────────────────────────────────────────────────────────────────
+  loadBooks();   // preload in background so book grid is ready when needed
+  showScreen('name');
+  document.getElementById('name-input').focus();
+</script>
+
+</body>
+</html>
