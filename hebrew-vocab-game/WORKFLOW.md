@@ -151,6 +151,32 @@ git pull
 
 ---
 
+## Planned Future Features
+
+Ideas discussed for future development, roughly in order of priority:
+
+**Difficulty levels**
+- Level 1 (current): words ranked 1–10 by frequency in each book
+- Level 2: words ranked 11–20 (already in `hebrew_vocab.json`, just unused)
+- Level 3: fill-in-the-blank for all 10 words, not just the bonus round
+
+**Bible text passage questions**
+- Show an actual pasuk (verse) from Sefaria with one word highlighted
+- Student translates the highlighted word in context
+- Much closer to real Torah reading skill
+- Sefaria API already supports this — same API already used in the project
+
+**More challenge types**
+- Matching (connect Hebrew column to English column)
+- Hear the word / audio pronunciation
+- Root identification (given an inflected form, identify the shoresh)
+
+**Classroom management**
+- Reset leaderboard at start of each semester: `rm players.json`
+- Per-class leaderboards (multiple `players_period1.json` etc.)
+
+---
+
 ## File Map
 
 | File | What it does |
