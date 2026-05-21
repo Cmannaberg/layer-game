@@ -6,6 +6,7 @@ Then open: http://localhost:5050/vocab
 """
 
 import json, os, random
+from datetime import date
 from flask import Flask, render_template, jsonify, redirect, request
 
 app = Flask(__name__)
@@ -19,10 +20,20 @@ def root():
     return redirect("/vocab")
 
 
+# ── Players / leaderboard ────────────────────────────────────────────────────
+
 def load_players():
     try:
         with open(PLAYERS_FILE, encoding="utf-8") as f:
-            return json.load(f)
+            data = json.load(f)
+        # Migrate old flat format {"name": score} to new format
+        migrated = {}
+        for name, val in data.items():
+            if isinstance(val, int) or isinstance(val, float):
+                migrated[name] = {"total": int(val), "played": {}}
+            else:
+                migrated[name] = val
+        return migrated
     except FileNotFoundError:
         return {}
 
@@ -30,12 +41,15 @@ def save_players(players):
     with open(PLAYERS_FILE, "w", encoding="utf-8") as f:
         json.dump(players, f, ensure_ascii=False, indent=2)
 
+def today():
+    return date.today().isoformat()   # e.g. "2026-05-21"
+
 
 @app.route("/vocab/api/leaderboard")
 def api_leaderboard():
     players = load_players()
     board = sorted(
-        [{"name": k, "score": v} for k, v in players.items()],
+        [{"name": k, "score": v["total"]} for k, v in players.items()],
         key=lambda x: x["score"], reverse=True
     )
     return jsonify(board)
@@ -43,16 +57,41 @@ def api_leaderboard():
 
 @app.route("/vocab/api/score", methods=["POST"])
 def api_add_score():
-    data   = request.get_json()
-    name   = (data.get("name") or "").strip()
-    points = int(data.get("points", 0))
+    data    = request.get_json()
+    name    = (data.get("name") or "").strip()
+    points  = int(data.get("points", 0))
+    book_id = (data.get("book_id") or "").strip()
     if not name:
         return jsonify({"error": "Name required"}), 400
-    players = load_players()
-    players[name] = players.get(name, 0) + points
-    save_players(players)
-    return jsonify({"name": name, "total": players[name]})
 
+    players = load_players()
+    if name not in players:
+        players[name] = {"total": 0, "played": {}}
+
+    player   = players[name]
+    today_str = today()
+
+    # Clean up old dates to keep the file small
+    player["played"] = {k: v for k, v in player["played"].items() if k == today_str}
+
+    already_played = book_id in player["played"].get(today_str, [])
+
+    if already_played:
+        save_players(players)
+        return jsonify({
+            "scored":  False,
+            "total":   player["total"],
+            "message": f"You already earned points for {book_id} today — great practice though!",
+        })
+
+    # Award points and record the play
+    player["total"] += points
+    player["played"].setdefault(today_str, []).append(book_id)
+    save_players(players)
+    return jsonify({"scored": True, "total": player["total"]})
+
+
+# ── Vocab ────────────────────────────────────────────────────────────────────
 
 def load_vocab():
     try:
@@ -86,7 +125,7 @@ def api_words(book_id):
     vocab = load_vocab()
     if book_id not in vocab:
         return jsonify({"error": "Book not found"}), 404
-    words = vocab[book_id]["words"][:10]
+    words = vocab[book_id]["words"]   # send all words; JS picks 10 randomly
     if len(words) < 3:
         return jsonify({"error": "Not enough words built yet"}), 400
     return jsonify({
@@ -95,6 +134,8 @@ def api_words(book_id):
         "words": words,
     })
 
+
+# ── Word lookup ──────────────────────────────────────────────────────────────
 
 @app.route("/lookup")
 def lookup():
@@ -115,11 +156,11 @@ def lookup_api(word):
 
     results = []
     for entry in data:
-        content = entry.get("content", {})
+        content  = entry.get("content", {})
         headword = entry.get("headword", word)
         lexicon  = entry.get("parent_lexicon", "")
         morph    = content.get("morphology", "") if isinstance(content, dict) else ""
-        senses   = content.get("senses", [])   if isinstance(content, dict) else []
+        senses   = content.get("senses", [])     if isinstance(content, dict) else []
 
         def extract_senses(sense_list, depth=0):
             out = []
@@ -133,10 +174,10 @@ def lookup_api(word):
             return out
 
         results.append({
-            "headword": headword,
-            "lexicon":  lexicon,
+            "headword":   headword,
+            "lexicon":    lexicon,
             "morphology": morph,
-            "senses": extract_senses(senses),
+            "senses":     extract_senses(senses),
         })
 
     return jsonify(results)

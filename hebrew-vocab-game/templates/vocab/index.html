@@ -517,10 +517,12 @@
   let results    = [];
   let selectedBookId   = null;
   let selectedBookName = null;
-  let bonusWord     = null;
-  let bonusAttempts = 0;
-  let playerName    = '';
-  let roundScore    = 0;   // points earned this round (for leaderboard display)
+  let bonusWord            = null;
+  let bonusAttempts        = 0;
+  let playerName           = '';
+  let roundScore           = 0;
+  let scoredThisRound      = true;
+  let alreadyPlayedMessage = '';
 
   // ── Screen management ───────────────────────────────────────────────────────
   function showScreen(name) {
@@ -554,10 +556,15 @@
       document.getElementById('lb-subtitle').textContent = `Great round, ${playerName}!`;
       const box = document.getElementById('lb-round-score-box');
       box.style.display = 'block';
-      document.getElementById('lb-round-pts').textContent = `${roundScore} points`;
       const me = board.find(p => p.name === playerName);
-      document.getElementById('lb-total-line').textContent =
-        me ? ` · Total: ${me.score} pts` : '';
+      if (scoredThisRound) {
+        document.getElementById('lb-round-pts').textContent = `${roundScore} points earned`;
+        document.getElementById('lb-total-line').textContent =
+          me ? ` · Total: ${me.score} pts` : '';
+      } else {
+        document.getElementById('lb-round-pts').textContent = '0 points — already played today';
+        document.getElementById('lb-total-line').textContent = alreadyPlayedMessage;
+      }
       document.getElementById('lb-cta').textContent = 'Play Again →';
       document.getElementById('lb-cta').onclick = () => showScreen('books');
     }
@@ -594,13 +601,22 @@
   }
 
   // ── Submit score to server ───────────────────────────────────────────────────
+  let scoredThisRound = true;   // whether points were actually awarded
+
   async function submitScore(points) {
     roundScore = points;
-    await fetch('/vocab/api/score', {
+    const res  = await fetch('/vocab/api/score', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({ name: playerName, points })
+      body: JSON.stringify({ name: playerName, points, book_id: selectedBookId })
     });
+    const data = await res.json();
+    scoredThisRound = data.scored;
+    if (!data.scored) {
+      // Show the server's message instead of the points earned
+      roundScore = 0;
+      alreadyPlayedMessage = data.message;
+    }
   }
 
   // ── Load books ──────────────────────────────────────────────────────────────

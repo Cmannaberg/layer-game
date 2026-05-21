@@ -24,8 +24,8 @@ _retry = Retry(total=4, backoff_factor=1.5,
                allowed_methods=["GET"])
 _session.mount("https://", HTTPAdapter(max_retries=_retry))
 OUT_FILE = "hebrew_vocab.json"
-TOP_N = 20          # words to store per book (game uses 10, extra for wrong answers)
-CANDIDATES = 80     # how many frequent words to try before giving up
+TOP_N = 30          # words to store per book (game randomly picks 10 each play)
+CANDIDATES = 100    # how many frequent words to try before giving up
 
 BOOKS = {
     "Torah": [
