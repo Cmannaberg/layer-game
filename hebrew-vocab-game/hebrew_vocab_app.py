@@ -5,9 +5,15 @@ Run: python3 hebrew_vocab_app.py
 Then open: http://localhost:5050/vocab
 """
 
-import json, os, random
+import json, os, random, socket
 from datetime import date
 from flask import Flask, render_template, jsonify, redirect, request
+try:
+    import qrcode
+except ImportError:
+    import subprocess, sys
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "qrcode", "-q"])
+    import qrcode
 
 app = Flask(__name__)
 VOCAB_FILE   = os.path.join(os.path.dirname(__file__), "hebrew_vocab.json")
@@ -183,5 +189,65 @@ def lookup_api(word):
     return jsonify(results)
 
 
+def get_local_ip():
+    """Return this machine's WiFi/LAN IP address."""
+    try:
+        # Connect to an external address (no data sent) to find the outbound interface
+        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        s.connect(("8.8.8.8", 80))
+        ip = s.getsockname()[0]
+        s.close()
+        return ip
+    except Exception:
+        return "127.0.0.1"
+
+
+def print_qr(url):
+    """Print a compact, square QR code using half-block Unicode characters.
+
+    Each pair of QR rows is merged into one terminal line using ▀/▄/█/space
+    so the output looks square instead of stretched tall.
+    """
+    qr = qrcode.QRCode(border=1)
+    qr.add_data(url)
+    qr.make(fit=True)
+    matrix = qr.get_matrix()          # list of lists of bools (True = dark)
+
+    # Pad to even number of rows
+    if len(matrix) % 2:
+        matrix.append([False] * len(matrix[0]))
+
+    for i in range(0, len(matrix), 2):
+        row_top = matrix[i]
+        row_bot = matrix[i + 1]
+        line = ""
+        for top, bot in zip(row_top, row_bot):
+            if top and bot:
+                line += "█"
+            elif top and not bot:
+                line += "▀"
+            elif not top and bot:
+                line += "▄"
+            else:
+                line += " "
+        print(line)
+
+
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5050)
+    PORT = 5050
+    local_ip = get_local_ip()
+    url = f"http://{local_ip}:{PORT}/vocab"
+
+    print()
+    print("=" * 52)
+    print("  Hebrew Vocab Game — server starting")
+    print("=" * 52)
+    print(f"  This Mac   :  http://localhost:{PORT}/vocab")
+    print(f"  WiFi URL   :  {url}")
+    print()
+    print("  Share that URL — or scan this QR code:")
+    print()
+    print_qr(url)
+    print("=" * 52)
+    print()
+    app.run(host="0.0.0.0", port=PORT, debug=False)

@@ -32,8 +32,9 @@ def build_combined(vocab):
                     "books":      [],
                     "total_freq": 0,
                 }
-            combined[hw]["books"].append((short, word["frequency"]))
-            combined[hw]["total_freq"] += word["frequency"]
+            freq = word.get("frequency", 0)
+            combined[hw]["books"].append((short, freq))
+            combined[hw]["total_freq"] += freq
 
     # Sort alphabetically by Hebrew (Unicode order matches alef-bet order)
     return sorted(combined.items(), key=lambda x: x[0])

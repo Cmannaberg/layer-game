@@ -16,7 +16,8 @@ source myenv/bin/activate
 python3 hebrew_vocab_app.py
 ```
 
-Open `http://localhost:5050` — or share your local IP with students on Chromebooks.
+The server prints your WiFi URL and a **scannable QR code** at startup.
+Students on the same WiFi point their phone camera at it — no typing needed.
 
 ## Features
 
@@ -26,3 +27,4 @@ Open `http://localhost:5050` — or share your local IP with students on Chromeb
 - Persistent leaderboard across all class sessions
 - Hebrew word lookup tool at `/lookup`
 - Export a printable dictionary with `python3 hebrew_vocab_dict.py`
+- Multi-device: students join via QR code on phones, tablets, or Chromebooks

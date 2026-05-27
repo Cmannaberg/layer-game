@@ -33,25 +33,40 @@ source myenv/bin/activate
 
 # 3. Start the server
 python3 hebrew_vocab_app.py
-
-# 4. Find your Mac's IP address (run in a second Terminal tab)
-ipconfig getifaddr en0
 ```
 
-Write `http://[your-ip]:5050` on the board.
-Students open that URL in Chrome on their Chromebooks.
+The terminal will print something like:
+
+```
+====================================================
+  Hebrew Vocab Game — server starting
+====================================================
+  This Mac   :  http://localhost:5050/vocab
+  WiFi URL   :  http://10.10.2.45:5050/vocab
+
+  Share that URL — or scan this QR code:
+
+▄▄▄▄▄▄▄ ▄ ▄  ...
+...
+====================================================
+```
+
+**Point your phone camera at the QR code** — tap the link and the game opens instantly.
+Students on Chromebooks can type the WiFi URL shown in the banner.
+
 Leave the Terminal window open for the entire class.
-
-To stop the server: press `Ctrl+C` in Terminal.
-
-**Connecting your phone on the same WiFi:**
-- Make sure your phone is on the same WiFi network as your Mac
-- Open Safari (iPhone) or Chrome (Android)
-- Type `http://[your-ip]:5050` using the same IP address
-- The game loads just like on a Chromebook
+To stop the server: press **Ctrl+C** in Terminal (don't just close the window —
+that leaves the server running and causes a "port already in use" error next time).
 
 > **Note:** Your Mac's local IP can change when it reconnects to WiFi.
-> If it stops working, re-run `ipconfig getifaddr en0` to get the new IP.
+> The banner always shows the current IP automatically — no need to look it up.
+
+**WiFi requirements:**
+- Your Mac and students' devices must be on the **same WiFi network**
+- Works well on home WiFi and most office/shop networks
+- Many school and public WiFi networks block device-to-device traffic (called
+  "client isolation") — if students can't connect, switch to your Mac's
+  Personal Hotspot instead (System Settings → General → Sharing → Internet Sharing)
 
 ---
 
@@ -207,7 +222,7 @@ Ideas discussed for future development, roughly in order of priority:
 
 | File | What it does |
 |------|-------------|
-| `hebrew_vocab_app.py` | Runs the game server |
+| `hebrew_vocab_app.py` | Runs the game server; prints WiFi URL + QR code at startup |
 | `hebrew_vocab_builder.py` | Fetches vocab from Sefaria API, builds JSON |
 | `hebrew_vocab_dict.py` | Exports vocab as a printable HTML dictionary |
 | `hebrew_vocab.json` | All vocabulary data — edit definitions here |

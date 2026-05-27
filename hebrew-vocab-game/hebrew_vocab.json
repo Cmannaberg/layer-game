@@ -10,7 +10,7 @@
       },
       {
         "hebrew": "כִּי",
-        "english": "for, because, that",
+        "english": "that, because, for, when, if, indeed, surely",
         "frequency": 158
       },
       {
@@ -30,7 +30,7 @@
       },
       {
         "hebrew": "שׂוּם",
-        "english": "to put, place, set, appoint, make",
+        "english": "no, nothing",
         "frequency": 59
       },
       {
@@ -65,12 +65,12 @@
       },
       {
         "hebrew": "לָקַח",
-        "english": "to take, get, fetch, lay hold of, seize, receive, acquire, buy, bring, marry, ta",
+        "english": "to take, get",
         "frequency": 43
       },
       {
         "hebrew": "יָלַד",
-        "english": "to bear, bringforth, beget, gender, travail",
+        "english": "boy",
         "frequency": 39
       },
       {
@@ -105,6 +105,950 @@
       }
     ]
   },
+  "Exodus": {
+    "display_name": "Shemot / Exodus",
+    "section": "Torah",
+    "words": [
+      {
+        "hebrew": "אָמַר",
+        "english": "to say, speak, utter",
+        "frequency": 155
+      },
+      {
+        "hebrew": "כִּי",
+        "english": "that, because, for, when, if, indeed, surely",
+        "frequency": 115
+      },
+      {
+        "hebrew": "פָּרַע",
+        "english": "to lead, act as leader",
+        "frequency": 69
+      },
+      {
+        "hebrew": "אִישׁ",
+        "english": "man",
+        "frequency": 53
+      },
+      {
+        "hebrew": "עָשָׂה",
+        "english": "to do, fashion, accomplish, make",
+        "frequency": 53
+      },
+      {
+        "hebrew": "הָיָה",
+        "english": "to be, become, come to pass, exist, happen, fall out",
+        "frequency": 41
+      },
+      {
+        "hebrew": "עַל",
+        "english": "on, over, about, against, upon, above, by, concerning",
+        "frequency": 40
+      },
+      {
+        "hebrew": "שָׁנֶה",
+        "english": "year",
+        "frequency": 39
+      },
+      {
+        "hebrew": "צָוָה",
+        "english": "to command, charge, give orders, lay charge, give charge to, order",
+        "frequency": 29
+      },
+      {
+        "hebrew": "מִשְׁכָּן",
+        "english": "dwelling place, tabernacle",
+        "frequency": 27
+      },
+      {
+        "hebrew": "נְחֹשֶׁת",
+        "english": "copper, bronze",
+        "frequency": 27
+      },
+      {
+        "hebrew": "שׁוּט",
+        "english": "to go or rove about, go to and fro",
+        "frequency": 26
+      },
+      {
+        "hebrew": "אַיִל",
+        "english": "ram",
+        "frequency": 25
+      },
+      {
+        "hebrew": "אֵל",
+        "english": "god, mighty one",
+        "frequency": 25
+      },
+      {
+        "hebrew": "יָם",
+        "english": "sea",
+        "frequency": 24
+      },
+      {
+        "hebrew": "יוֹם",
+        "english": "day, time, year",
+        "frequency": 23
+      },
+      {
+        "hebrew": "תְּכֵלֶת",
+        "english": "blue, blue thread",
+        "frequency": 23
+      },
+      {
+        "hebrew": "קָרָא",
+        "english": "to call, call out, recite, read, cry out, proclaim",
+        "frequency": 22
+      },
+      {
+        "hebrew": "חָצֵר",
+        "english": "court, enclosure",
+        "frequency": 22
+      },
+      {
+        "hebrew": "אֶרֶץ",
+        "english": "land, earth",
+        "frequency": 21
+      }
+    ]
+  },
+  "Leviticus": {
+    "display_name": "Vayikra / Leviticus",
+    "section": "Torah",
+    "words": [
+      {
+        "hebrew": "כִּי",
+        "english": "that, because, for, when, if, indeed, surely",
+        "frequency": 71
+      },
+      {
+        "hebrew": "עַל",
+        "english": "on, over, about, against, upon, above, by, concerning",
+        "frequency": 55
+      },
+      {
+        "hebrew": "אָמַר",
+        "english": "to say, speak, utter",
+        "frequency": 51
+      },
+      {
+        "hebrew": "אִישׁ",
+        "english": "man",
+        "frequency": 42
+      },
+      {
+        "hebrew": "דָבַר",
+        "english": "to speak, declare, converse, command, promise, warn, threaten, sing",
+        "frequency": 40
+      },
+      {
+        "hebrew": "יוֹם",
+        "english": "day, time, year",
+        "frequency": 37
+      },
+      {
+        "hebrew": "מַיִם",
+        "english": "water, waters",
+        "frequency": 34
+      },
+      {
+        "hebrew": "הָיָה",
+        "english": "to be, become, come to pass, exist, happen, fall out",
+        "frequency": 34
+      },
+      {
+        "hebrew": "יָם",
+        "english": "sea",
+        "frequency": 31
+      },
+      {
+        "hebrew": "כְּפוֹר",
+        "english": "bowl, basin",
+        "frequency": 29
+      },
+      {
+        "hebrew": "טָמֵא",
+        "english": "to be unclean, become unclean, become impure",
+        "frequency": 29
+      },
+      {
+        "hebrew": "שָׁבוּעַ",
+        "english": "seven, period of seven (days or years), heptad, week",
+        "frequency": 27
+      },
+      {
+        "hebrew": "נָגַע",
+        "english": "to touch, reach, strike",
+        "frequency": 27
+      },
+      {
+        "hebrew": "אֹהֶל",
+        "english": "tent",
+        "frequency": 26
+      },
+      {
+        "hebrew": "מִזְבֵּחַ",
+        "english": "altar",
+        "frequency": 24
+      },
+      {
+        "hebrew": "חָטָא",
+        "english": "to sin",
+        "frequency": 1
+      },
+      {
+        "hebrew": "אָכַל",
+        "english": "to eat, devour, burn up, feed",
+        "frequency": 23
+      },
+      {
+        "hebrew": "אֲדָמָה",
+        "english": "ground, land",
+        "frequency": 23
+      },
+      {
+        "hebrew": "רָאָה",
+        "english": "to see",
+        "frequency": 22
+      },
+      {
+        "hebrew": "בֶּגֶד",
+        "english": "treachery, deceit",
+        "frequency": 20
+      }
+    ]
+  },
+  "Numbers": {
+    "display_name": "Bamidbar / Numbers",
+    "section": "Torah",
+    "words": [
+      {
+        "hebrew": "מִשְׁפָּחָה",
+        "english": "clan, family",
+        "frequency": 95
+      },
+      {
+        "hebrew": "אָמַר",
+        "english": "to say, speak, utter",
+        "frequency": 95
+      },
+      {
+        "hebrew": "אִישׁ",
+        "english": "man",
+        "frequency": 74
+      },
+      {
+        "hebrew": "כִּי",
+        "english": "that, because, for, when, if, indeed, surely",
+        "frequency": 74
+      },
+      {
+        "hebrew": "דָבַר",
+        "english": "to speak, declare, converse, command, promise, warn, threaten, sing",
+        "frequency": 57
+      },
+      {
+        "hebrew": "בֵּן",
+        "english": "son, grandson, child, member of a group",
+        "frequency": 57
+      },
+      {
+        "hebrew": "נָסַע",
+        "english": "to pull out, pull up, set out, journey, remove, set forward, depart",
+        "frequency": 51
+      },
+      {
+        "hebrew": "חָנָה",
+        "english": "to decline, incline, encamp, bend down, lay siege against",
+        "frequency": 47
+      },
+      {
+        "hebrew": "יוֹם",
+        "english": "day, time, year",
+        "frequency": 39
+      },
+      {
+        "hebrew": "עַל",
+        "english": "on, over, about, against, upon, above, by, concerning",
+        "frequency": 37
+      },
+      {
+        "hebrew": "מָעַל",
+        "english": "to act unfaithfully, act treacherously, transgress, commit a trespass",
+        "frequency": 36
+      },
+      {
+        "hebrew": "אָב",
+        "english": "father of an individual",
+        "frequency": 33
+      },
+      {
+        "hebrew": "אֲדָמָה",
+        "english": "ground, land",
+        "frequency": 33
+      },
+      {
+        "hebrew": "צָוָה",
+        "english": "to command, charge, give orders, lay charge, give charge to, order",
+        "frequency": 29
+      },
+      {
+        "hebrew": "כֶּבֶשׂ",
+        "english": "lamb, sheep, young ram",
+        "frequency": 29
+      },
+      {
+        "hebrew": "שֶׁמֶן",
+        "english": "fat, oil",
+        "frequency": 28
+      },
+      {
+        "hebrew": "מִדְבָּר",
+        "english": "wilderness",
+        "frequency": 27
+      },
+      {
+        "hebrew": "הָיָה",
+        "english": "to be, become, come to pass, exist, happen, fall out",
+        "frequency": 27
+      },
+      {
+        "hebrew": "סֹלֶת",
+        "english": "fine flour",
+        "frequency": 27
+      },
+      {
+        "hebrew": "מוֹט",
+        "english": "to totter, shake, slip",
+        "frequency": 26
+      }
+    ]
+  },
+  "Deuteronomy": {
+    "display_name": "Devarim / Deuteronomy",
+    "section": "Torah",
+    "words": [
+      {
+        "hebrew": "כִּי",
+        "english": "that, because, for, when, if, indeed, surely",
+        "frequency": 160
+      },
+      {
+        "hebrew": "יוֹם",
+        "english": "day, time, year",
+        "frequency": 70
+      },
+      {
+        "hebrew": "אָמַר",
+        "english": "to say, speak, utter",
+        "frequency": 40
+      },
+      {
+        "hebrew": "עָשָׂה",
+        "english": "to do, fashion, accomplish, make",
+        "frequency": 36
+      },
+      {
+        "hebrew": "שׂוּם",
+        "english": "to put, place, set, appoint, make",
+        "frequency": 35
+      },
+      {
+        "hebrew": "אָלָה",
+        "english": "to lament, wail",
+        "frequency": 34
+      },
+      {
+        "hebrew": "אִישׁ",
+        "english": "man",
+        "frequency": 28
+      },
+      {
+        "hebrew": "צָוָה",
+        "english": "to command, charge, give orders, lay charge, give charge to, order",
+        "frequency": 27
+      },
+      {
+        "hebrew": "יָרַשׁ",
+        "english": "to seize, dispossess, take possession of, inherit, disinherit, occupy, impoverish",
+        "frequency": 25
+      },
+      {
+        "hebrew": "אֲדָמָה",
+        "english": "ground, land",
+        "frequency": 24
+      },
+      {
+        "hebrew": "עַל",
+        "english": "on, over, about, against, upon, above, by, concerning",
+        "frequency": 20
+      },
+      {
+        "hebrew": "שָׁמַיִם",
+        "english": "heaven, heavens, sky",
+        "frequency": 19
+      },
+      {
+        "hebrew": "יָם",
+        "english": "sea",
+        "frequency": 19
+      },
+      {
+        "hebrew": "נָתַן",
+        "english": "to give, put, set",
+        "frequency": 18
+      },
+      {
+        "hebrew": "פָּנִים",
+        "english": "face",
+        "frequency": 18
+      },
+      {
+        "hebrew": "עַם",
+        "english": "nation, people",
+        "frequency": 18
+      },
+      {
+        "hebrew": "אֶרֶץ",
+        "english": "land, earth",
+        "frequency": 17
+      },
+      {
+        "hebrew": "שָׂבַע",
+        "english": "to be satisfied, be sated, be fulfilled, be surfeited",
+        "frequency": 17
+      },
+      {
+        "hebrew": "דֶּרֶךְ",
+        "english": "way, road, distance, journey, manner",
+        "frequency": 17
+      },
+      {
+        "hebrew": "הָיָה",
+        "english": "to be, become, come to pass, exist, happen, fall out",
+        "frequency": 17
+      }
+    ]
+  },
+  "Psalms": {
+    "display_name": "Tehillim / Psalms",
+    "section": "Ketuvim",
+    "words": [
+      {
+        "hebrew": "נֶפֶשׁ",
+        "english": "soul",
+        "frequency": 87
+      },
+      {
+        "hebrew": "סָלָה",
+        "english": "to make light of, toss aside",
+        "frequency": 69
+      },
+      {
+        "hebrew": "מִזְמוֹר",
+        "english": "melody, psalm",
+        "frequency": 57
+      },
+      {
+        "hebrew": "נָצַח",
+        "english": "to excel, be bright",
+        "frequency": 55
+      },
+      {
+        "hebrew": "חֵסֵד",
+        "english": "goodness, kindness, faithfulness",
+        "frequency": 46
+      },
+      {
+        "hebrew": "שִׁיר",
+        "english": "to sing",
+        "frequency": 35
+      },
+      {
+        "hebrew": "עָשָׂה",
+        "english": "to do, fashion, accomplish, make",
+        "frequency": 34
+      },
+      {
+        "hebrew": "אֲדָמָה",
+        "english": "ground, land",
+        "frequency": 31
+      },
+      {
+        "hebrew": "אֵל",
+        "english": "god, god-like one, mighty one",
+        "frequency": 31
+      },
+      {
+        "hebrew": "שׂוּם",
+        "english": "to put, place, set, appoint, make",
+        "frequency": 28
+      },
+      {
+        "hebrew": "אֶרֶץ",
+        "english": "land, earth",
+        "frequency": 24
+      },
+      {
+        "hebrew": "אֶשֶׁר",
+        "english": "happiness, blessedness",
+        "frequency": 24
+      },
+      {
+        "hebrew": "פָּנִים",
+        "english": "face",
+        "frequency": 24
+      },
+      {
+        "hebrew": "הָלַל",
+        "english": "to shine",
+        "frequency": 24
+      },
+      {
+        "hebrew": "עַיִן",
+        "english": "eye",
+        "frequency": 23
+      },
+      {
+        "hebrew": "עַם",
+        "english": "nation, people",
+        "frequency": 23
+      },
+      {
+        "hebrew": "רֶשַׁע",
+        "english": "wrong, wickedness, guilt",
+        "frequency": 23
+      },
+      {
+        "hebrew": "תָּמִיד",
+        "english": "continuity, perpetuity",
+        "frequency": 23
+      },
+      {
+        "hebrew": "הַר",
+        "english": "hill, mountain, hill country, mount",
+        "frequency": 20
+      }
+    ]
+  },
+  "Proverbs": {
+    "display_name": "Mishlei / Proverbs",
+    "section": "Ketuvim",
+    "words": [
+      {
+        "hebrew": "כִּי",
+        "english": "for, because, that",
+        "frequency": 50
+      },
+      {
+        "hebrew": "רֶשַׁע",
+        "english": "wrong, wickedness, guilt",
+        "frequency": 31
+      },
+      {
+        "hebrew": "אִישׁ",
+        "english": "man",
+        "frequency": 28
+      },
+      {
+        "hebrew": "חָכַם",
+        "english": "to be wise",
+        "frequency": 27
+      },
+      {
+        "hebrew": "טוֹב",
+        "english": "to be good, be pleasing, be joyful, be beneficial, be pleasant, be favourable, b",
+        "frequency": 23
+      },
+      {
+        "hebrew": "מוּסָר",
+        "english": "discipline, chastening, correction",
+        "frequency": 22
+      },
+      {
+        "hebrew": "נֶפֶשׁ",
+        "english": "soul",
+        "frequency": 19
+      },
+      {
+        "hebrew": "כְּסִיל",
+        "english": "fool, stupid fellow, dullard, simpleton, arrogant one",
+        "frequency": 18
+      },
+      {
+        "hebrew": "לֵב",
+        "english": "inner man, mind, will, heart, understanding",
+        "frequency": 17
+      },
+      {
+        "hebrew": "אִוֶּלֶת",
+        "english": "foolishness, folly",
+        "frequency": 15
+      },
+      {
+        "hebrew": "דַּעַת",
+        "english": "knowledge",
+        "frequency": 14
+      },
+      {
+        "hebrew": "תּוֹעֵבַה",
+        "english": "a disgusting thing, abomination, abominable",
+        "frequency": 14
+      },
+      {
+        "hebrew": "דֶּרֶךְ",
+        "english": "way, road, distance, journey, manner",
+        "frequency": 12
+      },
+      {
+        "hebrew": "מִשְׁפָּט",
+        "english": "judgment, justice, ordinance",
+        "frequency": 11
+      },
+      {
+        "hebrew": "הָלַךְ",
+        "english": "to go, walk, come",
+        "frequency": 11
+      },
+      {
+        "hebrew": "אָהַב",
+        "english": "to love",
+        "frequency": 11
+      },
+      {
+        "hebrew": "עַיִן",
+        "english": "eye",
+        "frequency": 11
+      },
+      {
+        "hebrew": "יוֹם",
+        "english": "day, time, year",
+        "frequency": 10
+      },
+      {
+        "hebrew": "יָרֵא",
+        "english": "to fear, revere, be afraid",
+        "frequency": 9
+      },
+      {
+        "hebrew": "נָתַן",
+        "english": "to give, put, set",
+        "frequency": 9
+      }
+    ]
+  },
+  "Job": {
+    "display_name": "Iyov / Job",
+    "section": "Ketuvim",
+    "words": [
+      {
+        "hebrew": "כִּי",
+        "english": "for, because, that",
+        "frequency": 70
+      },
+      {
+        "hebrew": "אָמַר",
+        "english": "to say, speak, utter",
+        "frequency": 49
+      },
+      {
+        "hebrew": "עָנָה",
+        "english": "to answer, respond, testify, speak, shout",
+        "frequency": 27
+      },
+      {
+        "hebrew": "אֱלוֹהַּ",
+        "english": "God",
+        "frequency": 27
+      },
+      {
+        "hebrew": "עַל",
+        "english": "on, over, about, against, upon, above, by, concerning",
+        "frequency": 23
+      },
+      {
+        "hebrew": "אַיִל",
+        "english": "ram",
+        "frequency": 14
+      },
+      {
+        "hebrew": "אוֹר",
+        "english": "to be or become light, shine",
+        "frequency": 14
+      },
+      {
+        "hebrew": "עָמַד",
+        "english": "to stand, remain, endure, take one's stand",
+        "frequency": 14
+      },
+      {
+        "hebrew": "נֶפֶשׁ",
+        "english": "soul",
+        "frequency": 13
+      },
+      {
+        "hebrew": "חָכַם",
+        "english": "to be wise",
+        "frequency": 13
+      },
+      {
+        "hebrew": "שׂוּם",
+        "english": "to put, place, set, appoint, make",
+        "frequency": 12
+      },
+      {
+        "hebrew": "אֶרֶץ",
+        "english": "land, earth",
+        "frequency": 11
+      },
+      {
+        "hebrew": "אִישׁ",
+        "english": "man",
+        "frequency": 10
+      },
+      {
+        "hebrew": "יָדַע",
+        "english": "to know",
+        "frequency": 10
+      },
+      {
+        "hebrew": "עַם",
+        "english": "nation, people",
+        "frequency": 10
+      },
+      {
+        "hebrew": "חָדַד",
+        "english": "to be sharp, be alert, be keen",
+        "frequency": 9
+      },
+      {
+        "hebrew": "אֱנוֹשׁ",
+        "english": "man, mortal man, person, mankind",
+        "frequency": 9
+      },
+      {
+        "hebrew": "מִשְׁפָּט",
+        "english": "judgment, justice, ordinance",
+        "frequency": 9
+      },
+      {
+        "hebrew": "מִלָּה",
+        "english": "word, speech, utterance",
+        "frequency": 9
+      },
+      {
+        "hebrew": "הָיָה",
+        "english": "to be, become, come to pass, exist, happen, fall out",
+        "frequency": 8
+      }
+    ]
+  },
+  "Song of Songs": {
+    "display_name": "Shir HaShirim / Song of Songs",
+    "section": "Ketuvim",
+    "words": [
+      {
+        "hebrew": "דּוֹד",
+        "english": "beloved, love, uncle",
+        "frequency": 18
+      },
+      {
+        "hebrew": "רַעְיָה",
+        "english": "attendant maidens, companion",
+        "frequency": 9
+      },
+      {
+        "hebrew": "בָּנָה",
+        "english": "to build, rebuild, establish, cause to continue",
+        "frequency": 8
+      },
+      {
+        "hebrew": "נֶפֶשׁ",
+        "english": "soul",
+        "frequency": 7
+      },
+      {
+        "hebrew": "כֹּל",
+        "english": "all, the whole",
+        "frequency": 6
+      },
+      {
+        "hebrew": "אָהַב",
+        "english": "to love",
+        "frequency": 5
+      },
+      {
+        "hebrew": "אָחוֹת",
+        "english": "sister",
+        "frequency": 5
+      },
+      {
+        "hebrew": "דַּד",
+        "english": "breast",
+        "frequency": 4
+      },
+      {
+        "hebrew": "יַיִן",
+        "english": "wine",
+        "frequency": 4
+      },
+      {
+        "hebrew": "עַל",
+        "english": "on, over, about, against, upon, above, by, concerning",
+        "frequency": 4
+      },
+      {
+        "hebrew": "עַיִן",
+        "english": "eye",
+        "frequency": 4
+      },
+      {
+        "hebrew": "שָׁבַע",
+        "english": "to swear, adjure",
+        "frequency": 4
+      },
+      {
+        "hebrew": "עָבַר",
+        "english": "to pass over or by or through, alienate, bring, carry, do away, take, take away,",
+        "frequency": 4
+      },
+      {
+        "hebrew": "שׁוּשַׁן",
+        "english": "lily",
+        "frequency": 4
+      },
+      {
+        "hebrew": "עֵדֶר",
+        "english": "flock, herd",
+        "frequency": 4
+      },
+      {
+        "hebrew": "שׁוּב",
+        "english": "to return, turn back",
+        "frequency": 4
+      },
+      {
+        "hebrew": "אִשָּׁה",
+        "english": "woman",
+        "frequency": 3
+      },
+      {
+        "hebrew": "צַוַּאר",
+        "english": "neck",
+        "frequency": 3
+      },
+      {
+        "hebrew": "שָׂדֶה",
+        "english": "field, land",
+        "frequency": 3
+      },
+      {
+        "hebrew": "חָפֵץ",
+        "english": "to delight in, take pleasure in, desire, be pleased with",
+        "frequency": 3
+      }
+    ]
+  },
+  "Ruth": {
+    "display_name": "Ruth",
+    "section": "Ketuvim",
+    "words": [
+      {
+        "hebrew": "אָמַר",
+        "english": "to say, speak, utter",
+        "frequency": 22
+      },
+      {
+        "hebrew": "יָלַד",
+        "english": "to bear, bringforth, beget, gender, travail",
+        "frequency": 9
+      },
+      {
+        "hebrew": "בַּיִת",
+        "english": "house",
+        "frequency": 8
+      },
+      {
+        "hebrew": "הָיָה",
+        "english": "to be, become, come to pass, exist, happen, fall out",
+        "frequency": 7
+      },
+      {
+        "hebrew": "אִישׁ",
+        "english": "man",
+        "frequency": 6
+      },
+      {
+        "hebrew": "שָׂדֶה",
+        "english": "field, land",
+        "frequency": 6
+      },
+      {
+        "hebrew": "יוֹם",
+        "english": "day, time, year",
+        "frequency": 6
+      },
+      {
+        "hebrew": "שׂוּם",
+        "english": "to put, place, set, appoint, make",
+        "frequency": 5
+      },
+      {
+        "hebrew": "אָחוֹר",
+        "english": "the back side, the rear",
+        "frequency": 5
+      },
+      {
+        "hebrew": "גָּאַל",
+        "english": "to redeem, act as kinsman-redeemer, avenge, revenge, ransom, do the part of a ki",
+        "frequency": 5
+      },
+      {
+        "hebrew": "יָשַׁב",
+        "english": "to dwell, remain, sit, abide",
+        "frequency": 4
+      },
+      {
+        "hebrew": "עַם",
+        "english": "nation, people",
+        "frequency": 4
+      },
+      {
+        "hebrew": "לַיִל",
+        "english": "night",
+        "frequency": 4
+      },
+      {
+        "hebrew": "בּוֹא",
+        "english": "to go in, enter, come, go, come in",
+        "frequency": 4
+      },
+      {
+        "hebrew": "חֲמוֹת",
+        "english": "mother-in-law, husband's mother",
+        "frequency": 4
+      },
+      {
+        "hebrew": "קוּם",
+        "english": "to rise, arise, stand, rise up, stand up",
+        "frequency": 3
+      },
+      {
+        "hebrew": "שׁוּב",
+        "english": "to return, turn back",
+        "frequency": 3
+      },
+      {
+        "hebrew": "נָתַן",
+        "english": "to give, put, set",
+        "frequency": 3
+      },
+      {
+        "hebrew": "בָּנָה",
+        "english": "to build, rebuild, establish, cause to continue",
+        "frequency": 3
+      }
+    ]
+  },
   "Joshua": {
     "display_name": "Yehoshua / Joshua",
     "section": "Nevi'im",
@@ -116,7 +1060,7 @@
       },
       {
         "hebrew": "כִּי",
-        "english": "for, because, that",
+        "english": "burning, branding",
         "frequency": 61
       },
       {
@@ -199,7 +1143,11 @@
         "english": "to go in, enter, come, go, come in",
         "frequency": 15
       },
-  
+      {
+        "hebrew": "אֱמֹרִי",
+        "english": "Amorite = \"a sayer\"",
+        "frequency": 15
+      },
       {
         "hebrew": "מוֹט",
         "english": "to totter, shake, slip",
@@ -223,8 +1171,13 @@
       },
       {
         "hebrew": "כִּי",
-        "english": "for, because, that",
+        "english": "burning, branding",
         "frequency": 65
+      },
+      {
+        "hebrew": "הָיָה",
+        "english": "to be, become, come to pass, exist, happen, fall out",
+        "frequency": 40
       },
       {
         "hebrew": "אַיִל",
@@ -305,11 +1258,6 @@
         "hebrew": "שְׁכֶם",
         "english": "shoulder, back",
         "frequency": 14
-      },
-      {
-        "hebrew": "מֲלְאָךְ",
-        "english": "messenger, representative",
-        "frequency": 13
       }
     ]
   },
@@ -324,7 +1272,7 @@
       },
       {
         "hebrew": "כִּי",
-        "english": "for, because, that",
+        "english": "burning, branding",
         "frequency": 144
       },
       {
@@ -339,7 +1287,7 @@
       },
       {
         "hebrew": "יוֹם",
-        "english": "day",
+        "english": "day, time, year",
         "frequency": 48
       },
       {
@@ -495,7 +1443,7 @@
       },
       {
         "hebrew": "עַל",
-        "english": "subst",
+        "english": "on, over, about, against, upon, above, by, concerning"  ,
         "frequency": 15
       },
       {
@@ -508,14 +1456,20 @@
         "english": "land, earth",
         "frequency": 14
       },
-      {
-        "hebrew": "אַמְנוֹן",
-        "english": "Amnon = \"faithful\"",
-        "frequency": 14
-      },
+      
       {
         "hebrew": "מִלְחָמָה",
         "english": "battle, war",
+        "frequency": 13
+      },
+      {
+        "hebrew": "עָשָׂה",
+        "english": "to do, fashion, accomplish, make",
+        "frequency": 13
+      },
+      {
+        "hebrew": "אֵל",
+        "english": "god, god-like one, mighty one",
         "frequency": 13
       }
     ]
@@ -531,7 +1485,7 @@
       },
       {
         "hebrew": "כִּי",
-        "english": "burning, branding",
+        "english": "because, for, that",
         "frequency": 87
       },
       {
@@ -616,12 +1570,12 @@
       },
       {
         "hebrew": "יוֹם",
-        "english": "day",
+        "english": "day, time, year",
         "frequency": 16
       },
       {
         "hebrew": "עַל",
-        "english": "upon, over, against, concerning",
+        "english": "subst",
         "frequency": 16
       }
     ]
@@ -637,7 +1591,7 @@
       },
       {
         "hebrew": "כִּי",
-        "english": "for, because, that",
+        "english": "burning, branding",
         "frequency": 66
       },
       {
@@ -712,7 +1666,7 @@
       },
       {
         "hebrew": "יוֹתֵר",
-        "english": "more, remaining, rest",
+        "english": "n m",
         "frequency": 22
       },
       {
@@ -720,7 +1674,11 @@
         "english": "king",
         "frequency": 22
       },
-   
+      {
+        "hebrew": "מָלַךְ",
+        "english": "to be or become king or queen, reign",
+        "frequency": 22
+      },
       {
         "hebrew": "כָּתַב",
         "english": "to write, record, enrol",
@@ -734,12 +1692,12 @@
     "words": [
       {
         "hebrew": "כִּי",
-        "english": "for, because, that",
+        "english": "burning, branding",
         "frequency": 202
       },
       {
         "hebrew": "יוֹם",
-        "english": "day",
+        "english": "day, time, year",
         "frequency": 57
       },
       {
@@ -759,12 +1717,12 @@
       },
       {
         "hebrew": "בַּת",
-        "english": "daughter",
+        "english": "n f",
         "frequency": 27
       },
       {
         "hebrew": "יַחַד",
-        "english": "together",
+        "english": "n m",
         "frequency": 26
       },
       {
@@ -774,7 +1732,7 @@
       },
       {
         "hebrew": "עַל",
-        "english": "upon, over, against, concerning",
+        "english": "subst",
         "frequency": 25
       },
       {
@@ -819,7 +1777,7 @@
       },
       {
         "hebrew": "שָׁמַע",
-        "english": "to hear, listen, obey",
+        "english": "v",
         "frequency": 17
       },
       {
@@ -835,7 +1793,7 @@
     "words": [
       {
         "hebrew": "כִּי",
-        "english": "for, because, that",
+        "english": "burning, branding",
         "frequency": 267
       },
       {
@@ -941,7 +1899,7 @@
     "words": [
       {
         "hebrew": "כִּי",
-        "english": "for, because, that",
+        "english": "burning, branding",
         "frequency": 109
       },
       {
@@ -1047,7 +2005,7 @@
     "words": [
       {
         "hebrew": "כִּי",
-        "english": "for, because, that",
+        "english": "burning, branding",
         "frequency": 41
       },
       {
@@ -1153,12 +2111,12 @@
     "words": [
       {
         "hebrew": "כִּי",
-        "english": "for, because, that",
+        "english": "burning, branding",
         "frequency": 23
       },
       {
         "hebrew": "יוֹם",
-        "english": "day",
+        "english": "day, time, year",
         "frequency": 5
       },
       {
@@ -1481,7 +2439,7 @@
       },
       {
         "hebrew": "כִּי",
-        "english": "burning, branding",
+        "english": "because, for, that",
         "frequency": 8
       },
       {
@@ -1577,7 +2535,7 @@
     "words": [
       {
         "hebrew": "כִּי",
-        "english": "burning, branding",
+        "english": "because, for, that",
         "frequency": 16
       },
       {
@@ -1683,7 +2641,7 @@
     "words": [
       {
         "hebrew": "כִּי",
-        "english": "burning, branding",
+        "english": "because, for, that",
         "frequency": 6
       },
       {
@@ -1789,7 +2747,7 @@
     "words": [
       {
         "hebrew": "כִּי",
-        "english": "burning, branding",
+        "english": "because, for, that",
         "frequency": 9
       },
       {
@@ -1895,7 +2853,7 @@
     "words": [
       {
         "hebrew": "כִּי",
-        "english": "burning, branding",
+        "english": "because, for, that",
         "frequency": 10
       },
       {
@@ -2310,6 +3268,854 @@
         "hebrew": "בּוֹא",
         "english": "to go in, enter, come, go, come in",
         "frequency": 2
+      }
+    ]
+  },
+  "Lamentations": {
+    "display_name": "Eichah / Lamentations",
+    "section": "Ketuvim",
+    "words": [
+      {
+        "hebrew": "כִּי",
+        "english": "burning, branding",
+        "frequency": 19
+      },
+      {
+        "hebrew": "עַל",
+        "english": "subst",
+        "frequency": 9
+      },
+      {
+        "hebrew": "הָיָה",
+        "english": "to be, become, come to pass, exist, happen, fall out",
+        "frequency": 8
+      },
+      {
+        "hebrew": "רָאָה",
+        "english": "to see, look at, inspect, perceive, consider",
+        "frequency": 6
+      },
+      {
+        "hebrew": "עַיִן",
+        "english": "eye",
+        "frequency": 6
+      },
+      {
+        "hebrew": "יוֹם",
+        "english": "day, time, year",
+        "frequency": 5
+      },
+      {
+        "hebrew": "נֶפֶשׁ",
+        "english": "soul, self, life, creature, person, appetite, mind, living being, desire, emotio",
+        "frequency": 5
+      },
+      {
+        "hebrew": "פָּנִים",
+        "english": "face",
+        "frequency": 5
+      },
+      {
+        "hebrew": "בַּת",
+        "english": "n f",
+        "frequency": 4
+      },
+      {
+        "hebrew": "אֹיֵב",
+        "english": "enemy",
+        "frequency": 4
+      },
+      {
+        "hebrew": "דָּרַךְ",
+        "english": "to tread, bend, lead, march",
+        "frequency": 3
+      },
+      {
+        "hebrew": "אָחוֹר",
+        "english": "the back side, the rear",
+        "frequency": 3
+      },
+      {
+        "hebrew": "פָּרַשׂ",
+        "english": "to spread, spread out, stretch, break in pieces",
+        "frequency": 3
+      },
+      {
+        "hebrew": "נָתַן",
+        "english": "to give, put, set",
+        "frequency": 3
+      },
+      {
+        "hebrew": "צָוָה",
+        "english": "to command, charge, give orders, lay charge, give charge to, order",
+        "frequency": 3
+      },
+      {
+        "hebrew": "בָּלַע",
+        "english": "to swallow down, swallow up, engulf, eat up",
+        "frequency": 3
+      },
+      {
+        "hebrew": "צִיוֹן",
+        "english": "dryness, parched land or ground",
+        "frequency": 3
+      },
+      {
+        "hebrew": "חוֹמָה",
+        "english": "wall",
+        "frequency": 3
+      },
+      {
+        "hebrew": "אִשָּׁה",
+        "english": "burnt-offering, offering made by fire, fire offering",
+        "frequency": 3
+      },
+      {
+        "hebrew": "טוֹב",
+        "english": "to be good, be pleasing, be joyful, be beneficial, be pleasant, be favourable, b",
+        "frequency": 3
+      }
+    ]
+  },
+  "Ecclesiastes": {
+    "display_name": "Kohelet / Ecclesiastes",
+    "section": "Ketuvim",
+    "words": [
+      {
+        "hebrew": "כִּי",
+        "english": "burning, branding",
+        "frequency": 64
+      },
+      {
+        "hebrew": "שֶׁמֶשׁ",
+        "english": "sun",
+        "frequency": 30
+      },
+      {
+        "hebrew": "הֶבֶל",
+        "english": "n m",
+        "frequency": 28
+      },
+      {
+        "hebrew": "טוֹב",
+        "english": "to be good, be pleasing, be joyful, be beneficial, be pleasant, be favourable, b",
+        "frequency": 23
+      },
+      {
+        "hebrew": "אָדָם",
+        "english": "man, mankind",
+        "frequency": 22
+      },
+      {
+        "hebrew": "עֵת",
+        "english": "time",
+        "frequency": 16
+      },
+      {
+        "hebrew": "רָאָה",
+        "english": "to see, look at, inspect, perceive, consider",
+        "frequency": 13
+      },
+      {
+        "hebrew": "חָכַם",
+        "english": "to be wise",
+        "frequency": 13
+      },
+      {
+        "hebrew": "אָמַר",
+        "english": "to say, speak, utter",
+        "frequency": 7
+      },
+      {
+        "hebrew": "עָשָׂה",
+        "english": "to do, fashion, accomplish, make",
+        "frequency": 7
+      },
+      {
+        "hebrew": "עָמַל",
+        "english": "to labour, toil",
+        "frequency": 7
+      },
+      {
+        "hebrew": "קְהִלָּה",
+        "english": "assembly, congregation",
+        "frequency": 6
+      },
+      {
+        "hebrew": "לֵב",
+        "english": "inner man, mind, will, heart, understanding",
+        "frequency": 6
+      },
+      {
+        "hebrew": "שׂוּם",
+        "english": "to put, place, set, appoint, make",
+        "frequency": 5
+      },
+      {
+        "hebrew": "הָלַךְ",
+        "english": "to go, walk, come",
+        "frequency": 5
+      },
+      {
+        "hebrew": "אִישׁ",
+        "english": "man",
+        "frequency": 5
+      },
+      {
+        "hebrew": "מָצָא",
+        "english": "to find, attain to",
+        "frequency": 5
+      },
+      {
+        "hebrew": "יָלַךְ",
+        "english": "to go, walk, come",
+        "frequency": 4
+      },
+      {
+        "hebrew": "חׇכְמָה",
+        "english": "wisdom",
+        "frequency": 4
+      },
+      {
+        "hebrew": "עַל",
+        "english": "subst",
+        "frequency": 4
+      }
+    ]
+  },
+  "Esther": {
+    "display_name": "Esther",
+    "section": "Ketuvim",
+    "words": [
+      {
+        "hebrew": "אָמַר",
+        "english": "to say, speak, utter",
+        "frequency": 26
+      },
+      {
+        "hebrew": "מְלוּכָה",
+        "english": "kingship, royalty, kingly office",
+        "frequency": 21
+      },
+      {
+        "hebrew": "יְהוּדִי",
+        "english": "Jew",
+        "frequency": 18
+      },
+      {
+        "hebrew": "כִּי",
+        "english": "because, for",
+        "frequency": 16
+      },
+      {
+        "hebrew": "שׁוּשַׁן",
+        "english": "capital city of Persia",
+        "frequency": 12
+      },
+      {
+        "hebrew": "טוֹב",
+        "english": "to be good, be pleasing, be joyful, be beneficial, be pleasant, be favourable, b",
+        "frequency": 11
+      },
+      {
+        "hebrew": "בִּירָה",
+        "english": "palace, castle",
+        "frequency": 10
+      },
+      {
+        "hebrew": "מִשְׁתֶּה",
+        "english": "feast, drink, banquet",
+        "frequency": 10
+      },
+      {
+        "hebrew": "אָלָה",
+        "english": "to lament, wail",
+        "frequency": 10
+      },
+      {
+        "hebrew": "יוֹם",
+        "english": "day, time, year",
+        "frequency": 10
+      },
+      {
+        "hebrew": "מְדִינָה",
+        "english": "province, district",
+        "frequency": 10
+      },
+      {
+        "hebrew": "פָּנִים",
+        "english": "face",
+        "frequency": 9
+      },
+      {
+        "hebrew": "מָלַךְ",
+        "english": "to be or become king or queen, reign",
+        "frequency": 9
+      },
+      {
+        "hebrew": "אִשָּׁה",
+        "english": "burnt-offering, offering made by fire, fire offering",
+        "frequency": 9
+      },
+      {
+        "hebrew": "אִישׁ",
+        "english": "man",
+        "frequency": 9
+      },
+      {
+        "hebrew": "עָשָׂה",
+        "english": "to do, fashion, accomplish, make",
+        "frequency": 8
+      },
+      {
+        "hebrew": "אֲדָר",
+        "english": "Adar, the twelfth month of the Jewish calendar",
+        "frequency": 8
+      },
+      {
+        "hebrew": "מַלְכָּה",
+        "english": "queen",
+        "frequency": 7
+      },
+      {
+        "hebrew": "בּוֹא",
+        "english": "to go in, enter, come, go, come in",
+        "frequency": 7
+      },
+      {
+        "hebrew": "דָבַר",
+        "english": "to speak, declare, converse, command, promise, warn, threaten, sing",
+        "frequency": 7
+      }
+    ]
+  },
+  "Daniel": {
+    "display_name": "Daniel",
+    "section": "Ketuvim",
+    "words": [
+      {
+        "hebrew": "מֶלֶךְ",
+        "english": "king",
+        "frequency": 94
+      },
+      {
+        "hebrew": "עָנָה",
+        "english": "to answer, respond, testify, speak, shout",
+        "frequency": 23
+      },
+      {
+        "hebrew": "אָמַר",
+        "english": "to say, speak, utter",
+        "frequency": 18
+      },
+      {
+        "hebrew": "חֲזָא",
+        "english": "to see, behold",
+        "frequency": 18
+      },
+      {
+        "hebrew": "כִּי",
+        "english": "because, for",
+        "frequency": 17
+      },
+      {
+        "hebrew": "שָׁמַיִן",
+        "english": "heaven, heavens, sky",
+        "frequency": 16
+      },
+      {
+        "hebrew": "הָוָא",
+        "english": "Qal)",
+        "frequency": 15
+      },
+      {
+        "hebrew": "עַל",
+        "english": "subst",
+        "frequency": 14
+      },
+      {
+        "hebrew": "חֵלֶם",
+        "english": "dream",
+        "frequency": 14
+      },
+      {
+        "hebrew": "פְּשַׁר",
+        "english": "to interpret",
+        "frequency": 14
+      },
+      {
+        "hebrew": "עָבַד",
+        "english": "to work, serve",
+        "frequency": 14
+      },
+      {
+        "hebrew": "מַלְכוּ",
+        "english": "royalty, reign, kingdom",
+        "frequency": 12
+      },
+      {
+        "hebrew": "קֶדֶם",
+        "english": "n m",
+        "frequency": 11
+      },
+      {
+        "hebrew": "עָשָׂה",
+        "english": "to do, fashion, accomplish, make",
+        "frequency": 11
+      },
+      {
+        "hebrew": "דְּהַב",
+        "english": "gold",
+        "frequency": 10
+      },
+      {
+        "hebrew": "יָרֵא",
+        "english": "to fear, revere, be afraid",
+        "frequency": 10
+      },
+      {
+        "hebrew": "יָם",
+        "english": "sea",
+        "frequency": 9
+      },
+      {
+        "hebrew": "פַּרְזֶל",
+        "english": "iron",
+        "frequency": 9
+      },
+      {
+        "hebrew": "עַם",
+        "english": "nation, people",
+        "frequency": 9
+      },
+      {
+        "hebrew": "מַלְכָּה",
+        "english": "queen",
+        "frequency": 9
+      }
+    ]
+  },
+  "Ezra": {
+    "display_name": "Ezra",
+    "section": "Ketuvim",
+    "words": [
+      {
+        "hebrew": "מֶלֶךְ",
+        "english": "king",
+        "frequency": 25
+      },
+      {
+        "hebrew": "בֵּן",
+        "english": "son, grandson, child, member of a group",
+        "frequency": 18
+      },
+      {
+        "hebrew": "כִּי",
+        "english": "because, for",
+        "frequency": 15
+      },
+      {
+        "hebrew": "כֹּהֵן",
+        "english": "priest, principal officer or chief ruler",
+        "frequency": 13
+      },
+      {
+        "hebrew": "שָׁנֶה",
+        "english": "year",
+        "frequency": 12
+      },
+      {
+        "hebrew": "עַם",
+        "english": "nation, people",
+        "frequency": 12
+      },
+      {
+        "hebrew": "מֵאָה",
+        "english": "hundred",
+        "frequency": 11
+      },
+      {
+        "hebrew": "זָכָר",
+        "english": "n m",
+        "frequency": 11
+      },
+      {
+        "hebrew": "שְׁאָר",
+        "english": "rest, residue, remnant, remainder",
+        "frequency": 10
+      },
+      {
+        "hebrew": "אִישׁ",
+        "english": "man",
+        "frequency": 9
+      },
+      {
+        "hebrew": "גּוֹלָה",
+        "english": "exiles, exile, captivity",
+        "frequency": 9
+      },
+      {
+        "hebrew": "הָמָה",
+        "english": "to murmur, growl, roar, cry aloud, mourn, rage, sound, make noise, tumult, be cl",
+        "frequency": 9
+      },
+      {
+        "hebrew": "שָׁמַיִן",
+        "english": "heaven, heavens, sky",
+        "frequency": 8
+      },
+      {
+        "hebrew": "שׂוּם",
+        "english": "to put, place, set, appoint, make",
+        "frequency": 8
+      },
+      {
+        "hebrew": "פָּרַס",
+        "english": "to divide, break in two",
+        "frequency": 7
+      },
+      {
+        "hebrew": "שָׁבוּעַ",
+        "english": "seven, period of seven (days or years), heptad, week",
+        "frequency": 7
+      },
+      {
+        "hebrew": "שָׁלוֹשׁ",
+        "english": "three, triad",
+        "frequency": 7
+      },
+      {
+        "hebrew": "חָדַשׁ",
+        "english": "to be new, renew, repair",
+        "frequency": 7
+      },
+      {
+        "hebrew": "הָוָא",
+        "english": "Qal)",
+        "frequency": 7
+      },
+      {
+        "hebrew": "אֱלָהּ",
+        "english": "god, God",
+        "frequency": 7
+      }
+    ]
+  },
+  "Nehemiah": {
+    "display_name": "Nehemiah",
+    "section": "Ketuvim",
+    "words": [
+      {
+        "hebrew": "חָזַק",
+        "english": "to strengthen, prevail, harden, be strong, become strong, be courageous, be firm",
+        "frequency": 26
+      },
+      {
+        "hebrew": "כִּי",
+        "english": "because, for",
+        "frequency": 23
+      },
+      {
+        "hebrew": "כֹּהֵן",
+        "english": "priest, principal officer or chief ruler",
+        "frequency": 16
+      },
+      {
+        "hebrew": "שׁוֹעֵר",
+        "english": "gatekeeper, porter",
+        "frequency": 15
+      },
+      {
+        "hebrew": "הָיָה",
+        "english": "to be, become, come to pass, exist, happen, fall out",
+        "frequency": 14
+      },
+      {
+        "hebrew": "אִישׁ",
+        "english": "man",
+        "frequency": 14
+      },
+      {
+        "hebrew": "שָׁנֶה",
+        "english": "year",
+        "frequency": 14
+      },
+      {
+        "hebrew": "אָמַר",
+        "english": "to say, speak, utter",
+        "frequency": 13
+      },
+      {
+        "hebrew": "שְׁמֹנֶה",
+        "english": "eight, eighth",
+        "frequency": 12
+      },
+      {
+        "hebrew": "יוֹם",
+        "english": "day, time, year",
+        "frequency": 11
+      },
+      {
+        "hebrew": "נְגַד",
+        "english": "to stream, flow",
+        "frequency": 9
+      },
+      {
+        "hebrew": "רֵאשׁ",
+        "english": "chief, head",
+        "frequency": 9
+      },
+      {
+        "hebrew": "שָׁמַיִם",
+        "english": "heaven, heavens, sky",
+        "frequency": 8
+      },
+      {
+        "hebrew": "מָלַךְ",
+        "english": "to be or become king or queen, reign",
+        "frequency": 8
+      },
+      {
+        "hebrew": "שִׁיר",
+        "english": "to sing",
+        "frequency": 8
+      },
+      {
+        "hebrew": "עָשָׂה",
+        "english": "to do, fashion, accomplish, make",
+        "frequency": 7
+      },
+      {
+        "hebrew": "מְלָאכָה",
+        "english": "occupation, work, business",
+        "frequency": 7
+      },
+      {
+        "hebrew": "עַל",
+        "english": "subst",
+        "frequency": 7
+      },
+      {
+        "hebrew": "חוֹמָה",
+        "english": "wall",
+        "frequency": 7
+      },
+      {
+        "hebrew": "מַד",
+        "english": "measure, cloth garment",
+        "frequency": 7
+      }
+    ]
+  },
+  "I Chronicles": {
+    "display_name": "Divrei HaYamim I / I Chronicles",
+    "section": "Ketuvim",
+    "words": [
+      {
+        "hebrew": "בּוֹא",
+        "english": "to go in, enter, come, go, come in",
+        "frequency": 110
+      },
+      {
+        "hebrew": "בֵּן",
+        "english": "son, grandson, child, member of a group",
+        "frequency": 81
+      },
+      {
+        "hebrew": "יָלַד",
+        "english": "to bear, bringforth, beget, gender, travail",
+        "frequency": 64
+      },
+      {
+        "hebrew": "כִּי",
+        "english": "because, for",
+        "frequency": 63
+      },
+      {
+        "hebrew": "אִישׁ",
+        "english": "man",
+        "frequency": 51
+      },
+      {
+        "hebrew": "אָח",
+        "english": "brother",
+        "frequency": 42
+      },
+      {
+        "hebrew": "אָמַר",
+        "english": "to say, speak, utter",
+        "frequency": 40
+      },
+      {
+        "hebrew": "אָב",
+        "english": "father of an individual",
+        "frequency": 33
+      },
+      {
+        "hebrew": "הָיָה",
+        "english": "to be, become, come to pass, exist, happen, fall out",
+        "frequency": 27
+      },
+      {
+        "hebrew": "אֵלָה",
+        "english": "terebinth, terebinth tree",
+        "frequency": 24
+      },
+      {
+        "hebrew": "רֵאשׁ",
+        "english": "chief, head",
+        "frequency": 22
+      },
+      {
+        "hebrew": "מוּת",
+        "english": "to die, kill, have one executed",
+        "frequency": 18
+      },
+      {
+        "hebrew": "רֹאשׁ",
+        "english": "head, top, summit, upper part, chief, total, sum, height, front, beginning",
+        "frequency": 18
+      },
+      {
+        "hebrew": "שׂוּם",
+        "english": "to put, place, set, appoint, make",
+        "frequency": 17
+      },
+      {
+        "hebrew": "עַל",
+        "english": "subst",
+        "frequency": 17
+      },
+      {
+        "hebrew": "שָׁנִי",
+        "english": "scarlet, crimson",
+        "frequency": 16
+      },
+      {
+        "hebrew": "אַרְבַּע",
+        "english": "four",
+        "frequency": 16
+      },
+      {
+        "hebrew": "מִלְחָמָה",
+        "english": "battle, war",
+        "frequency": 15
+      },
+      {
+        "hebrew": "יָשַׁב",
+        "english": "to dwell, remain, sit, abide",
+        "frequency": 12
+      },
+      {
+        "hebrew": "הֵם",
+        "english": "abundance, clamour (meaning uncertain)",
+        "frequency": 12
+      }
+    ]
+  },
+  "II Chronicles": {
+    "display_name": "Divrei HaYamim II / II Chronicles",
+    "section": "Ketuvim",
+    "words": [
+      {
+        "hebrew": "כִּי",
+        "english": "because, for",
+        "frequency": 125
+      },
+      {
+        "hebrew": "אָמַר",
+        "english": "to say, speak, utter",
+        "frequency": 84
+      },
+      {
+        "hebrew": "עָשָׂה",
+        "english": "to do, fashion, accomplish, make",
+        "frequency": 45
+      },
+      {
+        "hebrew": "הָיָה",
+        "english": "to be, become, come to pass, exist, happen, fall out",
+        "frequency": 42
+      },
+      {
+        "hebrew": "אִישׁ",
+        "english": "man",
+        "frequency": 36
+      },
+      {
+        "hebrew": "עַל",
+        "english": "on, over, about, against, upon, above, by, concerning",
+        "frequency": 31   
+      },
+      {
+        "hebrew": "כֹּהֵן",
+        "english": "priest, principal officer or chief ruler",
+        "frequency": 30
+      },
+      {
+        "hebrew": "אַיִל",
+        "english": "ram",
+        "frequency": 22
+      },
+      {
+        "hebrew": "בּוֹא",
+        "english": "to go in, enter, come, go, come in",
+        "frequency": 21
+      },
+      {
+        "hebrew": "עַיִן",
+        "english": "eye",
+        "frequency": 19
+      },
+      {
+        "hebrew": "מָלַךְ",
+        "english": "to be or become king or queen, reign",
+        "frequency": 18
+      },
+      {
+        "hebrew": "שׂוּם",
+        "english": "to put, place, set, appoint, make",
+        "frequency": 17
+      },
+      {
+        "hebrew": "אֲדָמָה",
+        "english": "ground, land",
+        "frequency": 17
+      },
+      {
+        "hebrew": "חֵיל",
+        "english": "rampart, fortress, wall",
+        "frequency": 17
+      },
+      {
+        "hebrew": "אָב",
+        "english": "father of an individual",
+        "frequency": 16
+      },
+      {
+        "hebrew": "תַּחַת",
+        "english": "the under part, beneath, instead of, as, for, for the sake of, flat, unto, where",
+        "frequency": 16
+      },
+      {
+        "hebrew": "נָתַן",
+        "english": "to give, put, set",
+        "frequency": 16
+      },
+      {
+        "hebrew": "עָמַד",
+        "english": "to stand, remain, endure, take one's stand",
+        "frequency": 16
+      },
+      {
+        "hebrew": "בֵּן",
+        "english": "son, grandson, child, member of a group",
+        "frequency": 16
+      },
+      {
+        "hebrew": "יָשַׁב",
+        "english": "to dwell, remain, sit, abide",
+        "frequency": 16
       }
     ]
   }
