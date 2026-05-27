@@ -18,6 +18,7 @@ except ImportError:
 app = Flask(__name__)
 VOCAB_FILE   = os.path.join(os.path.dirname(__file__), "hebrew_vocab.json")
 PLAYERS_FILE = os.path.join(os.path.dirname(__file__), "players.json")
+PASUK_FILE   = os.path.join(os.path.dirname(__file__), "pasuk_questions.json")
 SECTION_ORDER = ["Torah", "Nevi'im", "Ketuvim"]
 
 
@@ -139,6 +140,27 @@ def api_words(book_id):
         "display_name": vocab[book_id]["display_name"],
         "words": words,
     })
+
+
+# ── Pasuk challenge ──────────────────────────────────────────────────────────
+
+@app.route("/vocab/api/pasuk")
+def api_pasuk():
+    """Return a random set of pasuk questions with choices pre-shuffled."""
+    try:
+        questions = json.loads(open(PASUK_FILE, encoding="utf-8").read())
+    except FileNotFoundError:
+        return jsonify({"error": "Run pasuk_builder.py first to build question data."}), 404
+
+    count    = min(int(request.args.get("count", 7)), len(questions))
+    selected = random.sample(questions, count)
+
+    for q in selected:
+        choices = [q["answer"]] + q["wrong_choices"][:3]
+        random.shuffle(choices)
+        q["choices"] = choices
+
+    return jsonify(selected)
 
 
 # ── Word lookup ──────────────────────────────────────────────────────────────

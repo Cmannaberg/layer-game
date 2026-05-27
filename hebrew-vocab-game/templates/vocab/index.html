@@ -328,6 +328,90 @@
     }
     .lb-empty { text-align: center; padding: 32px; color: var(--grey); font-size: .95rem; }
 
+    /* ── PASUK CHALLENGE ── */
+    .pasuk-banner {
+      background: linear-gradient(135deg, var(--blue) 0%, #2a5298 100%);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      margin-bottom: 28px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      cursor: pointer;
+      transition: opacity .15s;
+      text-decoration: none;
+    }
+    .pasuk-banner:hover { opacity: .88; }
+    .pasuk-banner .pb-icon { font-size: 2.2rem; flex-shrink: 0; }
+    .pasuk-banner .pb-text { flex: 1; }
+    .pasuk-banner .pb-text h3 { color: #fff; font-size: 1.05rem; font-weight: 800; margin-bottom: 3px; }
+    .pasuk-banner .pb-text p  { color: rgba(255,255,255,.72); font-size: .82rem; }
+    .pasuk-banner .pb-btn {
+      background: var(--gold);
+      color: #fff;
+      border: none;
+      border-radius: 99px;
+      padding: 9px 18px;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: .88rem;
+      cursor: pointer;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    #screen-pasuk { display: none; }
+    .pasuk-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 28px 20px 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,.08);
+      margin-bottom: 20px;
+    }
+    .pasuk-label {
+      font-size: .78rem;
+      color: var(--grey);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .pasuk-ref {
+      text-align: center;
+      font-size: .82rem;
+      font-weight: 800;
+      color: var(--gold);
+      letter-spacing: .5px;
+      margin-bottom: 16px;
+    }
+    .pasuk-verse {
+      font-family: 'Frank Ruhl Libre', serif;
+      direction: rtl;
+      font-size: 1.65rem;
+      line-height: 2.1;
+      color: #333;
+      text-align: center;
+    }
+    .pasuk-word { display: inline; }
+    .pasuk-word.hl {
+      background: var(--gold);
+      color: #fff;
+      padding: 1px 10px;
+      border-radius: 8px;
+      font-weight: 900;
+      font-size: 1.8rem;
+    }
+    .pasuk-english {
+      text-align: center;
+      font-size: .88rem;
+      color: var(--grey);
+      font-style: italic;
+      margin-top: 14px;
+      line-height: 1.5;
+      min-height: 20px;
+    }
+
     /* ── BONUS SCREEN ── */
     #screen-bonus { display: none; text-align: center; }
     .bonus-badge {
@@ -428,6 +512,14 @@
 
   <!-- SCREEN 1: Book Selection -->
   <div id="screen-books">
+    <div class="pasuk-banner" onclick="startPasukChallenge()">
+      <span class="pb-icon">📜</span>
+      <div class="pb-text">
+        <h3>Pasuk Challenge</h3>
+        <p>Translate highlighted words from famous Bible verses</p>
+      </div>
+      <button class="pb-btn">Play →</button>
+    </div>
     <h2>Choose a Book of Tanach</h2>
     <p>You'll be tested on the 10 most frequent words in that book.</p>
     <div id="book-list">
@@ -493,6 +585,28 @@
     </div>
   </div>
 
+  <!-- SCREEN: Pasuk Challenge -->
+  <div id="screen-pasuk">
+    <div class="game-header">
+      <span class="game-book">📜 Pasuk Challenge</span>
+      <span class="score-display">⭐ <span id="pasuk-score">0</span></span>
+    </div>
+    <div class="progress-bar">
+      <div class="progress-fill" id="pasuk-progress" style="width:0%"></div>
+    </div>
+    <div class="pasuk-card">
+      <div class="pasuk-label">What does the highlighted word mean?</div>
+      <div class="pasuk-ref"    id="pasuk-ref"></div>
+      <div class="pasuk-verse"  id="pasuk-verse"></div>
+      <div class="pasuk-english" id="pasuk-english"></div>
+    </div>
+    <div class="choices" id="pasuk-choices"></div>
+    <div class="feedback" id="pasuk-feedback"></div>
+    <button class="next-btn" id="pasuk-next-btn" onclick="nextPasuk()" style="display:none">
+      Next Verse →
+    </button>
+  </div>
+
   <!-- SCREEN 5: Results -->
   <div id="screen-results">
     <div class="result-star" id="result-star">🏆</div>
@@ -526,7 +640,7 @@
 
   // ── Screen management ───────────────────────────────────────────────────────
   function showScreen(name) {
-    ['name','leaderboard','books','lang','game','bonus','results'].forEach(s =>
+    ['name','leaderboard','books','lang','game','bonus','results','pasuk'].forEach(s =>
       document.getElementById(`screen-${s}`).style.display = 'none');
     document.getElementById(`screen-${name}`).style.display = 'block';
   }
@@ -603,12 +717,12 @@
   // ── Submit score to server ───────────────────────────────────────────────────
   let scoredThisRound = true;   // whether points were actually awarded
 
-  async function submitScore(points) {
+  async function submitScore(points, bookId) {
     roundScore = points;
     const res  = await fetch('/vocab/api/score', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({ name: playerName, points, book_id: selectedBookId })
+      body: JSON.stringify({ name: playerName, points, book_id: bookId || selectedBookId })
     });
     const data = await res.json();
     scoredThisRound = data.scored;
@@ -884,6 +998,96 @@
         </div>`;
     });
     return html + '</div>';
+  }
+
+  // ── Pasuk Challenge ─────────────────────────────────────────────────────────
+  let pasukQuestions = [];
+  let pasukIndex     = 0;
+  let pasukScore     = 0;
+  const PASUK_BOOK_ID = '__pasuk__';
+
+  async function startPasukChallenge() {
+    const res  = await fetch('/vocab/api/pasuk?count=7');
+    const data = await res.json();
+    if (data.error) { alert(data.error); return; }
+
+    pasukQuestions = data;
+    pasukIndex     = 0;
+    pasukScore     = 0;
+    showScreen('pasuk');
+    renderPasukQuestion();
+  }
+
+  function renderPasukQuestion() {
+    const q     = pasukQuestions[pasukIndex];
+    const total = pasukQuestions.length;
+
+    document.getElementById('pasuk-progress').style.width = (pasukIndex / total * 100) + '%';
+    document.getElementById('pasuk-score').textContent    = pasukScore;
+    document.getElementById('pasuk-ref').textContent      = q.ref;
+    document.getElementById('pasuk-english').textContent  = '';
+    document.getElementById('pasuk-feedback').textContent = '';
+    document.getElementById('pasuk-feedback').className   = 'feedback';
+    document.getElementById('pasuk-next-btn').style.display = 'none';
+
+    // Verse with highlighted word
+    document.getElementById('pasuk-verse').innerHTML =
+      q.words.map((w, i) =>
+        i === q.quiz_word_idx
+          ? `<span class="pasuk-word hl">${w}</span>`
+          : `<span class="pasuk-word">${w} </span>`
+      ).join('');
+
+    // Multiple-choice buttons (English answers)
+    const choicesEl = document.getElementById('pasuk-choices');
+    choicesEl.innerHTML = '';
+    q.choices.forEach(choice => {
+      const btn = document.createElement('button');
+      btn.className = 'choice-btn';
+      btn.textContent = choice;
+      btn.onclick = () => handlePasukAnswer(choice, q, btn);
+      choicesEl.appendChild(btn);
+    });
+  }
+
+  function handlePasukAnswer(chosen, q, clickedBtn) {
+    const isCorrect = chosen === q.answer;
+
+    document.querySelectorAll('#pasuk-choices .choice-btn').forEach(btn => {
+      btn.disabled = true;
+      if (btn.textContent === q.answer) btn.classList.add('correct');
+    });
+    if (!isCorrect) clickedBtn.classList.add('wrong');
+
+    const fb = document.getElementById('pasuk-feedback');
+    if (isCorrect) {
+      pasukScore += 10;
+      document.getElementById('pasuk-score').textContent = pasukScore;
+      fb.textContent = '✓ Correct! +10 points';
+      fb.className   = 'feedback correct';
+    } else {
+      fb.textContent = `✗ Correct answer: ${q.answer}`;
+      fb.className   = 'feedback wrong';
+    }
+
+    // Reveal English translation after answering
+    document.getElementById('pasuk-english').textContent = `"${q.english_text}"`;
+
+    if (pasukIndex < pasukQuestions.length - 1) {
+      document.getElementById('pasuk-next-btn').style.display = 'block';
+    } else {
+      setTimeout(finishPasuk, 1200);
+    }
+  }
+
+  function nextPasuk() {
+    pasukIndex++;
+    renderPasukQuestion();
+  }
+
+  async function finishPasuk() {
+    await submitScore(pasukScore, PASUK_BOOK_ID);
+    showLeaderboard('postgame');
   }
 
   // ── Utils ───────────────────────────────────────────────────────────────────
