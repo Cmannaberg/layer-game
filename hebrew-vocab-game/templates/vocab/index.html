@@ -715,8 +715,6 @@
   }
 
   // ── Submit score to server ───────────────────────────────────────────────────
-  let scoredThisRound = true;   // whether points were actually awarded
-
   async function submitScore(points, bookId) {
     roundScore = points;
     const res  = await fetch('/vocab/api/score', {
