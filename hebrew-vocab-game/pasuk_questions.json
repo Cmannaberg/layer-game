@@ -1,0 +1,612 @@
+[
+  {
+    "ref": "Genesis 1:1",
+    "sefaria_ref": "Genesis.1.1",
+    "book": "Genesis",
+    "hebrew_text": "בְּרֵאשִׁית בָּרָא אֱלֹהִים אֵת הַשָּׁמַיִם וְאֵת הָאָֽרֶץ",
+    "english_text": "When God began to create heaven and earth—",
+    "words": [
+      "בְּרֵאשִׁית",
+      "בָּרָא",
+      "אֱלֹהִים",
+      "אֵת",
+      "הַשָּׁמַיִם",
+      "וְאֵת",
+      "הָאָֽרֶץ"
+    ],
+    "quiz_word_idx": 2,
+    "quiz_word": "אֱלֹהִים",
+    "answer": "God",
+    "wrong_choices": [
+      "father of an individual",
+      "boy",
+      "to dwell, remain, sit, abide"
+    ]
+  },
+  {
+    "ref": "Genesis 1:1",
+    "sefaria_ref": "Genesis.1.1",
+    "book": "Genesis",
+    "hebrew_text": "בְּרֵאשִׁית בָּרָא אֱלֹהִים אֵת הַשָּׁמַיִם וְאֵת הָאָֽרֶץ",
+    "english_text": "When God began to create heaven and earth—",
+    "words": [
+      "בְּרֵאשִׁית",
+      "בָּרָא",
+      "אֱלֹהִים",
+      "אֵת",
+      "הַשָּׁמַיִם",
+      "וְאֵת",
+      "הָאָֽרֶץ"
+    ],
+    "quiz_word_idx": 6,
+    "quiz_word": "הָאָֽרֶץ",
+    "answer": "the earth",
+    "wrong_choices": [
+      "the back side, the rear",
+      "son, grandson, child, member of a group",
+      "to lead, act as leader"
+    ]
+  },
+  {
+    "ref": "Genesis 1:1",
+    "sefaria_ref": "Genesis.1.1",
+    "book": "Genesis",
+    "hebrew_text": "בְּרֵאשִׁית בָּרָא אֱלֹהִים אֵת הַשָּׁמַיִם וְאֵת הָאָֽרֶץ",
+    "english_text": "When God began to create heaven and earth—",
+    "words": [
+      "בְּרֵאשִׁית",
+      "בָּרָא",
+      "אֱלֹהִים",
+      "אֵת",
+      "הַשָּׁמַיִם",
+      "וְאֵת",
+      "הָאָֽרֶץ"
+    ],
+    "quiz_word_idx": 4,
+    "quiz_word": "הַשָּׁמַיִם",
+    "answer": "the heavens",
+    "wrong_choices": [
+      "no, nothing",
+      "boy",
+      "ram"
+    ]
+  },
+  {
+    "ref": "Genesis 1:27",
+    "sefaria_ref": "Genesis.1.27",
+    "book": "Genesis",
+    "hebrew_text": "וַיִּבְרָא אֱלֹהִים אֶת־הָֽאָדָם בְּצַלְמוֹ בְּצֶלֶם אֱלֹהִים בָּרָא אֹתוֹ זָכָר וּנְקֵבָה בָּרָא אֹתָֽם",
+    "english_text": "And God created humankind in the divine image, creating it in the image of God— creating them male and female.",
+    "words": [
+      "וַיִּבְרָא",
+      "אֱלֹהִים",
+      "אֶת",
+      "הָֽאָדָם",
+      "בְּצַלְמוֹ",
+      "בְּצֶלֶם",
+      "אֱלֹהִים",
+      "בָּרָא",
+      "אֹתוֹ",
+      "זָכָר",
+      "וּנְקֵבָה",
+      "בָּרָא",
+      "אֹתָֽם"
+    ],
+    "quiz_word_idx": 3,
+    "quiz_word": "הָֽאָדָם",
+    "answer": "humankind",
+    "wrong_choices": [
+      "to dwell, remain, sit, abide",
+      "that, because, for, when, if, indeed, surely",
+      "to be, become, come to pass, exist, happen, fall out"
+    ]
+  },
+  {
+    "ref": "Genesis 28:16",
+    "sefaria_ref": "Genesis.28.16",
+    "book": "Genesis",
+    "hebrew_text": "וַיִּיקַץ יַעֲקֹב מִשְּׁנָתוֹ וַיֹּאמֶר אָכֵן יֵשׁ יְהֹוָה בַּמָּקוֹם הַזֶּה וְאָנֹכִי לֹא יָדָֽעְתִּי",
+    "english_text": "Jacob awoke from his sleep and said, “Surely GOD is present in this place, and I did not know it!”",
+    "words": [
+      "וַיִּיקַץ",
+      "יַעֲקֹב",
+      "מִשְּׁנָתוֹ",
+      "וַיֹּאמֶר",
+      "אָכֵן",
+      "יֵשׁ",
+      "יְהֹוָה",
+      "בַּמָּקוֹם",
+      "הַזֶּה",
+      "וְאָנֹכִי",
+      "לֹא",
+      "יָדָֽעְתִּי"
+    ],
+    "quiz_word_idx": 7,
+    "quiz_word": "בַּמָּקוֹם",
+    "answer": "in this place",
+    "wrong_choices": [
+      "ram",
+      "the back side, the rear",
+      "father of an individual"
+    ]
+  },
+  {
+    "ref": "Exodus 3:14",
+    "sefaria_ref": "Exodus.3.14",
+    "book": "Exodus",
+    "hebrew_text": "וַיֹּאמֶר אֱלֹהִים אֶל־מֹשֶׁה אֶֽהְיֶה אֲשֶׁר אֶֽהְיֶה וַיֹּאמֶר כֹּה תֹאמַר לִבְנֵי יִשְׂרָאֵל אֶֽהְיֶה שְׁלָחַנִי אֲלֵיכֶֽם",
+    "english_text": "And God said to Moses, “Ehyeh-Asher-Ehyeh,” continuing, “Thus shall you say to the Israelites, ‘Ehyeh sent me to you.’”",
+    "words": [
+      "וַיֹּאמֶר",
+      "אֱלֹהִים",
+      "אֶל",
+      "מֹשֶׁה",
+      "אֶֽהְיֶה",
+      "אֲשֶׁר",
+      "אֶֽהְיֶה",
+      "וַיֹּאמֶר",
+      "כֹּה",
+      "תֹאמַר",
+      "לִבְנֵי",
+      "יִשְׂרָאֵל",
+      "אֶֽהְיֶה",
+      "שְׁלָחַנִי",
+      "אֲלֵיכֶֽם"
+    ],
+    "quiz_word_idx": 4,
+    "quiz_word": "אֶֽהְיֶה",
+    "answer": "I am / I will be",
+    "wrong_choices": [
+      "to go or rove about, go to and fro",
+      "ram",
+      "copper, bronze"
+    ]
+  },
+  {
+    "ref": "Exodus 20:8",
+    "sefaria_ref": "Exodus.20.8",
+    "book": "Exodus",
+    "hebrew_text": "זָכוֹר אֶת־יוֹם הַשַּׁבָּת לְקַדְּשֽׁוֹ",
+    "english_text": "Remember the sabbath day and keep it holy.",
+    "words": [
+      "זָכוֹר",
+      "אֶת",
+      "יוֹם",
+      "הַשַּׁבָּת",
+      "לְקַדְּשֽׁוֹ"
+    ],
+    "quiz_word_idx": 2,
+    "quiz_word": "יוֹם",
+    "answer": "day",
+    "wrong_choices": [
+      "year",
+      "that, because, for, when, if, indeed, surely",
+      "ram"
+    ]
+  },
+  {
+    "ref": "Leviticus 19:18",
+    "sefaria_ref": "Leviticus.19.18",
+    "book": "Leviticus",
+    "hebrew_text": "לֹֽא־תִקֹּם וְלֹֽא־תִטֹּר אֶת־בְּנֵי עַמֶּךָ וְאָֽהַבְתָּ לְרֵעֲךָ כָּמוֹךָ אֲנִי יְהֹוָֽה",
+    "english_text": "You shall not take vengeance or bear a grudge against members of your people. Love your fellow as yourself: I am GOD.",
+    "words": [
+      "לֹֽא",
+      "תִקֹּם",
+      "וְלֹֽא",
+      "תִטֹּר",
+      "אֶת",
+      "בְּנֵי",
+      "עַמֶּךָ",
+      "וְאָֽהַבְתָּ",
+      "לְרֵעֲךָ",
+      "כָּמוֹךָ",
+      "אֲנִי",
+      "יְהֹוָֽה"
+    ],
+    "quiz_word_idx": 8,
+    "quiz_word": "לְרֵעֲךָ",
+    "answer": "your neighbor",
+    "wrong_choices": [
+      "altar",
+      "to say, speak, utter",
+      "that, because, for, when, if, indeed, surely"
+    ]
+  },
+  {
+    "ref": "Numbers 6:24",
+    "sefaria_ref": "Numbers.6.24",
+    "book": "Numbers",
+    "hebrew_text": "יְבָרֶכְךָ יְהֹוָה וְיִשְׁמְרֶֽךָ",
+    "english_text": "GOD bless you and protect you!",
+    "words": [
+      "יְבָרֶכְךָ",
+      "יְהֹוָה",
+      "וְיִשְׁמְרֶֽךָ"
+    ],
+    "quiz_word_idx": 0,
+    "quiz_word": "יְבָרֶכְךָ",
+    "answer": "may He bless you",
+    "wrong_choices": [
+      "wilderness",
+      "to be, become, come to pass, exist, happen, fall out",
+      "man"
+    ]
+  },
+  {
+    "ref": "Deuteronomy 6:4",
+    "sefaria_ref": "Deuteronomy.6.4",
+    "book": "Deuteronomy",
+    "hebrew_text": "שְׁמַע יִשְׂרָאֵל יְהֹוָה אֱלֹהֵינוּ יְהֹוָה אֶחָֽד",
+    "english_text": "Hear, O Israel! The ETERNAL is our God, the ETERNAL alone.",
+    "words": [
+      "שְׁמַע",
+      "יִשְׂרָאֵל",
+      "יְהֹוָה",
+      "אֱלֹהֵינוּ",
+      "יְהֹוָה",
+      "אֶחָֽד"
+    ],
+    "quiz_word_idx": 5,
+    "quiz_word": "אֶחָֽד",
+    "answer": "one",
+    "wrong_choices": [
+      "to be satisfied, be sated, be fulfilled, be surfeited",
+      "to give, put, set",
+      "to do, fashion, accomplish, make"
+    ]
+  },
+  {
+    "ref": "Deuteronomy 6:5",
+    "sefaria_ref": "Deuteronomy.6.5",
+    "book": "Deuteronomy",
+    "hebrew_text": "וְאָהַבְתָּ אֵת יְהֹוָה אֱלֹהֶיךָ בְּכׇל־לְבָבְךָ וּבְכׇל־נַפְשְׁךָ וּבְכׇל־מְאֹדֶֽךָ",
+    "english_text": "You shall love the ETERNAL your God with all your heart and with all your soul and with all your might.",
+    "words": [
+      "וְאָהַבְתָּ",
+      "אֵת",
+      "יְהֹוָה",
+      "אֱלֹהֶיךָ",
+      "בְּכׇל",
+      "לְבָבְךָ",
+      "וּבְכׇל",
+      "נַפְשְׁךָ",
+      "וּבְכׇל",
+      "מְאֹדֶֽךָ"
+    ],
+    "quiz_word_idx": 5,
+    "quiz_word": "לְבָבְךָ",
+    "answer": "your heart",
+    "wrong_choices": [
+      "to put, place, set, appoint, make",
+      "to lament, wail",
+      "that, because, for, when, if, indeed, surely"
+    ]
+  },
+  {
+    "ref": "Deuteronomy 30:19",
+    "sefaria_ref": "Deuteronomy.30.19",
+    "book": "Deuteronomy",
+    "hebrew_text": "הַעִדֹתִי בָכֶם הַיּוֹם אֶת־הַשָּׁמַיִם וְאֶת־הָאָרֶץ הַחַיִּים וְהַמָּוֶת נָתַתִּי לְפָנֶיךָ הַבְּרָכָה וְהַקְּלָלָה וּבָֽחַרְתָּ בַּחַיִּים לְמַעַן תִּֽחְיֶה אַתָּה וְזַרְעֶֽךָ",
+    "english_text": "I call heaven and earth to witness against you this day: I have put before you life and death, blessing and curse. Choose life—if you and your offspring would live—",
+    "words": [
+      "הַעִדֹתִי",
+      "בָכֶם",
+      "הַיּוֹם",
+      "אֶת",
+      "הַשָּׁמַיִם",
+      "וְאֶת",
+      "הָאָרֶץ",
+      "הַחַיִּים",
+      "וְהַמָּוֶת",
+      "נָתַתִּי",
+      "לְפָנֶיךָ",
+      "הַבְּרָכָה",
+      "וְהַקְּלָלָה",
+      "וּבָֽחַרְתָּ",
+      "בַּחַיִּים",
+      "לְמַעַן",
+      "תִּֽחְיֶה",
+      "אַתָּה",
+      "וְזַרְעֶֽךָ"
+    ],
+    "quiz_word_idx": 7,
+    "quiz_word": "הַחַיִּים",
+    "answer": "the life, the living",
+    "wrong_choices": [
+      "ground, land",
+      "to do, fashion, accomplish, make",
+      "to say, speak, utter"
+    ]
+  },
+  {
+    "ref": "Joshua 1:9",
+    "sefaria_ref": "Joshua.1.9",
+    "book": "Joshua",
+    "hebrew_text": "הֲלוֹא צִוִּיתִיךָ חֲזַק וֶאֱמָץ אַֽל־תַּעֲרֹץ וְאַל־תֵּחָת כִּי עִמְּךָ יְהֹוָה אֱלֹהֶיךָ בְּכֹל אֲשֶׁר תֵּלֵֽךְ",
+    "english_text": "“I charge you: Be strong and resolute; do not be terrified or dismayed, for the ETERNAL your God is with you wherever you go.”",
+    "words": [
+      "הֲלוֹא",
+      "צִוִּיתִיךָ",
+      "חֲזַק",
+      "וֶאֱמָץ",
+      "אַֽל",
+      "תַּעֲרֹץ",
+      "וְאַל",
+      "תֵּחָת",
+      "כִּי",
+      "עִמְּךָ",
+      "יְהֹוָה",
+      "אֱלֹהֶיךָ",
+      "בְּכֹל",
+      "אֲשֶׁר",
+      "תֵּלֵֽךְ"
+    ],
+    "quiz_word_idx": 2,
+    "quiz_word": "חֲזַק",
+    "answer": "be strong",
+    "wrong_choices": [
+      "possession, property, inheritance, heritage",
+      "day, time, year",
+      "border, territory"
+    ]
+  },
+  {
+    "ref": "Isaiah 6:3",
+    "sefaria_ref": "Isaiah.6.3",
+    "book": "Isaiah",
+    "hebrew_text": "וְקָרָא זֶה אֶל־זֶה וְאָמַר קָדוֹשׁ קָדוֹשׁ קָדוֹשׁ יְהֹוָה צְבָאוֹת מְלֹא כׇל־הָאָרֶץ כְּבוֹדֽוֹ",
+    "english_text": "And one would call to the other, “Holy, holy, holy! GOD of Hosts— Whose presence fills all the earth!”",
+    "words": [
+      "וְקָרָא",
+      "זֶה",
+      "אֶל",
+      "זֶה",
+      "וְאָמַר",
+      "קָדוֹשׁ",
+      "קָדוֹשׁ",
+      "קָדוֹשׁ",
+      "יְהֹוָה",
+      "צְבָאוֹת",
+      "מְלֹא",
+      "כׇל",
+      "הָאָרֶץ",
+      "כְּבוֹדֽוֹ"
+    ],
+    "quiz_word_idx": 5,
+    "quiz_word": "קָדוֹשׁ",
+    "answer": "holy",
+    "wrong_choices": [
+      "man",
+      "ground, land",
+      "to say, speak, utter"
+    ]
+  },
+  {
+    "ref": "Isaiah 40:31",
+    "sefaria_ref": "Isaiah.40.31",
+    "book": "Isaiah",
+    "hebrew_text": "וְקוֹיֵ יְהֹוָה יַחֲלִיפוּ כֹחַ יַעֲלוּ אֵבֶר כַּנְּשָׁרִים יָרוּצוּ וְלֹא יִיגָעוּ יֵלְכוּ וְלֹא יִיעָֽפוּ",
+    "english_text": "But they who trust in GOD shall renew their strength As eagles grow new plumes: They shall run and not grow weary, They shall march and not grow faint.",
+    "words": [
+      "וְקוֹיֵ",
+      "יְהֹוָה",
+      "יַחֲלִיפוּ",
+      "כֹחַ",
+      "יַעֲלוּ",
+      "אֵבֶר",
+      "כַּנְּשָׁרִים",
+      "יָרוּצוּ",
+      "וְלֹא",
+      "יִיגָעוּ",
+      "יֵלְכוּ",
+      "וְלֹא",
+      "יִיעָֽפוּ"
+    ],
+    "quiz_word_idx": 3,
+    "quiz_word": "כֹחַ",
+    "answer": "strength, power",
+    "wrong_choices": [
+      "ground, land",
+      "land, earth",
+      "to put, place, set, appoint, make"
+    ]
+  },
+  {
+    "ref": "Micah 6:8",
+    "sefaria_ref": "Micah.6.8",
+    "book": "Micah",
+    "hebrew_text": "הִגִּיד לְךָ אָדָם מַה־טּוֹב וּמָֽה־יְהֹוָה דּוֹרֵשׁ מִמְּךָ כִּי אִם־עֲשׂוֹת מִשְׁפָּט וְאַהֲבַת חֶסֶד וְהַצְנֵעַ לֶכֶת עִם־אֱלֹהֶֽיךָ",
+    "english_text": "“You have been told, O mortal, what is good, And what GOD requires of you: Only to do justice And to love goodness, And to walk modestly with your God;",
+    "words": [
+      "הִגִּיד",
+      "לְךָ",
+      "אָדָם",
+      "מַה",
+      "טּוֹב",
+      "וּמָֽה",
+      "יְהֹוָה",
+      "דּוֹרֵשׁ",
+      "מִמְּךָ",
+      "כִּי",
+      "אִם",
+      "עֲשׂוֹת",
+      "מִשְׁפָּט",
+      "וְאַהֲבַת",
+      "חֶסֶד",
+      "וְהַצְנֵעַ",
+      "לֶכֶת",
+      "עִם",
+      "אֱלֹהֶֽיךָ"
+    ],
+    "quiz_word_idx": 12,
+    "quiz_word": "מִשְׁפָּט",
+    "answer": "justice, judgment",
+    "wrong_choices": [
+      "battle, war",
+      "day, time, year",
+      "because, for, that"
+    ]
+  },
+  {
+    "ref": "Psalms 23:1",
+    "sefaria_ref": "Psalms.23.1",
+    "book": "Psalms",
+    "hebrew_text": "מִזְמוֹר לְדָוִד יְהֹוָה רֹעִי לֹא אֶחְסָֽר",
+    "english_text": "A psalm of David. GOD is my shepherd; I lack nothing.",
+    "words": [
+      "מִזְמוֹר",
+      "לְדָוִד",
+      "יְהֹוָה",
+      "רֹעִי",
+      "לֹא",
+      "אֶחְסָֽר"
+    ],
+    "quiz_word_idx": 3,
+    "quiz_word": "רֹעִי",
+    "answer": "my shepherd",
+    "wrong_choices": [
+      "hill, mountain, hill country, mount",
+      "to sing",
+      "god, god-like one, mighty one"
+    ]
+  },
+  {
+    "ref": "Psalms 27:1",
+    "sefaria_ref": "Psalms.27.1",
+    "book": "Psalms",
+    "hebrew_text": "לְדָוִד יְהֹוָה אוֹרִי וְיִשְׁעִי מִמִּי אִירָא יְהֹוָה מָעוֹז־חַיַּי מִמִּי אֶפְחָֽד",
+    "english_text": "Of David. GOD is my light and my help; whom should I fear? GOD is the stronghold of my life, whom should I dread?",
+    "words": [
+      "לְדָוִד",
+      "יְהֹוָה",
+      "אוֹרִי",
+      "וְיִשְׁעִי",
+      "מִמִּי",
+      "אִירָא",
+      "יְהֹוָה",
+      "מָעוֹז",
+      "חַיַּי",
+      "מִמִּי",
+      "אֶפְחָֽד"
+    ],
+    "quiz_word_idx": 2,
+    "quiz_word": "אוֹרִי",
+    "answer": "my light",
+    "wrong_choices": [
+      "ground, land",
+      "hill, mountain, hill country, mount",
+      "to shine"
+    ]
+  },
+  {
+    "ref": "Psalms 121:2",
+    "sefaria_ref": "Psalms.121.2",
+    "book": "Psalms",
+    "hebrew_text": "עֶזְרִי מֵעִם יְהֹוָה עֹשֵׂה שָׁמַיִם וָאָֽרֶץ",
+    "english_text": "My help comes from GOD, maker of heaven and earth.",
+    "words": [
+      "עֶזְרִי",
+      "מֵעִם",
+      "יְהֹוָה",
+      "עֹשֵׂה",
+      "שָׁמַיִם",
+      "וָאָֽרֶץ"
+    ],
+    "quiz_word_idx": 0,
+    "quiz_word": "עֶזְרִי",
+    "answer": "my help",
+    "wrong_choices": [
+      "goodness, kindness, faithfulness",
+      "to sing",
+      "to shine"
+    ]
+  },
+  {
+    "ref": "Proverbs 3:5",
+    "sefaria_ref": "Proverbs.3.5",
+    "book": "Proverbs",
+    "hebrew_text": "בְּטַח אֶל־יְהֹוָה בְּכׇל־לִבֶּךָ וְאֶל־בִּינָתְךָ אַל־תִּשָּׁעֵֽן",
+    "english_text": "Trust in GOD with all your heart, And do not rely on your own understanding.",
+    "words": [
+      "בְּטַח",
+      "אֶל",
+      "יְהֹוָה",
+      "בְּכׇל",
+      "לִבֶּךָ",
+      "וְאֶל",
+      "בִּינָתְךָ",
+      "אַל",
+      "תִּשָּׁעֵֽן"
+    ],
+    "quiz_word_idx": 0,
+    "quiz_word": "בְּטַח",
+    "answer": "trust",
+    "wrong_choices": [
+      "eye",
+      "inner man, mind, will, heart, understanding",
+      "to fear, revere, be afraid"
+    ]
+  },
+  {
+    "ref": "Ruth 1:16",
+    "sefaria_ref": "Ruth.1.16",
+    "book": "Ruth",
+    "hebrew_text": "וַתֹּאמֶר רוּת אַל־תִּפְגְּעִי־בִי לְעׇזְבֵךְ לָשׁוּב מֵאַחֲרָיִךְ כִּי אֶל־אֲשֶׁר תֵּלְכִי אֵלֵךְ וּבַאֲשֶׁר תָּלִינִי אָלִין עַמֵּךְ עַמִּי וֵאלֹהַיִךְ אֱלֹהָֽי",
+    "english_text": "But Ruth replied, “Do not urge me to leave you, to turn back and not follow you. For wherever you go, I will go; wherever you lodge, I will lodge; your people shall be my people, and your God my God.",
+    "words": [
+      "וַתֹּאמֶר",
+      "רוּת",
+      "אַל",
+      "תִּפְגְּעִי",
+      "בִי",
+      "לְעׇזְבֵךְ",
+      "לָשׁוּב",
+      "מֵאַחֲרָיִךְ",
+      "כִּי",
+      "אֶל",
+      "אֲשֶׁר",
+      "תֵּלְכִי",
+      "אֵלֵךְ",
+      "וּבַאֲשֶׁר",
+      "תָּלִינִי",
+      "אָלִין",
+      "עַמֵּךְ",
+      "עַמִּי",
+      "וֵאלֹהַיִךְ",
+      "אֱלֹהָֽי"
+    ],
+    "quiz_word_idx": 11,
+    "quiz_word": "תֵּלְכִי",
+    "answer": "you go",
+    "wrong_choices": [
+      "to bear, bringforth, beget, gender, travail",
+      "to be, become, come to pass, exist, happen, fall out",
+      "the back side, the rear"
+    ]
+  },
+  {
+    "ref": "Ecclesiastes 3:1",
+    "sefaria_ref": "Ecclesiastes.3.1",
+    "book": "Ecclesiastes",
+    "hebrew_text": "לַכֹּל זְמָן וְעֵת לְכׇל־חֵפֶץ תַּחַת הַשָּׁמָֽיִם",
+    "english_text": "A season is set for everything, a time for every experience under heaven:",
+    "words": [
+      "לַכֹּל",
+      "זְמָן",
+      "וְעֵת",
+      "לְכׇל",
+      "חֵפֶץ",
+      "תַּחַת",
+      "הַשָּׁמָֽיִם"
+    ],
+    "quiz_word_idx": 1,
+    "quiz_word": "זְמָן",
+    "answer": "appointed time, season",
+    "wrong_choices": [
+      "assembly, congregation",
+      "to put, place, set, appoint, make",
+      "inner man, mind, will, heart, understanding"
+    ]
+  }
+]
