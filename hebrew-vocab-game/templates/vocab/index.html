@@ -1059,9 +1059,9 @@
 
     const fb = document.getElementById('pasuk-feedback');
     if (isCorrect) {
-      pasukScore += 10;
+      pasukScore += 20;
       document.getElementById('pasuk-score').textContent = pasukScore;
-      fb.textContent = '✓ Correct! +10 points';
+      fb.textContent = '✓ Correct! +20 points';
       fb.className   = 'feedback correct';
     } else {
       fb.textContent = `✗ Correct answer: ${q.answer}`;
