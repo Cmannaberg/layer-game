@@ -21,10 +21,11 @@ Students on the same WiFi point their phone camera at it — no typing needed.
 
 ## Features
 
-- Pick any book of Tanach (Torah, Nevi'im, Ketuvim)
+- **Pasuk Challenge** — famous Bible verses with one word highlighted; student translates it from 4 choices; English verse revealed after answering
+- Pick any book of Tanach (Torah, Nevi'im, Ketuvim) for word-frequency vocab drill
 - Hebrew → English or English → Hebrew multiple choice
 - Bonus fill-in-the-blank round for scores of 8/10 or higher (+50 points)
-- Persistent leaderboard across all class sessions
+- Persistent year-long leaderboard shared across all devices
+- Multi-device: students join via QR code on phones, tablets, or Chromebooks
 - Hebrew word lookup tool at `/lookup`
 - Export a printable dictionary with `python3 hebrew_vocab_dict.py`
-- Multi-device: students join via QR code on phones, tablets, or Chromebooks

@@ -70,6 +70,41 @@ that leaves the server running and causes a "port already in use" error next tim
 
 ---
 
+## Pasuk Challenge
+
+The Pasuk Challenge shows a complete Hebrew verse with one word highlighted in
+gold. Students pick the correct English translation from four choices. After
+answering, the full English verse is revealed.
+
+**How students access it:**
+On the book-selection screen, there's a blue "📜 Pasuk Challenge" banner at the
+top. Tap it to start — no book selection needed.
+
+**What's in the question pool:**
+22 famous verses spanning all three sections of Tanach — Bereshit 1:1, the
+Shema, "Love your neighbor", the Priestly Blessing, Psalm 23, "Be strong and
+courageous", Isaiah's Keddushah, and more. Each session draws 7 random
+questions. Scores go on the same year-long leaderboard.
+
+**Adding more verses:**
+Open `pasuk_builder.py` and add an entry to the `PASUKIM` list:
+
+```python
+("Book.Chapter.Verse", "Book", "consonants-as-in-verse", "English answer"),
+# e.g.
+("Genesis.15.1",  "Genesis",  "תירא",  "fear, be afraid"),
+```
+
+Then re-run the builder — it skips verses already in the file:
+
+```bash
+cd ~/layer-game/hebrew-vocab-game
+source myenv/bin/activate
+python3 pasuk_builder.py
+```
+
+---
+
 ## Adding New Books to the Vocab Data
 
 ```bash
@@ -226,7 +261,9 @@ Ideas discussed for future development, roughly in order of priority:
 | `hebrew_vocab_builder.py` | Fetches vocab from Sefaria API, builds JSON |
 | `hebrew_vocab_dict.py` | Exports vocab as a printable HTML dictionary |
 | `hebrew_vocab.json` | All vocabulary data — edit definitions here |
+| `pasuk_builder.py` | Fetches famous verses from Sefaria API, builds pasuk question data |
+| `pasuk_questions.json` | Pasuk Challenge question pool — 22 famous verses with quiz data |
 | `players.json` | Leaderboard scores — local only, not on GitHub |
-| `templates/vocab/index.html` | The game UI |
+| `templates/vocab/index.html` | The game UI (vocab drill + Pasuk Challenge) |
 | `templates/vocab/lookup.html` | Hebrew word lookup tool |
 | `requirements.txt` | Python package list |
