@@ -214,42 +214,84 @@ git pull
 
 Ideas discussed for future development, roughly in order of priority:
 
-**Difficulty levels**
-- Level 1 (current): words ranked 1–10 by frequency in each book
-- Level 2: words ranked 11–20 (already in `hebrew_vocab.json`, just unused)
-- Level 3: fill-in-the-blank for all 10 words, not just the bonus round
+---
 
-**Bible text passage questions**
-- Show an actual pasuk (verse) from Sefaria with one word highlighted
-- Student translates the highlighted word in context
-- Much closer to real Torah reading skill
-- Sefaria API already supports this — same API already used in the project
+### Quick wins — more content, no new features needed
 
-**More challenge types**
-- Matching (connect Hebrew column to English column)
-- Hear the word / audio pronunciation
-- Root identification (given an inflected form, identify the shoresh)
+**Level 2 words** *(easiest — data already exists)*
+- Ranks 11–20 per book are already stored in `hebrew_vocab.json` but unused
+- Add a difficulty selector on the book screen: "Common" (top 10) vs "Less Common" (11–20)
+- One afternoon of work
 
-**Root identification (Shoresh)**
-- Show a long inflected word from the Bible (e.g. וַיִּכְתְּבֵהוּ)
-- Student identifies the 3-letter root (shoresh) from multiple choice
-- Then defines the root
-- Teaches the most important Biblical Hebrew skill
+**More pasukim**
+- Current pool is 22 verses — 50–60 would give much more variety per session
+- Add entries to `PASUKIM` list in `pasuk_builder.py` and re-run the builder
+- See the Pasuk Challenge section above for instructions
+
+**More books**
+- If any Tanach books are missing from the vocab, `hebrew_vocab_builder.py` can add them
+- Run: `python3 hebrew_vocab_builder.py --book BookName`
+
+---
+
+### Medium challenge — new question types
+
+**Fill-in-the-blank (Level 3)**
+- Instead of multiple choice, student types the English translation
+- Already partially built — the bonus round works this way
+- Extend it to all 10 questions as a hard mode
+
+**Shoresh (root) identification** *(highest educational value)*
+- Show an inflected word from the Bible (e.g. וַיִּכְתֹּב)
+- Student picks the 3-letter root (shoresh) from 4 choices
+- This is the most important Biblical Hebrew reading skill
+- Could extend: after identifying the root, student also defines it
+
+**Plural forms**
+- Show a singular noun, student picks the correct plural (or vice versa)
+- Teaches masculine plural (ים-) and feminine plural (ות-) endings
+- Irregular plurals (מַיִם, נָשִׁים, etc.) would be the hardest questions
+
+**Matching game**
+- Connect Hebrew column to English column
+- Good for review at end of a unit
+
+---
+
+### High challenge — grammar parsing
+
+**Verb parsing**
+- Show a fully conjugated verb form, student identifies person / gender / number
+- e.g. וַיִּכְתֹּב → "3rd person masculine singular, Qal"
+- Very advanced but extremely useful for independent Torah reading
 
 **Prefix and suffix morphology**
-- Show a root word, then add a prefix or suffix (e.g. ב, ל, ו, ים, ות, ה)
-- Student guesses the new meaning or grammatical form
+- Show a root word with a prefix or suffix attached (ב, ל, ה, ו, ים, ות)
+- Student identifies what changed and what it means
 - Covers: definite article, prepositions, conjunctions, plurals, gender endings
 - Builds reading skill by teaching how words change in context
 
-**Noun gender**
-- Show a Hebrew noun, student guesses masculine or feminine
-- Hint mode: teach the patterns (ה- and ת- endings are usually feminine)
-- Could also include dual and plural forms
+---
 
-**Classroom management**
+### Already built — for reference
+
+**Noun gender display** *(live)*
+- Blue badge = masculine, pink = feminine, purple = both
+- Shows automatically on nouns in Hebrew→English mode
+- Data stored in `hebrew_vocab.json` as `"gender": "m"/"f"/"mf"/null`
+- Re-run `gender_enricher.py` after adding new words to tag them
+
+**Pasuk Challenge** *(live)*
+- 22 famous verses; each session draws 7 at random
+- 20 points per correct answer
+- Scores go on the same year-long leaderboard
+
+---
+
+### Classroom management
+
 - Reset leaderboard at start of each semester: `rm players.json`
-- Per-class leaderboards (multiple `players_period1.json` etc.)
+- Per-class leaderboards (multiple `players_period1.json` etc.) — not yet built
 
 ---
 
