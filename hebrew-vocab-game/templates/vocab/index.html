@@ -157,6 +157,15 @@
     }
     .question-word.hebrew { font-family: 'Frank Ruhl Libre', serif; direction: rtl; font-size: 3.8rem; }
     .question-freq { font-size: .8rem; color: var(--grey); margin-top: 10px; }
+    #question-gender { margin-top: 8px; min-height: 1.6rem; }
+    .gender-badge {
+      display: inline-block;
+      font-size: .75rem; font-weight: 700; letter-spacing: .5px;
+      padding: 2px 10px; border-radius: 20px;
+    }
+    .gender-badge.m  { background: #dbeafe; color: #1e40af; }  /* blue  — masculine */
+    .gender-badge.f  { background: #fce7f3; color: #9d174d; }  /* pink  — feminine  */
+    .gender-badge.mf { background: #ede9fe; color: #5b21b6; }  /* purple — both     */
 
     .choices { display: grid; gap: 12px; }
     .choice-btn {
@@ -557,6 +566,7 @@
     <div class="question-card">
       <div class="question-label" id="question-label">What does this mean?</div>
       <div class="question-word" id="question-word"></div>
+      <div id="question-gender"></div>
       <div class="question-freq" id="question-freq"></div>
     </div>
     <div class="choices" id="choices"></div>
@@ -846,6 +856,18 @@
       qLabel.textContent = 'Which Hebrew word?';
     }
     qFreq.textContent = `appears ${word.frequency.toLocaleString()}× in this book`;
+
+    // Gender badge — only for nouns in Hebrew→English mode
+    const genderEl = document.getElementById('question-gender');
+    const isNoun   = !word.english.trim().toLowerCase().startsWith('to ');
+    const gender   = word.gender;
+    if (mode === 'he-en' && isNoun && gender) {
+      const labels = { m: 'masculine', f: 'feminine', mf: 'masculine / feminine' };
+      genderEl.innerHTML =
+        `<span class="gender-badge ${gender}">${labels[gender] || gender}</span>`;
+    } else {
+      genderEl.innerHTML = '';
+    }
 
     // Build choices: correct + 2 random wrong from other game words
     const others   = gameWords.filter((_, i) => i !== wordIndex);

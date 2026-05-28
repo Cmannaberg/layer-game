@@ -6,42 +6,50 @@
       {
         "hebrew": "פָּרַע",
         "english": "to lead, act as leader",
-        "frequency": 60
+        "frequency": 60,
+        "gender": null
       },
       {
         "hebrew": "קָרָא",
         "english": "to call, call out, recite, read, cry out, proclaim",
-        "frequency": 52
+        "frequency": 52,
+        "gender": null
       },
       {
         "hebrew": "רָאָה",
         "english": "to see, look at, inspect, perceive, consider",
-        "frequency": 49
+        "frequency": 49,
+        "gender": "f"
       },
       {
         "hebrew": "לָקַח",
         "english": "to take, get",
-        "frequency": 43
+        "frequency": 43,
+        "gender": null
       },
       {
         "hebrew": "יָלַד",
         "english": "boy",
-        "frequency": 39
+        "frequency": 39,
+        "gender": null
       },
       {
         "hebrew": "אָח",
         "english": "brother",
-        "frequency": 32
+        "frequency": 32,
+        "gender": "mf"
       },
       {
         "hebrew": "מַיִם",
         "english": "water, waters",
-        "frequency": 30
+        "frequency": 30,
+        "gender": "m"
       },
       {
         "hebrew": "יָשַׁב",
         "english": "to dwell, remain, sit, abide",
-        "frequency": 30
+        "frequency": 30,
+        "gender": null
       }
     ]
   },
@@ -52,57 +60,68 @@
       {
         "hebrew": "פָּרַע",
         "english": "to lead, act as leader",
-        "frequency": 69
+        "frequency": 69,
+        "gender": null
       },
       {
         "hebrew": "שָׁנֶה",
         "english": "year",
-        "frequency": 39
+        "frequency": 39,
+        "gender": "f"
       },
       {
         "hebrew": "צָוָה",
         "english": "to command, charge, give orders, lay charge, give charge to, order",
-        "frequency": 29
+        "frequency": 29,
+        "gender": null
       },
       {
         "hebrew": "מִשְׁכָּן",
         "english": "dwelling place, tabernacle",
-        "frequency": 27
+        "frequency": 27,
+        "gender": "m"
       },
       {
         "hebrew": "נְחֹשֶׁת",
         "english": "copper, bronze",
-        "frequency": 27
+        "frequency": 27,
+        "gender": "m"
       },
       {
         "hebrew": "שׁוּט",
         "english": "to go or rove about, go to and fro",
-        "frequency": 26
+        "frequency": 26,
+        "gender": null
       },
       {
         "hebrew": "אֵל",
         "english": "god, mighty one",
-        "frequency": 25
+        "frequency": 25,
+        "gender": "mf"
       },
       {
         "hebrew": "תְּכֵלֶת",
         "english": "blue, blue thread",
-        "frequency": 23
+        "frequency": 23,
+        "gender": "f"
       },
       {
         "hebrew": "קָרָא",
         "english": "to call, call out, recite, read, cry out, proclaim",
-        "frequency": 22
+        "frequency": 22,
+        "gender": null
       },
       {
         "hebrew": "חָצֵר",
         "english": "court, enclosure",
-        "frequency": 22
+        "frequency": 22,
+        "gender": "mf"
       },
       {
         "hebrew": "אֶרֶץ",
         "english": "land, earth",
-        "frequency": 21
+        "frequency": 21,
+        "gender": "f"
       }
     ]
   },
@@ -113,57 +132,68 @@
       {
         "hebrew": "מַיִם",
         "english": "water, waters",
-        "frequency": 34
+        "frequency": 34,
+        "gender": "m"
       },
       {
         "hebrew": "כְּפוֹר",
         "english": "bowl, basin",
-        "frequency": 29
+        "frequency": 29,
+        "gender": "m"
       },
       {
         "hebrew": "טָמֵא",
         "english": "to be unclean, become unclean, become impure",
-        "frequency": 29
+        "frequency": 29,
+        "gender": "f"
       },
       {
         "hebrew": "שָׁבוּעַ",
         "english": "seven, period of seven (days or years), heptad, week",
-        "frequency": 27
+        "frequency": 27,
+        "gender": "m"
       },
       {
         "hebrew": "נָגַע",
         "english": "to touch, reach, strike",
-        "frequency": 27
+        "frequency": 27,
+        "gender": "m"
       },
       {
         "hebrew": "אֹהֶל",
         "english": "tent",
-        "frequency": 26
+        "frequency": 26,
+        "gender": "m"
       },
       {
         "hebrew": "מִזְבֵּחַ",
         "english": "altar",
-        "frequency": 24
+        "frequency": 24,
+        "gender": "m"
       },
       {
         "hebrew": "חָטָא",
         "english": "to sin",
-        "frequency": 1
+        "frequency": 1,
+        "gender": null
       },
       {
         "hebrew": "אָכַל",
         "english": "to eat, devour, burn up, feed",
-        "frequency": 23
+        "frequency": 23,
+        "gender": null
       },
       {
         "hebrew": "רָאָה",
         "english": "to see",
-        "frequency": 22
+        "frequency": 22,
+        "gender": "f"
       },
       {
         "hebrew": "בֶּגֶד",
         "english": "treachery, deceit",
-        "frequency": 20
+        "frequency": 20,
+        "gender": "m"
       }
     ]
   },
@@ -174,52 +204,62 @@
       {
         "hebrew": "מִשְׁפָּחָה",
         "english": "clan, family",
-        "frequency": 95
+        "frequency": 95,
+        "gender": "f"
       },
       {
         "hebrew": "נָסַע",
         "english": "to pull out, pull up, set out, journey, remove, set forward, depart",
-        "frequency": 51
+        "frequency": 51,
+        "gender": null
       },
       {
         "hebrew": "חָנָה",
         "english": "to decline, incline, encamp, bend down, lay siege against",
-        "frequency": 47
+        "frequency": 47,
+        "gender": null
       },
       {
         "hebrew": "מָעַל",
         "english": "to act unfaithfully, act treacherously, transgress, commit a trespass",
-        "frequency": 36
+        "frequency": 36,
+        "gender": "m"
       },
       {
         "hebrew": "צָוָה",
         "english": "to command, charge, give orders, lay charge, give charge to, order",
-        "frequency": 29
+        "frequency": 29,
+        "gender": null
       },
       {
         "hebrew": "כֶּבֶשׂ",
         "english": "lamb, sheep, young ram",
-        "frequency": 29
+        "frequency": 29,
+        "gender": "m"
       },
       {
         "hebrew": "שֶׁמֶן",
         "english": "fat, oil",
-        "frequency": 28
+        "frequency": 28,
+        "gender": "m"
       },
       {
         "hebrew": "מִדְבָּר",
         "english": "wilderness",
-        "frequency": 27
+        "frequency": 27,
+        "gender": "m"
       },
       {
         "hebrew": "סֹלֶת",
         "english": "fine flour",
-        "frequency": 27
+        "frequency": 27,
+        "gender": "f"
       },
       {
         "hebrew": "מוֹט",
         "english": "to totter, shake, slip",
-        "frequency": 26
+        "frequency": 26,
+        "gender": "m"
       }
     ]
   },
@@ -230,52 +270,62 @@
       {
         "hebrew": "אָלָה",
         "english": "to lament, wail",
-        "frequency": 34
+        "frequency": 34,
+        "gender": "f"
       },
       {
         "hebrew": "צָוָה",
         "english": "to command, charge, give orders, lay charge, give charge to, order",
-        "frequency": 27
+        "frequency": 27,
+        "gender": null
       },
       {
         "hebrew": "יָרַשׁ",
         "english": "to seize, dispossess, take possession of, inherit, disinherit, occupy, impoverish",
-        "frequency": 25
+        "frequency": 25,
+        "gender": null
       },
       {
         "hebrew": "שָׁמַיִם",
         "english": "heaven, heavens, sky",
-        "frequency": 19
+        "frequency": 19,
+        "gender": "m"
       },
       {
         "hebrew": "נָתַן",
         "english": "to give, put, set",
-        "frequency": 18
+        "frequency": 18,
+        "gender": null
       },
       {
         "hebrew": "פָּנִים",
         "english": "face",
-        "frequency": 18
+        "frequency": 18,
+        "gender": null
       },
       {
         "hebrew": "עַם",
         "english": "nation, people",
-        "frequency": 18
+        "frequency": 18,
+        "gender": "m"
       },
       {
         "hebrew": "אֶרֶץ",
         "english": "land, earth",
-        "frequency": 17
+        "frequency": 17,
+        "gender": "f"
       },
       {
         "hebrew": "שָׂבַע",
         "english": "to be satisfied, be sated, be fulfilled, be surfeited",
-        "frequency": 17
+        "frequency": 17,
+        "gender": null
       },
       {
         "hebrew": "דֶּרֶךְ",
         "english": "way, road, distance, journey, manner",
-        "frequency": 17
+        "frequency": 17,
+        "gender": "m"
       }
     ]
   },
@@ -286,82 +336,98 @@
       {
         "hebrew": "נֶפֶשׁ",
         "english": "soul",
-        "frequency": 87
+        "frequency": 87,
+        "gender": "f"
       },
       {
         "hebrew": "סָלָה",
         "english": "to make light of, toss aside",
-        "frequency": 69
+        "frequency": 69,
+        "gender": null
       },
       {
         "hebrew": "מִזְמוֹר",
         "english": "melody, psalm",
-        "frequency": 57
+        "frequency": 57,
+        "gender": "m"
       },
       {
         "hebrew": "נָצַח",
         "english": "to excel, be bright",
-        "frequency": 55
+        "frequency": 55,
+        "gender": null
       },
       {
         "hebrew": "חֵסֵד",
         "english": "goodness, kindness, faithfulness",
-        "frequency": 46
+        "frequency": 46,
+        "gender": "m"
       },
       {
         "hebrew": "שִׁיר",
         "english": "to sing",
-        "frequency": 35
+        "frequency": 35,
+        "gender": "m"
       },
       {
         "hebrew": "אֵל",
         "english": "god, god-like one, mighty one",
-        "frequency": 31
+        "frequency": 31,
+        "gender": "mf"
       },
       {
         "hebrew": "אֶרֶץ",
         "english": "land, earth",
-        "frequency": 24
+        "frequency": 24,
+        "gender": "f"
       },
       {
         "hebrew": "אֶשֶׁר",
         "english": "happiness, blessedness",
-        "frequency": 24
+        "frequency": 24,
+        "gender": "m"
       },
       {
         "hebrew": "פָּנִים",
         "english": "face",
-        "frequency": 24
+        "frequency": 24,
+        "gender": null
       },
       {
         "hebrew": "הָלַל",
         "english": "to shine",
-        "frequency": 24
+        "frequency": 24,
+        "gender": null
       },
       {
         "hebrew": "עַיִן",
         "english": "eye",
-        "frequency": 23
+        "frequency": 23,
+        "gender": "f"
       },
       {
         "hebrew": "עַם",
         "english": "nation, people",
-        "frequency": 23
+        "frequency": 23,
+        "gender": "m"
       },
       {
         "hebrew": "רֶשַׁע",
         "english": "wrong, wickedness, guilt",
-        "frequency": 23
+        "frequency": 23,
+        "gender": "m"
       },
       {
         "hebrew": "תָּמִיד",
         "english": "continuity, perpetuity",
-        "frequency": 23
+        "frequency": 23,
+        "gender": "m"
       },
       {
         "hebrew": "הַר",
         "english": "hill, mountain, hill country, mount",
-        "frequency": 20
+        "frequency": 20,
+        "gender": "mf"
       }
     ]
   },
@@ -372,87 +438,104 @@
       {
         "hebrew": "רֶשַׁע",
         "english": "wrong, wickedness, guilt",
-        "frequency": 31
+        "frequency": 31,
+        "gender": "m"
       },
       {
         "hebrew": "חָכַם",
         "english": "to be wise",
-        "frequency": 27
+        "frequency": 27,
+        "gender": null
       },
       {
         "hebrew": "טוֹב",
         "english": "to be good, be pleasing, be joyful, be beneficial, be pleasant, be favourable, b",
-        "frequency": 23
+        "frequency": 23,
+        "gender": null
       },
       {
         "hebrew": "מוּסָר",
         "english": "discipline, chastening, correction",
-        "frequency": 22
+        "frequency": 22,
+        "gender": "m"
       },
       {
         "hebrew": "נֶפֶשׁ",
         "english": "soul",
-        "frequency": 19
+        "frequency": 19,
+        "gender": "f"
       },
       {
         "hebrew": "כְּסִיל",
         "english": "fool, stupid fellow, dullard, simpleton, arrogant one",
-        "frequency": 18
+        "frequency": 18,
+        "gender": "m"
       },
       {
         "hebrew": "לֵב",
         "english": "inner man, mind, will, heart, understanding",
-        "frequency": 17
+        "frequency": 17,
+        "gender": "m"
       },
       {
         "hebrew": "אִוֶּלֶת",
         "english": "foolishness, folly",
-        "frequency": 15
+        "frequency": 15,
+        "gender": "f"
       },
       {
         "hebrew": "דַּעַת",
         "english": "knowledge",
-        "frequency": 14
+        "frequency": 14,
+        "gender": "f"
       },
       {
         "hebrew": "תּוֹעֵבַה",
         "english": "a disgusting thing, abomination, abominable",
-        "frequency": 14
+        "frequency": 14,
+        "gender": "f"
       },
       {
         "hebrew": "דֶּרֶךְ",
         "english": "way, road, distance, journey, manner",
-        "frequency": 12
+        "frequency": 12,
+        "gender": "m"
       },
       {
         "hebrew": "מִשְׁפָּט",
         "english": "judgment, justice, ordinance",
-        "frequency": 11
+        "frequency": 11,
+        "gender": "m"
       },
       {
         "hebrew": "הָלַךְ",
         "english": "to go, walk, come",
-        "frequency": 11
+        "frequency": 11,
+        "gender": null
       },
       {
         "hebrew": "אָהַב",
         "english": "to love",
-        "frequency": 11
+        "frequency": 11,
+        "gender": null
       },
       {
         "hebrew": "עַיִן",
         "english": "eye",
-        "frequency": 11
+        "frequency": 11,
+        "gender": "f"
       },
       {
         "hebrew": "יָרֵא",
         "english": "to fear, revere, be afraid",
-        "frequency": 9
+        "frequency": 9,
+        "gender": null
       },
       {
         "hebrew": "נָתַן",
         "english": "to give, put, set",
-        "frequency": 9
+        "frequency": 9,
+        "gender": null
       }
     ]
   },
@@ -463,67 +546,80 @@
       {
         "hebrew": "עָנָה",
         "english": "to answer, respond, testify, speak, shout",
-        "frequency": 27
+        "frequency": 27,
+        "gender": null
       },
       {
         "hebrew": "אֱלוֹהַּ",
         "english": "God",
-        "frequency": 27
+        "frequency": 27,
+        "gender": "m"
       },
       {
         "hebrew": "אוֹר",
         "english": "to be or become light, shine",
-        "frequency": 14
+        "frequency": 14,
+        "gender": "mf"
       },
       {
         "hebrew": "עָמַד",
         "english": "to stand, remain, endure, take one's stand",
-        "frequency": 14
+        "frequency": 14,
+        "gender": null
       },
       {
         "hebrew": "נֶפֶשׁ",
         "english": "soul",
-        "frequency": 13
+        "frequency": 13,
+        "gender": "f"
       },
       {
         "hebrew": "חָכַם",
         "english": "to be wise",
-        "frequency": 13
+        "frequency": 13,
+        "gender": null
       },
       {
         "hebrew": "אֶרֶץ",
         "english": "land, earth",
-        "frequency": 11
+        "frequency": 11,
+        "gender": "f"
       },
       {
         "hebrew": "יָדַע",
         "english": "to know",
-        "frequency": 10
+        "frequency": 10,
+        "gender": null
       },
       {
         "hebrew": "עַם",
         "english": "nation, people",
-        "frequency": 10
+        "frequency": 10,
+        "gender": "m"
       },
       {
         "hebrew": "חָדַד",
         "english": "to be sharp, be alert, be keen",
-        "frequency": 9
+        "frequency": 9,
+        "gender": null
       },
       {
         "hebrew": "אֱנוֹשׁ",
         "english": "man, mortal man, person, mankind",
-        "frequency": 9
+        "frequency": 9,
+        "gender": "m"
       },
       {
         "hebrew": "מִשְׁפָּט",
         "english": "judgment, justice, ordinance",
-        "frequency": 9
+        "frequency": 9,
+        "gender": "m"
       },
       {
         "hebrew": "מִלָּה",
         "english": "word, speech, utterance",
-        "frequency": 9
+        "frequency": 9,
+        "gender": "f"
       }
     ]
   },
@@ -534,97 +630,116 @@
       {
         "hebrew": "דּוֹד",
         "english": "beloved, love, uncle",
-        "frequency": 18
+        "frequency": 18,
+        "gender": "m"
       },
       {
         "hebrew": "רַעְיָה",
         "english": "attendant maidens, companion",
-        "frequency": 9
+        "frequency": 9,
+        "gender": "f"
       },
       {
         "hebrew": "בָּנָה",
         "english": "to build, rebuild, establish",
-        "frequency": 8
+        "frequency": 8,
+        "gender": null
       },
       {
         "hebrew": "נֶפֶשׁ",
         "english": "soul",
-        "frequency": 7
+        "frequency": 7,
+        "gender": "f"
       },
       {
         "hebrew": "כֹּל",
         "english": "all, the whole",
-        "frequency": 6
+        "frequency": 6,
+        "gender": "m"
       },
       {
         "hebrew": "אָהַב",
         "english": "to love",
-        "frequency": 5
+        "frequency": 5,
+        "gender": null
       },
       {
         "hebrew": "אָחוֹת",
         "english": "sister",
-        "frequency": 5
+        "frequency": 5,
+        "gender": "f"
       },
       {
         "hebrew": "דַּד",
         "english": "breast",
-        "frequency": 4
+        "frequency": 4,
+        "gender": "m"
       },
       {
         "hebrew": "יַיִן",
         "english": "wine",
-        "frequency": 4
+        "frequency": 4,
+        "gender": "m"
       },
       {
         "hebrew": "עַיִן",
         "english": "eye",
-        "frequency": 4
+        "frequency": 4,
+        "gender": "f"
       },
       {
         "hebrew": "שָׁבַע",
         "english": "to swear, adjure",
-        "frequency": 4
+        "frequency": 4,
+        "gender": null
       },
       {
         "hebrew": "עָבַר",
         "english": "to pass over or by or through, alienate, bring, carry, do away, take, take away,",
-        "frequency": 4
+        "frequency": 4,
+        "gender": null
       },
       {
         "hebrew": "שׁוּשַׁן",
         "english": "lily",
-        "frequency": 4
+        "frequency": 4,
+        "gender": "m"
       },
       {
         "hebrew": "עֵדֶר",
         "english": "flock, herd",
-        "frequency": 4
+        "frequency": 4,
+        "gender": "m"
       },
       {
         "hebrew": "שׁוּב",
         "english": "to return, turn back",
-        "frequency": 4
+        "frequency": 4,
+        "gender": null
       },
       {
         "hebrew": "אִשָּׁה",
         "english": "woman",
-        "frequency": 3
+        "frequency": 3,
+        "gender": "mf"
       },
       {
         "hebrew": "צַוַּאר",
         "english": "neck",
-        "frequency": 3
+        "frequency": 3,
+        "gender": "m"
       },
       {
         "hebrew": "שָׂדֶה",
         "english": "field, land",
-        "frequency": 3
+        "frequency": 3,
+        "gender": "mf"
       },
       {
         "hebrew": "חָפֵץ",
         "english": "to delight in, take pleasure in, desire, be pleased with",
-        "frequency": 3
+        "frequency": 3,
+        "gender": null
       }
     ]
   },
@@ -635,62 +750,74 @@
       {
         "hebrew": "יָלַד",
         "english": "to bear, bringforth, beget, gender, travail",
-        "frequency": 9
+        "frequency": 9,
+        "gender": null
       },
       {
         "hebrew": "בַּיִת",
         "english": "house",
-        "frequency": 8
+        "frequency": 8,
+        "gender": "m"
       },
       {
         "hebrew": "שָׂדֶה",
         "english": "field, land",
-        "frequency": 6
+        "frequency": 6,
+        "gender": "mf"
       },
       {
         "hebrew": "גָּאַל",
         "english": "to redeem, act as kinsman-redeemer, avenge, revenge, ransom, do the part of a ki",
-        "frequency": 5
+        "frequency": 5,
+        "gender": null
       },
       {
         "hebrew": "יָשַׁב",
         "english": "to dwell, remain, sit, abide",
-        "frequency": 4
+        "frequency": 4,
+        "gender": null
       },
       {
         "hebrew": "עַם",
         "english": "nation, people",
-        "frequency": 4
+        "frequency": 4,
+        "gender": "m"
       },
       {
         "hebrew": "לַיִל",
         "english": "night",
-        "frequency": 4
+        "frequency": 4,
+        "gender": "m"
       },
       {
         "hebrew": "חֲמוֹת",
         "english": "mother-in-law, husband's mother",
-        "frequency": 4
+        "frequency": 4,
+        "gender": "mf"
       },
       {
         "hebrew": "קוּם",
         "english": "to rise, arise, stand, rise up, stand up",
-        "frequency": 3
+        "frequency": 3,
+        "gender": null
       },
       {
         "hebrew": "שׁוּב",
         "english": "to return, turn back",
-        "frequency": 3
+        "frequency": 3,
+        "gender": null
       },
       {
         "hebrew": "נָתַן",
         "english": "to give, put, set",
-        "frequency": 3
+        "frequency": 3,
+        "gender": null
       },
       {
         "hebrew": "בָּנָה",
         "english": "to build, rebuild, establish",
-        "frequency": 3
+        "frequency": 3,
+        "gender": null
       }
     ]
   },
@@ -701,52 +828,62 @@
       {
         "hebrew": "אָלָה",
         "english": "to lament, wail",
-        "frequency": 38
+        "frequency": 38,
+        "gender": "f"
       },
       {
         "hebrew": "עִיר",
         "english": "excitement, anguish",
-        "frequency": 36
+        "frequency": 36,
+        "gender": "mf"
       },
       {
         "hebrew": "גְּבוּל",
         "english": "border, territory",
-        "frequency": 35
+        "frequency": 35,
+        "gender": "m"
       },
       {
         "hebrew": "חָצֵר",
         "english": "court, enclosure",
-        "frequency": 26
+        "frequency": 26,
+        "gender": "mf"
       },
       {
         "hebrew": "מִשְׁפָּחָה",
         "english": "clan, family",
-        "frequency": 24
+        "frequency": 24,
+        "gender": "f"
       },
       {
         "hebrew": "צָוָה",
         "english": "to command, charge, give orders, lay charge, give charge to, order",
-        "frequency": 22
+        "frequency": 22,
+        "gender": null
       },
       {
         "hebrew": "תָּוֶךְ",
         "english": "midst, middle",
-        "frequency": 16
+        "frequency": 16,
+        "gender": "m"
       },
       {
         "hebrew": "הַר",
         "english": "hill, mountain, hill country, mount",
-        "frequency": 16
+        "frequency": 16,
+        "gender": "mf"
       },
       {
         "hebrew": "נַחֲלָה",
         "english": "possession, property, inheritance, heritage",
-        "frequency": 16
+        "frequency": 16,
+        "gender": "mf"
       },
       {
         "hebrew": "מוֹט",
         "english": "to totter, shake, slip",
-        "frequency": 15
+        "frequency": 15,
+        "gender": "m"
       }
     ]
   },
@@ -757,47 +894,56 @@
       {
         "hebrew": "הָלַךְ",
         "english": "to go, walk, come",
-        "frequency": 25
+        "frequency": 25,
+        "gender": null
       },
       {
         "hebrew": "יָשַׁב",
         "english": "to dwell, remain, sit, abide",
-        "frequency": 25
+        "frequency": 25,
+        "gender": null
       },
       {
         "hebrew": "קוּם",
         "english": "to rise, arise, stand, rise up, stand up",
-        "frequency": 21
+        "frequency": 21,
+        "gender": null
       },
       {
         "hebrew": "דִּין",
         "english": "to judge, contend, plead",
-        "frequency": 20
+        "frequency": 20,
+        "gender": "m"
       },
       {
         "hebrew": "עָלָה",
         "english": "to go up, ascend, climb",
-        "frequency": 17
+        "frequency": 17,
+        "gender": null
       },
       {
         "hebrew": "מוּת",
         "english": "to die",
-        "frequency": 14
+        "frequency": 14,
+        "gender": "m"
       },
       {
         "hebrew": "שָׁלַח",
         "english": "to send, send away, let go, stretch out",
-        "frequency": 14
+        "frequency": 14,
+        "gender": "m"
       },
       {
         "hebrew": "אֵל",
         "english": "god, god-like one, mighty one",
-        "frequency": 14
+        "frequency": 14,
+        "gender": "mf"
       },
       {
         "hebrew": "שְׁכֶם",
         "english": "shoulder, back",
-        "frequency": 14
+        "frequency": 14,
+        "gender": "m"
       }
     ]
   },
@@ -808,52 +954,62 @@
       {
         "hebrew": "הָלַךְ",
         "english": "to go, walk, come",
-        "frequency": 34
+        "frequency": 34,
+        "gender": null
       },
       {
         "hebrew": "אָלָה",
         "english": "to lament, wail",
-        "frequency": 25
+        "frequency": 25,
+        "gender": "f"
       },
       {
         "hebrew": "שָׁלַח",
         "english": "to send, send away, let go, stretch out",
-        "frequency": 22
+        "frequency": 22,
+        "gender": "m"
       },
       {
         "hebrew": "קוּם",
         "english": "to rise, arise, stand, rise up, stand up",
-        "frequency": 21
+        "frequency": 21,
+        "gender": null
       },
       {
         "hebrew": "שְׁאוֹל",
         "english": "sheol, underworld, grave, hell, pit",
-        "frequency": 20
+        "frequency": 20,
+        "gender": "mf"
       },
       {
         "hebrew": "עָנָה",
         "english": "to answer, respond, testify, speak, shout",
-        "frequency": 19
+        "frequency": 19,
+        "gender": null
       },
       {
         "hebrew": "לָקַח",
         "english": "to take, get",
-        "frequency": 18
+        "frequency": 18,
+        "gender": null
       },
       {
         "hebrew": "יָשַׁב",
         "english": "to dwell, remain, sit, abide",
-        "frequency": 17
+        "frequency": 17,
+        "gender": null
       },
       {
         "hebrew": "אָרוֹן",
         "english": "chest, ark",
-        "frequency": 17
+        "frequency": 17,
+        "gender": null
       },
       {
         "hebrew": "אֵל",
         "english": "god, god-like one, mighty one",
-        "frequency": 16
+        "frequency": 16,
+        "gender": "mf"
       }
     ]
   },
@@ -864,52 +1020,62 @@
       {
         "hebrew": "שָׁלַח",
         "english": "to send, send away, let go, stretch out",
-        "frequency": 35
+        "frequency": 35,
+        "gender": "m"
       },
       {
         "hebrew": "עָבַד",
         "english": "to work, serve",
-        "frequency": 29
+        "frequency": 29,
+        "gender": null
       },
       {
         "hebrew": "הָלַךְ",
         "english": "to go, walk, come",
-        "frequency": 24
+        "frequency": 24,
+        "gender": null
       },
       {
         "hebrew": "קָרָא",
         "english": "to call, call out, recite, read, cry out, proclaim",
-        "frequency": 19
+        "frequency": 19,
+        "gender": null
       },
       {
         "hebrew": "יָשַׁב",
         "english": "to dwell, remain, sit, abide",
-        "frequency": 17
+        "frequency": 17,
+        "gender": null
       },
       {
         "hebrew": "מָלַךְ",
         "english": "to be or become king or queen, reign",
-        "frequency": 16
+        "frequency": 16,
+        "gender": null
       },
       {
         "hebrew": "מוּת",
         "english": "to die",
-        "frequency": 15
+        "frequency": 15,
+        "gender": "m"
       },
       {
         "hebrew": "אֶרֶץ",
         "english": "land, earth",
-        "frequency": 14
+        "frequency": 14,
+        "gender": "f"
       },
       {
         "hebrew": "מִלְחָמָה",
         "english": "battle, war",
-        "frequency": 13
+        "frequency": 13,
+        "gender": "f"
       },
       {
         "hebrew": "אֵל",
         "english": "god, god-like one, mighty one",
-        "frequency": 13
+        "frequency": 13,
+        "gender": "mf"
       }
     ]
   },
@@ -920,42 +1086,50 @@
       {
         "hebrew": "הָלַךְ",
         "english": "to go, walk, come",
-        "frequency": 32
+        "frequency": 32,
+        "gender": null
       },
       {
         "hebrew": "מָלַךְ",
         "english": "to be or become king or queen, reign",
-        "frequency": 27
+        "frequency": 27,
+        "gender": null
       },
       {
         "hebrew": "נָבִיא",
         "english": "spokesman, speaker, prophet",
-        "frequency": 21
+        "frequency": 21,
+        "gender": "m"
       },
       {
         "hebrew": "שָׁלַח",
         "english": "to send, send away, let go, stretch out",
-        "frequency": 19
+        "frequency": 19,
+        "gender": "m"
       },
       {
         "hebrew": "עַיִן",
         "english": "eye",
-        "frequency": 19
+        "frequency": 19,
+        "gender": "f"
       },
       {
         "hebrew": "קָרָא",
         "english": "to call, call out, recite, read, cry out, proclaim",
-        "frequency": 18
+        "frequency": 18,
+        "gender": null
       },
       {
         "hebrew": "דֶּרֶךְ",
         "english": "way, road, distance, journey, manner",
-        "frequency": 18
+        "frequency": 18,
+        "gender": "m"
       },
       {
         "hebrew": "יָשַׁב",
         "english": "to dwell, remain, sit, abide",
-        "frequency": 17
+        "frequency": 17,
+        "gender": null
       }
     ]
   },
@@ -966,52 +1140,62 @@
       {
         "hebrew": "הָלַךְ",
         "english": "to go, walk, come",
-        "frequency": 34
+        "frequency": 34,
+        "gender": null
       },
       {
         "hebrew": "שָׁלַח",
         "english": "to send, send away, let go, stretch out",
-        "frequency": 31
+        "frequency": 31,
+        "gender": "m"
       },
       {
         "hebrew": "יָשַׁב",
         "english": "to dwell, remain, sit, abide",
-        "frequency": 30
+        "frequency": 30,
+        "gender": null
       },
       {
         "hebrew": "עַיִן",
         "english": "eye",
-        "frequency": 30
+        "frequency": 30,
+        "gender": "f"
       },
       {
         "hebrew": "שְׁנָה",
         "english": "sleep",
-        "frequency": 23
+        "frequency": 23,
+        "gender": "f"
       },
       {
         "hebrew": "לָקַח",
         "english": "to take, get, fetch, lay hold of, seize, receive, acquire, buy, bring, marry, ta",
-        "frequency": 23
+        "frequency": 23,
+        "gender": null
       },
       {
         "hebrew": "יוֹתֵר",
         "english": "n m",
-        "frequency": 22
+        "frequency": 22,
+        "gender": "m"
       },
       {
         "hebrew": "מֶלֶךְ",
         "english": "king",
-        "frequency": 22
+        "frequency": 22,
+        "gender": "m"
       },
       {
         "hebrew": "מָלַךְ",
         "english": "to be or become king or queen, reign",
-        "frequency": 22
+        "frequency": 22,
+        "gender": null
       },
       {
         "hebrew": "כָּתַב",
         "english": "to write, record, enrol",
-        "frequency": 21
+        "frequency": 21,
+        "gender": null
       }
     ]
   },
@@ -1022,47 +1206,56 @@
       {
         "hebrew": "אֶרֶץ",
         "english": "land, earth",
-        "frequency": 34
+        "frequency": 34,
+        "gender": "f"
       },
       {
         "hebrew": "יַחַד",
         "english": "n m",
-        "frequency": 26
+        "frequency": 26,
+        "gender": "m"
       },
       {
         "hebrew": "יָלַךְ",
         "english": "to go, walk, come",
-        "frequency": 24
+        "frequency": 24,
+        "gender": null
       },
       {
         "hebrew": "מִשְׁפָּט",
         "english": "judgment, justice, ordinance",
-        "frequency": 21
+        "frequency": 21,
+        "gender": "m"
       },
       {
         "hebrew": "חַיִל",
         "english": "strength, might, efficiency, wealth, army",
-        "frequency": 20
+        "frequency": 20,
+        "gender": "m"
       },
       {
         "hebrew": "עַם",
         "english": "nation, people",
-        "frequency": 19
+        "frequency": 19,
+        "gender": "m"
       },
       {
         "hebrew": "עָבַד",
         "english": "to work, serve",
-        "frequency": 19
+        "frequency": 19,
+        "gender": null
       },
       {
         "hebrew": "שָׁמַע",
         "english": "v",
-        "frequency": 17
+        "frequency": 17,
+        "gender": "m"
       },
       {
         "hebrew": "אֵשׁ",
         "english": "fire",
-        "frequency": 17
+        "frequency": 17,
+        "gender": "f"
       }
     ]
   },
@@ -1073,42 +1266,50 @@
       {
         "hebrew": "יָלַךְ",
         "english": "to go, walk, come",
-        "frequency": 55
+        "frequency": 55,
+        "gender": null
       },
       {
         "hebrew": "נָבִיא",
         "english": "spokesman, speaker, prophet",
-        "frequency": 41
+        "frequency": 41,
+        "gender": "m"
       },
       {
         "hebrew": "אָלָה",
         "english": "to lament, wail",
-        "frequency": 39
+        "frequency": 39,
+        "gender": "f"
       },
       {
         "hebrew": "שָׁמַע",
         "english": "v",
-        "frequency": 36
+        "frequency": 36,
+        "gender": "m"
       },
       {
         "hebrew": "אֵל",
         "english": "god, god-like one, mighty one",
-        "frequency": 30
+        "frequency": 30,
+        "gender": "mf"
       },
       {
         "hebrew": "הֵם",
         "english": "abundance, clamour (meaning uncertain)",
-        "frequency": 29
+        "frequency": 29,
+        "gender": "mf"
       },
       {
         "hebrew": "אֶרֶץ",
         "english": "land, earth",
-        "frequency": 29
+        "frequency": 29,
+        "gender": "f"
       },
       {
         "hebrew": "כֹּל",
         "english": "all, the whole",
-        "frequency": 22
+        "frequency": 22,
+        "gender": "m"
       }
     ]
   },
@@ -1119,52 +1320,62 @@
       {
         "hebrew": "נְאֻם",
         "english": "utterance, declaration (of prophet)",
-        "frequency": 82
+        "frequency": 82,
+        "gender": "m"
       },
       {
         "hebrew": "יָלַךְ",
         "english": "to go, walk, come",
-        "frequency": 63
+        "frequency": 63,
+        "gender": null
       },
       {
         "hebrew": "נָתַן",
         "english": "to give, put, set",
-        "frequency": 45
+        "frequency": 45,
+        "gender": null
       },
       {
         "hebrew": "הֵם",
         "english": "abundance, clamour (meaning uncertain)",
-        "frequency": 43
+        "frequency": 43,
+        "gender": "mf"
       },
       {
         "hebrew": "יָדַע",
         "english": "to know",
-        "frequency": 42
+        "frequency": 42,
+        "gender": null
       },
       {
         "hebrew": "תָּוֶךְ",
         "english": "midst, middle",
-        "frequency": 39
+        "frequency": 39,
+        "gender": "m"
       },
       {
         "hebrew": "שׁוֹעֵר",
         "english": "gatekeeper, porter",
-        "frequency": 31
+        "frequency": 31,
+        "gender": "m"
       },
       {
         "hebrew": "חָרַב",
         "english": "to be waste, lay waste, make desolate, be desolate, be in ruins",
-        "frequency": 28
+        "frequency": 28,
+        "gender": null
       },
       {
         "hebrew": "רָחַב",
         "english": "to be or grow wide, be or grow large",
-        "frequency": 25
+        "frequency": 25,
+        "gender": null
       },
       {
         "hebrew": "חֶרֶב",
         "english": "sword, knife",
-        "frequency": 24
+        "frequency": 24,
+        "gender": "f"
       }
     ]
   },
@@ -1175,62 +1386,74 @@
       {
         "hebrew": "עֵת",
         "english": "time",
-        "frequency": 9
+        "frequency": 9,
+        "gender": "f"
       },
       {
         "hebrew": "עַם",
         "english": "nation, people",
-        "frequency": 7
+        "frequency": 7,
+        "gender": "m"
       },
       {
         "hebrew": "אוֹן",
         "english": "vigour, generative power",
-        "frequency": 7
+        "frequency": 7,
+        "gender": "mf"
       },
       {
         "hebrew": "זָנוּן",
         "english": "adultery, fornication, prostitution",
-        "frequency": 5
+        "frequency": 5,
+        "gender": null
       },
       {
         "hebrew": "יָלַךְ",
         "english": "to go, walk, come",
-        "frequency": 5
+        "frequency": 5,
+        "gender": null
       },
       {
         "hebrew": "רָחַם",
         "english": "to love, love deeply, have mercy, be compassionate, have tender affection, have ",
-        "frequency": 4
+        "frequency": 4,
+        "gender": "f"
       },
       {
         "hebrew": "הֵם",
         "english": "abundance, clamour (meaning uncertain)",
-        "frequency": 4
+        "frequency": 4,
+        "gender": "mf"
       },
       {
         "hebrew": "שָׂדֶה",
         "english": "field, land",
-        "frequency": 4
+        "frequency": 4,
+        "gender": "mf"
       },
       {
         "hebrew": "יָשַׁב",
         "english": "to dwell, remain, sit, abide",
-        "frequency": 4
+        "frequency": 4,
+        "gender": null
       },
       {
         "hebrew": "זָבַח",
         "english": "to slaughter, kill, sacrifice, slaughter for sacrifice",
-        "frequency": 4
+        "frequency": 4,
+        "gender": "m"
       },
       {
         "hebrew": "עָוֺן",
         "english": "perversity, depravity, iniquity, guilt or punishment of iniquity",
-        "frequency": 4
+        "frequency": 4,
+        "gender": "m"
       },
       {
         "hebrew": "לֵב",
         "english": "inner man, mind, will, heart, understanding",
-        "frequency": 4
+        "frequency": 4,
+        "gender": "m"
       }
     ]
   },
@@ -1241,72 +1464,86 @@
       {
         "hebrew": "שָׁרַת",
         "english": "to minister, serve, minister to",
-        "frequency": 4
+        "frequency": 4,
+        "gender": null
       },
       {
         "hebrew": "אָסַף",
         "english": "to gather, receive, remove, gather in",
-        "frequency": 4
+        "frequency": 4,
+        "gender": null
       },
       {
         "hebrew": "אָכַל",
         "english": "to eat, devour, burn up, feed",
-        "frequency": 4
+        "frequency": 4,
+        "gender": null
       },
       {
         "hebrew": "צִיוֹן",
         "english": "dryness, parched land or ground",
-        "frequency": 4
+        "frequency": 4,
+        "gender": "mf"
       },
       {
         "hebrew": "אַרְבֶּה",
         "english": "a kind of locust, locust swarm (coll)",
-        "frequency": 3
+        "frequency": 3,
+        "gender": "m"
       },
       {
         "hebrew": "יֶלֶק",
         "english": "young locust (early stage of development)",
-        "frequency": 3
+        "frequency": 3,
+        "gender": "m"
       },
       {
         "hebrew": "נֶסֶךְ",
         "english": "drink offering, libation, molten image, something poured out",
-        "frequency": 3
+        "frequency": 3,
+        "gender": "m"
       },
       {
         "hebrew": "כֹּהֵן",
         "english": "priest, principal officer or chief ruler",
-        "frequency": 3
+        "frequency": 3,
+        "gender": "m"
       },
       {
         "hebrew": "אֵשׁ",
         "english": "fire",
-        "frequency": 3
+        "frequency": 3,
+        "gender": "f"
       },
       {
         "hebrew": "אוּת",
         "english": "to consent, agree",
-        "frequency": 3
+        "frequency": 3,
+        "gender": null
       },
       {
         "hebrew": "פָּנִים",
         "english": "face",
-        "frequency": 3
+        "frequency": 3,
+        "gender": null
       },
       {
         "hebrew": "מִלְחָמָה",
         "english": "battle, war",
-        "frequency": 3
+        "frequency": 3,
+        "gender": "f"
       },
       {
         "hebrew": "עָלָה",
         "english": "to go up, ascend, climb",
-        "frequency": 3
+        "frequency": 3,
+        "gender": null
       },
       {
         "hebrew": "דּוֹר",
         "english": "period, generation, habitation, dwelling",
-        "frequency": 2
+        "frequency": 2,
+        "gender": "m"
       }
     ]
   },
@@ -1317,67 +1554,80 @@
       {
         "hebrew": "אָכַל",
         "english": "to eat, devour, burn up, feed",
-        "frequency": 9
+        "frequency": 9,
+        "gender": null
       },
       {
         "hebrew": "שׁוּב",
         "english": "to return, turn back",
-        "frequency": 8
+        "frequency": 8,
+        "gender": null
       },
       {
         "hebrew": "פֶּשַׁע",
         "english": "transgression, rebellion",
-        "frequency": 7
+        "frequency": 7,
+        "gender": "m"
       },
       {
         "hebrew": "חֶרֶב",
         "english": "sword, knife",
-        "frequency": 7
+        "frequency": 7,
+        "gender": "f"
       },
       {
         "hebrew": "יָלַךְ",
         "english": "to go, walk, come",
-        "frequency": 7
+        "frequency": 7,
+        "gender": null
       },
       {
         "hebrew": "אֵשׁ",
         "english": "fire",
-        "frequency": 6
+        "frequency": 6,
+        "gender": "f"
       },
       {
         "hebrew": "שָׁלַח",
         "english": "to send, send away, let go, stretch out",
-        "frequency": 5
+        "frequency": 5,
+        "gender": "m"
       },
       {
         "hebrew": "עַד",
         "english": "perpetuity, for ever, continuing future",
-        "frequency": 5
+        "frequency": 5,
+        "gender": "m"
       },
       {
         "hebrew": "אַרְמוֹן",
         "english": "citadel, palace, fortress",
-        "frequency": 4
+        "frequency": 4,
+        "gender": "m"
       },
       {
         "hebrew": "רֹאשׁ",
         "english": "head, top, summit, upper part, chief, total, sum, height, front, beginning",
-        "frequency": 4
+        "frequency": 4,
+        "gender": "m"
       },
       {
         "hebrew": "שָׁמַע",
         "english": "v",
-        "frequency": 4
+        "frequency": 4,
+        "gender": "m"
       },
       {
         "hebrew": "נְאֻם",
         "english": "utterance, declaration (of prophet)",
-        "frequency": 4
+        "frequency": 4,
+        "gender": "m"
       },
       {
         "hebrew": "מִשְׁפָּט",
         "english": "judgment, justice, ordinance",
-        "frequency": 4
+        "frequency": 4,
+        "gender": "m"
       }
     ]
   },
@@ -1388,72 +1638,86 @@
       {
         "hebrew": "יָרַשׁ",
         "english": "to seize, dispossess, take possession off, inherit, disinherit, occupy, impoveri",
-        "frequency": 3
+        "frequency": 3,
+        "gender": null
       },
       {
         "hebrew": "הַר",
         "english": "hill, mountain, hill country, mount",
-        "frequency": 2
+        "frequency": 2,
+        "gender": "mf"
       },
       {
         "hebrew": "אֵיד",
         "english": "distress, burden, calamity",
-        "frequency": 2
+        "frequency": 2,
+        "gender": "m"
       },
       {
         "hebrew": "נֶגֶב",
         "english": "south-country, Nekeb, south",
-        "frequency": 2
+        "frequency": 2,
+        "gender": "m"
       },
       {
         "hebrew": "גֻּלָּה",
         "english": "bowl, spring, basin",
-        "frequency": 2
+        "frequency": 2,
+        "gender": "f"
       },
       {
         "hebrew": "חָזוֹן",
         "english": "vision",
-        "frequency": 1
+        "frequency": 1,
+        "gender": "m"
       },
       {
         "hebrew": "שְׁמוּעָה",
         "english": "report, news, rumour",
-        "frequency": 1
+        "frequency": 1,
+        "gender": "f"
       },
       {
         "hebrew": "שָׁמַע",
         "english": "v",
-        "frequency": 1
+        "frequency": 1,
+        "gender": "m"
       },
       {
         "hebrew": "צִיר",
         "english": "envoy, messenger",
-        "frequency": 1
+        "frequency": 1,
+        "gender": "m"
       },
       {
         "hebrew": "קוּם",
         "english": "to rise, arise, stand, rise up, stand up",
-        "frequency": 1
+        "frequency": 1,
+        "gender": null
       },
       {
         "hebrew": "מִלְחָמָה",
         "english": "battle, war",
-        "frequency": 1
+        "frequency": 1,
+        "gender": "f"
       },
       {
         "hebrew": "נָתַן",
         "english": "to give, put, set",
-        "frequency": 1
+        "frequency": 1,
+        "gender": null
       },
       {
         "hebrew": "בָּזָה",
         "english": "to despise, hold in contempt, disdain",
-        "frequency": 1
+        "frequency": 1,
+        "gender": null
       },
       {
         "hebrew": "זָדוֹן",
         "english": "pride, insolence, presumptuousness, arrogance",
-        "frequency": 1
+        "frequency": 1,
+        "gender": "m"
       }
     ]
   },
@@ -1464,67 +1728,80 @@
       {
         "hebrew": "יוֹנָה",
         "english": "dove, pigeon",
-        "frequency": 8
+        "frequency": 8,
+        "gender": "f"
       },
       {
         "hebrew": "מָנָה",
         "english": "to count, reckon, number, assign, tell, appoint, prepare",
-        "frequency": 4
+        "frequency": 4,
+        "gender": "f"
       },
       {
         "hebrew": "קַו",
         "english": "cord, line, measuring-line",
-        "frequency": 3
+        "frequency": 3,
+        "gender": "m"
       },
       {
         "hebrew": "קוּם",
         "english": "to rise, arise, stand, rise up, stand up",
-        "frequency": 3
+        "frequency": 3,
+        "gender": null
       },
       {
         "hebrew": "תַּרְשִׁישׁ",
         "english": "a precious stone or semi-precious gem",
-        "frequency": 3
+        "frequency": 3,
+        "gender": "m"
       },
       {
         "hebrew": "יָרֵא",
         "english": "to fear, revere, be afraid",
-        "frequency": 3
+        "frequency": 3,
+        "gender": null
       },
       {
         "hebrew": "הָלַךְ",
         "english": "to go, walk, come",
-        "frequency": 3
+        "frequency": 3,
+        "gender": null
       },
       {
         "hebrew": "יָשַׁב",
         "english": "to dwell, remain, sit, abide",
-        "frequency": 3
+        "frequency": 3,
+        "gender": null
       },
       {
         "hebrew": "קָרָא",
         "english": "to call, call out, recite, read, cry out, proclaim",
-        "frequency": 2
+        "frequency": 2,
+        "gender": null
       },
       {
         "hebrew": "בָּרַח",
         "english": "to flee, run away",
-        "frequency": 2
+        "frequency": 2,
+        "gender": null
       },
       {
         "hebrew": "פָּנִים",
         "english": "face",
-        "frequency": 2
+        "frequency": 2,
+        "gender": null
       },
       {
         "hebrew": "יָרַד",
         "english": "to go down, descend, decline, march down, sink down",
-        "frequency": 2
+        "frequency": 2,
+        "gender": null
       },
       {
         "hebrew": "אָבַד",
         "english": "perish, vanish, go astray, be destroyed",
-        "frequency": 2
+        "frequency": 2,
+        "gender": null
       }
     ]
   },
@@ -1535,67 +1812,80 @@
       {
         "hebrew": "עַם",
         "english": "nation, people",
-        "frequency": 8
+        "frequency": 8,
+        "gender": "m"
       },
       {
         "hebrew": "יָלַךְ",
         "english": "to go, walk, come",
-        "frequency": 6
+        "frequency": 6,
+        "gender": null
       },
       {
         "hebrew": "יָשַׁב",
         "english": "to dwell, remain, sit, abide",
-        "frequency": 5
+        "frequency": 5,
+        "gender": null
       },
       {
         "hebrew": "שָׁמַע",
         "english": "v",
-        "frequency": 4
+        "frequency": 4,
+        "gender": "m"
       },
       {
         "hebrew": "אֶרֶץ",
         "english": "land, earth",
-        "frequency": 4
+        "frequency": 4,
+        "gender": "f"
       },
       {
         "hebrew": "אָשַׁר",
         "english": "to go straight, walk, go on, advance, make progress",
-        "frequency": 4
+        "frequency": 4,
+        "gender": null
       },
       {
         "hebrew": "עֵת",
         "english": "time",
-        "frequency": 4
+        "frequency": 4,
+        "gender": "f"
       },
       {
         "hebrew": "חַיִל",
         "english": "strength, might, efficiency, wealth, army",
-        "frequency": 3
+        "frequency": 3,
+        "gender": "m"
       },
       {
         "hebrew": "מִלְחָמָה",
         "english": "battle, war",
-        "frequency": 3
+        "frequency": 3,
+        "gender": "f"
       },
       {
         "hebrew": "שְׁאֵרִית",
         "english": "rest, residue, remainder, remnant",
-        "frequency": 3
+        "frequency": 3,
+        "gender": "f"
       },
       {
         "hebrew": "תָּוֶךְ",
         "english": "midst, middle",
-        "frequency": 3
+        "frequency": 3,
+        "gender": "m"
       },
       {
         "hebrew": "מָצוֹר",
         "english": "siege-enclosure, siege, entrenchment, siege works",
-        "frequency": 3
+        "frequency": 3,
+        "gender": "m"
       },
       {
         "hebrew": "קֶרֶב",
         "english": "midst, among, inner part, middle",
-        "frequency": 3
+        "frequency": 3,
+        "gender": "m"
       }
     ]
   },
@@ -1606,82 +1896,98 @@
       {
         "hebrew": "כֹּל",
         "english": "all, the whole",
-        "frequency": 4
+        "frequency": 4,
+        "gender": "m"
       },
       {
         "hebrew": "קוּץ",
         "english": "to spend the summer",
-        "frequency": 3
+        "frequency": 3,
+        "gender": null
       },
       {
         "hebrew": "אֲרִי",
         "english": "lion",
-        "frequency": 3
+        "frequency": 3,
+        "gender": "m"
       },
       {
         "hebrew": "חָרַב",
         "english": "to be waste, lay waste, make desolate, be desolate, be in ruins",
-        "frequency": 3
+        "frequency": 3,
+        "gender": null
       },
       {
         "hebrew": "נָקַם",
         "english": "to avenge, take vengeance, revenge, avenge oneself, be avenged, be punished",
-        "frequency": 2
+        "frequency": 2,
+        "gender": null
       },
       {
         "hebrew": "כֹּחַ",
         "english": "strength, power, might",
-        "frequency": 2
+        "frequency": 2,
+        "gender": "m"
       },
       {
         "hebrew": "אָמַל",
         "english": "to be weak, to droop, to languish, to be exhausted",
-        "frequency": 2
+        "frequency": 2,
+        "gender": null
       },
       {
         "hebrew": "בְּלִיַּעַל",
         "english": "worthlessness",
-        "frequency": 2
+        "frequency": 2,
+        "gender": "m"
       },
       {
         "hebrew": "רָכַב",
         "english": "to mount and ride, ride",
-        "frequency": 2
+        "frequency": 2,
+        "gender": null
       },
       {
         "hebrew": "כָּשַׁל",
         "english": "to stumble, stagger, totter",
-        "frequency": 2
+        "frequency": 2,
+        "gender": null
       },
       {
         "hebrew": "חוֹמָה",
         "english": "wall",
-        "frequency": 2
+        "frequency": 2,
+        "gender": "f"
       },
       {
         "hebrew": "שַׁעַר",
         "english": "gate",
-        "frequency": 2
+        "frequency": 2,
+        "gender": "m"
       },
       {
         "hebrew": "פָּתַח",
         "english": "to open",
-        "frequency": 2
+        "frequency": 2,
+        "gender": "m"
       },
       {
         "hebrew": "עָמַד",
         "english": "to stand, remain, endure, take one's stand",
-        "frequency": 2
+        "frequency": 2,
+        "gender": null
       },
       {
         "hebrew": "בּוּז",
         "english": "to despise, hold in contempt, hold as insignificant",
-        "frequency": 2
+        "frequency": 2,
+        "gender": "m"
       },
       {
         "hebrew": "טָרַף",
         "english": "to tear, rend, pluck",
-        "frequency": 2
+        "frequency": 2,
+        "gender": null
       }
     ]
   },
@@ -1692,77 +1998,92 @@
       {
         "hebrew": "רֶשַׁע",
         "english": "wrong, wickedness, guilt",
-        "frequency": 3
+        "frequency": 3,
+        "gender": "m"
       },
       {
         "hebrew": "קִרְיָה",
         "english": "city, town",
-        "frequency": 3
+        "frequency": 3,
+        "gender": "mf"
       },
       {
         "hebrew": "סָלָה",
         "english": "to make light of, toss aside",
-        "frequency": 3
+        "frequency": 3,
+        "gender": null
       },
       {
         "hebrew": "נָבִיא",
         "english": "spokesman, speaker, prophet",
-        "frequency": 2
+        "frequency": 2,
+        "gender": "m"
       },
       {
         "hebrew": "חָמַס",
         "english": "to wrong, do violence to, treat violently, do wrongly",
-        "frequency": 2
+        "frequency": 2,
+        "gender": null
       },
       {
         "hebrew": "אוֹן",
         "english": "vigour, generative power",
-        "frequency": 2
+        "frequency": 2,
+        "gender": "mf"
       },
       {
         "hebrew": "נָבַט",
         "english": "to look, regard",
-        "frequency": 2
+        "frequency": 2,
+        "gender": null
       },
       {
         "hebrew": "שַׁד",
         "english": "breast, bosom, (female) breast",
-        "frequency": 2
+        "frequency": 2,
+        "gender": "m"
       },
       {
         "hebrew": "מִשְׁפָּט",
         "english": "judgment, justice, ordinance",
-        "frequency": 2
+        "frequency": 2,
+        "gender": "m"
       },
       {
         "hebrew": "יָעַף",
         "english": "to be or grow weary, be fatigued, be faint",
-        "frequency": 2
+        "frequency": 2,
+        "gender": null
       },
       {
         "hebrew": "כֹּל",
         "english": "all, the whole",
-        "frequency": 2
+        "frequency": 2,
+        "gender": "m"
       },
       {
         "hebrew": "אָסַף",
         "english": "to gather, receive, remove, gather in",
-        "frequency": 2
+        "frequency": 2,
+        "gender": null
       },
       {
         "hebrew": "חָזוֹן",
         "english": "vision",
-        "frequency": 2
+        "frequency": 2,
+        "gender": "m"
       },
       {
         "hebrew": "נֶפֶשׁ",
         "english": "soul, self, life, creature, person, appetite, mind, living being, desire, emotio",
-        "frequency": 2
+        "frequency": 2,
+        "gender": "f"
       },
       {
         "hebrew": "עַם",
         "english": "nation, people",
-        "frequency": 2
+        "frequency": 2,
+        "gender": "m"
       }
     ]
   },
@@ -1773,72 +2094,86 @@
       {
         "hebrew": "אָסַף",
         "english": "to gather, receive, remove, gather in",
-        "frequency": 4
+        "frequency": 4,
+        "gender": null
       },
       {
         "hebrew": "פָּקַד",
         "english": "v",
-        "frequency": 3
+        "frequency": 3,
+        "gender": null
       },
       {
         "hebrew": "עֵת",
         "english": "time",
-        "frequency": 3
+        "frequency": 3,
+        "gender": "f"
       },
       {
         "hebrew": "שָׁמֵם",
         "english": "to be desolate, be appalled, stun, stupefy",
-        "frequency": 3
+        "frequency": 3,
+        "gender": null
       },
       {
         "hebrew": "חָבַל",
         "english": "to bind",
-        "frequency": 3
+        "frequency": 3,
+        "gender": null
       },
       {
         "hebrew": "קֶרֶב",
         "english": "midst, among, inner part, middle",
-        "frequency": 3
+        "frequency": 3,
+        "gender": "m"
       },
       {
         "hebrew": "פָּנִים",
         "english": "face",
-        "frequency": 2
+        "frequency": 2,
+        "gender": null
       },
       {
         "hebrew": "זָבַח",
         "english": "to slaughter, kill, sacrifice, slaughter for sacrifice",
-        "frequency": 2
+        "frequency": 2,
+        "gender": "m"
       },
       {
         "hebrew": "יָשַׁב",
         "english": "to dwell, remain, sit, abide",
-        "frequency": 2
+        "frequency": 2,
+        "gender": null
       },
       {
         "hebrew": "אָכַל",
         "english": "to eat, devour, burn up, feed",
-        "frequency": 2
+        "frequency": 2,
+        "gender": null
       },
       {
         "hebrew": "חָרוֹן",
         "english": "anger, heat, burning (of anger)",
-        "frequency": 2
+        "frequency": 2,
+        "gender": "m"
       },
       {
         "hebrew": "בָּקַשׁ",
         "english": "to seek, require, desire, exact, request",
-        "frequency": 2
+        "frequency": 2,
+        "gender": null
       },
       {
         "hebrew": "מִשְׁפָּט",
         "english": "judgment, justice, ordinance",
-        "frequency": 2
+        "frequency": 2,
+        "gender": "m"
       },
       {
         "hebrew": "גֵּו",
         "english": "the back, back, midst",
-        "frequency": 2
+        "frequency": 2,
+        "gender": "m"
       }
     ]
   },
@@ -1849,72 +2184,86 @@
       {
         "hebrew": "נָבִיא",
         "english": "spokesman, speaker, prophet",
-        "frequency": 5
+        "frequency": 5,
+        "gender": "m"
       },
       {
         "hebrew": "לֵבָב",
         "english": "inner man, mind, will, heart, soul, understanding",
-        "frequency": 5
+        "frequency": 5,
+        "gender": "m"
       },
       {
         "hebrew": "נְאֻם",
         "english": "utterance, declaration (of prophet)",
-        "frequency": 5
+        "frequency": 5,
+        "gender": "m"
       },
       {
         "hebrew": "חָדַשׁ",
         "english": "to be new, renew, repair",
-        "frequency": 4
+        "frequency": 4,
+        "gender": null
       },
       {
         "hebrew": "חַג",
         "english": "festival, feast, festival-gathering, pilgrim-feast",
-        "frequency": 4
+        "frequency": 4,
+        "gender": "m"
       },
       {
         "hebrew": "אַרְבַּע",
         "english": "four",
-        "frequency": 4
+        "frequency": 4,
+        "gender": "f"
       },
       {
         "hebrew": "שְׁנָה",
         "english": "sleep",
-        "frequency": 3
+        "frequency": 3,
+        "gender": "f"
       },
       {
         "hebrew": "פֶּחָה",
         "english": "governor",
-        "frequency": 3
+        "frequency": 3,
+        "gender": "m"
       },
       {
         "hebrew": "חָרַב",
         "english": "to be waste, lay waste, make desolate, be desolate, be in ruins",
-        "frequency": 3
+        "frequency": 3,
+        "gender": null
       },
       {
         "hebrew": "עֶשְׂרִים",
         "english": "twenty, twentieth",
-        "frequency": 3
+        "frequency": 3,
+        "gender": "m"
       },
       {
         "hebrew": "מָעַט",
         "english": "to be or become small, be few, be diminished",
-        "frequency": 2
+        "frequency": 2,
+        "gender": null
       },
       {
         "hebrew": "שְׁאֵרִית",
         "english": "rest, residue, remainder, remnant",
-        "frequency": 2
+        "frequency": 2,
+        "gender": "f"
       },
       {
         "hebrew": "חָזַק",
         "english": "to strengthen, prevail, harden, be strong, become strong, be courageous, be firm",
-        "frequency": 2
+        "frequency": 2,
+        "gender": null
       },
       {
         "hebrew": "רָעַשׁ",
         "english": "to quake, shake",
-        "frequency": 2
+        "frequency": 2,
+        "gender": null
       }
     ]
   },
@@ -1925,62 +2274,74 @@
       {
         "hebrew": "בַּד",
         "english": "alone, by itself, besides, a part, separation, being alone",
-        "frequency": 11
+        "frequency": 11,
+        "gender": "m"
       },
       {
         "hebrew": "נְאֻם",
         "english": "utterance, declaration (of prophet)",
-        "frequency": 10
+        "frequency": 10,
+        "gender": "m"
       },
       {
         "hebrew": "מֲלְאָךְ",
         "english": "messenger, representative",
-        "frequency": 8
+        "frequency": 8,
+        "gender": "m"
       },
       {
         "hebrew": "עָנָה",
         "english": "to answer, respond, testify, speak, shout",
-        "frequency": 7
+        "frequency": 7,
+        "gender": null
       },
       {
         "hebrew": "אָלָה",
         "english": "to lament, wail",
-        "frequency": 7
+        "frequency": 7,
+        "gender": "f"
       },
       {
         "hebrew": "נָבִיא",
         "english": "spokesman, speaker, prophet",
-        "frequency": 6
+        "frequency": 6,
+        "gender": "m"
       },
       {
         "hebrew": "מִשְׁפָּחָה",
         "english": "clan, family",
-        "frequency": 6
+        "frequency": 6,
+        "gender": "f"
       },
       {
         "hebrew": "עָמַד",
         "english": "to stand, remain, endure, take one's stand",
-        "frequency": 5
+        "frequency": 5,
+        "gender": null
       },
       {
         "hebrew": "נָשָׂא",
         "english": "to lift, bear up, carry, take",
-        "frequency": 5
+        "frequency": 5,
+        "gender": null
       },
       {
         "hebrew": "עַיִן",
         "english": "eye",
-        "frequency": 5
+        "frequency": 5,
+        "gender": "f"
       },
       {
         "hebrew": "שָׁלַח",
         "english": "to send, send away, let go, stretch out",
-        "frequency": 5
+        "frequency": 5,
+        "gender": "m"
       },
       {
         "hebrew": "רָאָה",
         "english": "to see, look at, inspect, perceive, consider",
-        "frequency": 5
+        "frequency": 5,
+        "gender": "f"
       }
     ]
   },
@@ -1991,67 +2352,80 @@
       {
         "hebrew": "יָד",
         "english": "hand",
-        "frequency": 4
+        "frequency": 4,
+        "gender": "f"
       },
       {
         "hebrew": "אֵל",
         "english": "god, god-like one, mighty one",
-        "frequency": 4
+        "frequency": 4,
+        "gender": "mf"
       },
       {
         "hebrew": "רִשְׁעָה",
         "english": "wickedness, guilt",
-        "frequency": 3
+        "frequency": 3,
+        "gender": "f"
       },
       {
         "hebrew": "חָפֵץ",
         "english": "to delight in, take pleasure in, desire, be pleased with",
-        "frequency": 3
+        "frequency": 3,
+        "gender": null
       },
       {
         "hebrew": "מֲלְאָךְ",
         "english": "messenger, representative",
-        "frequency": 2
+        "frequency": 2,
+        "gender": "m"
       },
       {
         "hebrew": "כֹּהֵן",
         "english": "priest, principal officer or chief ruler",
-        "frequency": 2
+        "frequency": 2,
+        "gender": "m"
       },
       {
         "hebrew": "גָּאַל",
         "english": "to redeem, act as kinsman-redeemer, avenge, revenge, ransom, do the part of a ki",
-        "frequency": 2
+        "frequency": 2,
+        "gender": null
       },
       {
         "hebrew": "שֻׁלְחָן",
         "english": "table",
-        "frequency": 2
+        "frequency": 2,
+        "gender": "m"
       },
       {
         "hebrew": "בָּזָה",
         "english": "to despise, hold in contempt, disdain",
-        "frequency": 2
+        "frequency": 2,
+        "gender": null
       },
       {
         "hebrew": "יָלַךְ",
         "english": "to go, walk, come",
-        "frequency": 2
+        "frequency": 2,
+        "gender": null
       },
       {
         "hebrew": "נָשָׂא",
         "english": "to lift, bear up, carry, take",
-        "frequency": 2
+        "frequency": 2,
+        "gender": null
       },
       {
         "hebrew": "מִנְחָה",
         "english": "gift, tribute, offering, present, oblation, sacrifice, meat offering",
-        "frequency": 2
+        "frequency": 2,
+        "gender": "f"
       },
       {
         "hebrew": "שֵׁם",
         "english": "name",
-        "frequency": 2
+        "frequency": 2,
+        "gender": "m"
       }
     ]
   },
@@ -2062,72 +2436,86 @@
       {
         "hebrew": "רָאָה",
         "english": "to see, look at, inspect, perceive, consider",
-        "frequency": 6
+        "frequency": 6,
+        "gender": "f"
       },
       {
         "hebrew": "עַיִן",
         "english": "eye",
-        "frequency": 6
+        "frequency": 6,
+        "gender": "f"
       },
       {
         "hebrew": "נֶפֶשׁ",
         "english": "soul, self, life, creature, person, appetite, mind, living being, desire, emotio",
-        "frequency": 5
+        "frequency": 5,
+        "gender": "f"
       },
       {
         "hebrew": "פָּנִים",
         "english": "face",
-        "frequency": 5
+        "frequency": 5,
+        "gender": null
       },
       {
         "hebrew": "אֹיֵב",
         "english": "enemy",
-        "frequency": 4
+        "frequency": 4,
+        "gender": "m"
       },
       {
         "hebrew": "דָּרַךְ",
         "english": "to tread, bend, lead, march",
-        "frequency": 3
+        "frequency": 3,
+        "gender": null
       },
       {
         "hebrew": "פָּרַשׂ",
         "english": "to spread, spread out, stretch, break in pieces",
-        "frequency": 3
+        "frequency": 3,
+        "gender": null
       },
       {
         "hebrew": "נָתַן",
         "english": "to give, put, set",
-        "frequency": 3
+        "frequency": 3,
+        "gender": null
       },
       {
         "hebrew": "צָוָה",
         "english": "to command, charge, give orders, lay charge, give charge to, order",
-        "frequency": 3
+        "frequency": 3,
+        "gender": null
       },
       {
         "hebrew": "בָּלַע",
         "english": "to swallow down, swallow up, engulf, eat up",
-        "frequency": 3
+        "frequency": 3,
+        "gender": "m"
       },
       {
         "hebrew": "צִיוֹן",
         "english": "dryness, parched land or ground",
-        "frequency": 3
+        "frequency": 3,
+        "gender": "mf"
       },
       {
         "hebrew": "חוֹמָה",
         "english": "wall",
-        "frequency": 3
+        "frequency": 3,
+        "gender": "f"
       },
       {
         "hebrew": "אִשָּׁה",
         "english": "burnt-offering, offering made by fire, fire offering",
-        "frequency": 3
+        "frequency": 3,
+        "gender": "mf"
       },
       {
         "hebrew": "טוֹב",
         "english": "to be good, be pleasing, be joyful, be beneficial, be pleasant, be favourable, b",
-        "frequency": 3
+        "frequency": 3,
+        "gender": null
       }
     ]
   },
@@ -2138,72 +2526,86 @@
       {
         "hebrew": "שֶׁמֶשׁ",
         "english": "sun",
-        "frequency": 30
+        "frequency": 30,
+        "gender": null
       },
       {
         "hebrew": "הֶבֶל",
         "english": "n m",
-        "frequency": 28
+        "frequency": 28,
+        "gender": "m"
       },
       {
         "hebrew": "טוֹב",
         "english": "to be good, be pleasing, be joyful, be beneficial, be pleasant, be favourable, b",
-        "frequency": 23
+        "frequency": 23,
+        "gender": null
       },
       {
         "hebrew": "אָדָם",
         "english": "man, mankind",
-        "frequency": 22
+        "frequency": 22,
+        "gender": "m"
       },
       {
         "hebrew": "עֵת",
         "english": "time",
-        "frequency": 16
+        "frequency": 16,
+        "gender": "f"
       },
       {
         "hebrew": "רָאָה",
         "english": "to see, look at, inspect, perceive, consider",
-        "frequency": 13
+        "frequency": 13,
+        "gender": "f"
       },
       {
         "hebrew": "חָכַם",
         "english": "to be wise",
-        "frequency": 13
+        "frequency": 13,
+        "gender": null
       },
       {
         "hebrew": "עָמַל",
         "english": "to labour, toil",
-        "frequency": 7
+        "frequency": 7,
+        "gender": null
       },
       {
         "hebrew": "קְהִלָּה",
         "english": "assembly, congregation",
-        "frequency": 6
+        "frequency": 6,
+        "gender": "mf"
       },
       {
         "hebrew": "לֵב",
         "english": "inner man, mind, will, heart, understanding",
-        "frequency": 6
+        "frequency": 6,
+        "gender": "m"
       },
       {
         "hebrew": "הָלַךְ",
         "english": "to go, walk, come",
-        "frequency": 5
+        "frequency": 5,
+        "gender": null
       },
       {
         "hebrew": "מָצָא",
         "english": "to find, attain to",
-        "frequency": 5
+        "frequency": 5,
+        "gender": null
       },
       {
         "hebrew": "יָלַךְ",
         "english": "to go, walk, come",
-        "frequency": 4
+        "frequency": 4,
+        "gender": null
       },
       {
         "hebrew": "חׇכְמָה",
         "english": "wisdom",
-        "frequency": 4
+        "frequency": 4,
+        "gender": "f"
       }
     ]
   },
@@ -2214,57 +2616,68 @@
       {
         "hebrew": "מְלוּכָה",
         "english": "kingship, royalty, kingly office",
-        "frequency": 21
+        "frequency": 21,
+        "gender": "f"
       },
       {
         "hebrew": "שׁוּשַׁן",
         "english": "capital city of Persia",
-        "frequency": 12
+        "frequency": 12,
+        "gender": "m"
       },
       {
         "hebrew": "טוֹב",
         "english": "to be good, be pleasing, be joyful, be beneficial, be pleasant, be favourable, b",
-        "frequency": 11
+        "frequency": 11,
+        "gender": null
       },
       {
         "hebrew": "בִּירָה",
         "english": "palace, castle",
-        "frequency": 10
+        "frequency": 10,
+        "gender": "f"
       },
       {
         "hebrew": "מִשְׁתֶּה",
         "english": "feast, drink, banquet",
-        "frequency": 10
+        "frequency": 10,
+        "gender": "m"
       },
       {
         "hebrew": "אָלָה",
         "english": "to lament, wail",
-        "frequency": 10
+        "frequency": 10,
+        "gender": "f"
       },
       {
         "hebrew": "מְדִינָה",
         "english": "province, district",
-        "frequency": 10
+        "frequency": 10,
+        "gender": "f"
       },
       {
         "hebrew": "פָּנִים",
         "english": "face",
-        "frequency": 9
+        "frequency": 9,
+        "gender": null
       },
       {
         "hebrew": "מָלַךְ",
         "english": "to be or become king or queen, reign",
-        "frequency": 9
+        "frequency": 9,
+        "gender": null
       },
       {
         "hebrew": "אִשָּׁה",
         "english": "burnt-offering, offering made by fire, fire offering",
-        "frequency": 9
+        "frequency": 9,
+        "gender": "mf"
       },
       {
         "hebrew": "מַלְכָּה",
         "english": "queen",
-        "frequency": 7
+        "frequency": 7,
+        "gender": "mf"
       }
     ]
   },
@@ -2275,72 +2688,86 @@
       {
         "hebrew": "מֶלֶךְ",
         "english": "king",
-        "frequency": 94
+        "frequency": 94,
+        "gender": "m"
       },
       {
         "hebrew": "עָנָה",
         "english": "to answer, respond, testify, speak, shout",
-        "frequency": 23
+        "frequency": 23,
+        "gender": null
       },
       {
         "hebrew": "חֲזָא",
         "english": "to see, behold",
-        "frequency": 18
+        "frequency": 18,
+        "gender": null
       },
       {
         "hebrew": "שָׁמַיִן",
         "english": "heaven, heavens, sky",
-        "frequency": 16
+        "frequency": 16,
+        "gender": "m"
       },
       {
         "hebrew": "חֵלֶם",
         "english": "dream",
-        "frequency": 14
+        "frequency": 14,
+        "gender": "m"
       },
       {
         "hebrew": "פְּשַׁר",
         "english": "to interpret",
-        "frequency": 14
+        "frequency": 14,
+        "gender": "m"
       },
       {
         "hebrew": "עָבַד",
         "english": "to work, serve",
-        "frequency": 14
+        "frequency": 14,
+        "gender": null
       },
       {
         "hebrew": "מַלְכוּ",
         "english": "royalty, reign, kingdom",
-        "frequency": 12
+        "frequency": 12,
+        "gender": "f"
       },
       {
         "hebrew": "קֶדֶם",
         "english": "n m",
-        "frequency": 11
+        "frequency": 11,
+        "gender": "m"
       },
       {
         "hebrew": "דְּהַב",
         "english": "gold",
-        "frequency": 10
+        "frequency": 10,
+        "gender": "m"
       },
       {
         "hebrew": "יָרֵא",
         "english": "to fear, revere, be afraid",
-        "frequency": 10
+        "frequency": 10,
+        "gender": null
       },
       {
         "hebrew": "פַּרְזֶל",
         "english": "iron",
-        "frequency": 9
+        "frequency": 9,
+        "gender": "m"
       },
       {
         "hebrew": "עַם",
         "english": "nation, people",
-        "frequency": 9
+        "frequency": 9,
+        "gender": "m"
       },
       {
         "hebrew": "מַלְכָּה",
         "english": "queen",
-        "frequency": 9
+        "frequency": 9,
+        "gender": "mf"
       }
     ]
   },
@@ -2351,77 +2778,92 @@
       {
         "hebrew": "מֶלֶךְ",
         "english": "king",
-        "frequency": 25
+        "frequency": 25,
+        "gender": "m"
       },
       {
         "hebrew": "כֹּהֵן",
         "english": "priest, principal officer or chief ruler",
-        "frequency": 13
+        "frequency": 13,
+        "gender": "m"
       },
       {
         "hebrew": "שָׁנֶה",
         "english": "year",
-        "frequency": 12
+        "frequency": 12,
+        "gender": "f"
       },
       {
         "hebrew": "עַם",
         "english": "nation, people",
-        "frequency": 12
+        "frequency": 12,
+        "gender": "m"
       },
       {
         "hebrew": "מֵאָה",
         "english": "hundred",
-        "frequency": 11
+        "frequency": 11,
+        "gender": "f"
       },
       {
         "hebrew": "זָכָר",
         "english": "n m",
-        "frequency": 11
+        "frequency": 11,
+        "gender": "m"
       },
       {
         "hebrew": "שְׁאָר",
         "english": "rest, residue, remnant, remainder",
-        "frequency": 10
+        "frequency": 10,
+        "gender": "m"
       },
       {
         "hebrew": "גּוֹלָה",
         "english": "exiles, exile, captivity",
-        "frequency": 9
+        "frequency": 9,
+        "gender": "f"
       },
       {
         "hebrew": "הָמָה",
         "english": "to murmur, growl, roar, cry aloud, mourn, rage, sound, make noise, tumult, be cl",
-        "frequency": 9
+        "frequency": 9,
+        "gender": null
       },
       {
         "hebrew": "שָׁמַיִן",
         "english": "heaven, heavens, sky",
-        "frequency": 8
+        "frequency": 8,
+        "gender": "m"
       },
       {
         "hebrew": "פָּרַס",
         "english": "to divide, break in two",
-        "frequency": 7
+        "frequency": 7,
+        "gender": null
       },
       {
         "hebrew": "שָׁבוּעַ",
         "english": "seven, period of seven (days or years), heptad, week",
-        "frequency": 7
+        "frequency": 7,
+        "gender": "m"
       },
       {
         "hebrew": "שָׁלוֹשׁ",
         "english": "three, triad",
-        "frequency": 7
+        "frequency": 7,
+        "gender": "f"
       },
       {
         "hebrew": "חָדַשׁ",
         "english": "to be new, renew, repair",
-        "frequency": 7
+        "frequency": 7,
+        "gender": null
       },
       {
         "hebrew": "אֱלָהּ",
         "english": "god, God",
-        "frequency": 7
+        "frequency": 7,
+        "gender": "m"
       }
     ]
   },
@@ -2432,67 +2874,80 @@
       {
         "hebrew": "חָזַק",
         "english": "to strengthen, prevail, harden, be strong, become strong, be courageous, be firm",
-        "frequency": 26
+        "frequency": 26,
+        "gender": null
       },
       {
         "hebrew": "כֹּהֵן",
         "english": "priest, principal officer or chief ruler",
-        "frequency": 16
+        "frequency": 16,
+        "gender": "m"
       },
       {
         "hebrew": "שׁוֹעֵר",
         "english": "gatekeeper, porter",
-        "frequency": 15
+        "frequency": 15,
+        "gender": "m"
       },
       {
         "hebrew": "שָׁנֶה",
         "english": "year",
-        "frequency": 14
+        "frequency": 14,
+        "gender": "f"
       },
       {
         "hebrew": "שְׁמֹנֶה",
         "english": "eight, eighth",
-        "frequency": 12
+        "frequency": 12,
+        "gender": "f"
       },
       {
         "hebrew": "נְגַד",
         "english": "to stream, flow",
-        "frequency": 9
+        "frequency": 9,
+        "gender": null
       },
       {
         "hebrew": "רֵאשׁ",
         "english": "chief, head",
-        "frequency": 9
+        "frequency": 9,
+        "gender": "m"
       },
       {
         "hebrew": "שָׁמַיִם",
         "english": "heaven, heavens, sky",
-        "frequency": 8
+        "frequency": 8,
+        "gender": "m"
       },
       {
         "hebrew": "מָלַךְ",
         "english": "to be or become king or queen, reign",
-        "frequency": 8
+        "frequency": 8,
+        "gender": null
       },
       {
         "hebrew": "שִׁיר",
         "english": "to sing",
-        "frequency": 8
+        "frequency": 8,
+        "gender": "m"
       },
       {
         "hebrew": "מְלָאכָה",
         "english": "occupation, work, business",
-        "frequency": 7
+        "frequency": 7,
+        "gender": "f"
       },
       {
         "hebrew": "חוֹמָה",
         "english": "wall",
-        "frequency": 7
+        "frequency": 7,
+        "gender": "f"
       },
       {
         "hebrew": "מַד",
         "english": "measure, cloth garment",
-        "frequency": 7
+        "frequency": 7,
+        "gender": "m"
       }
     ]
   },
@@ -2503,57 +2958,68 @@
       {
         "hebrew": "יָלַד",
         "english": "to bear, bringforth, beget, gender, travail",
-        "frequency": 64
+        "frequency": 64,
+        "gender": null
       },
       {
         "hebrew": "אָח",
         "english": "brother",
-        "frequency": 42
+        "frequency": 42,
+        "gender": "mf"
       },
       {
         "hebrew": "אֵלָה",
         "english": "terebinth, terebinth tree",
-        "frequency": 24
+        "frequency": 24,
+        "gender": "f"
       },
       {
         "hebrew": "רֵאשׁ",
         "english": "chief, head",
-        "frequency": 22
+        "frequency": 22,
+        "gender": "m"
       },
       {
         "hebrew": "מוּת",
         "english": "to die",
-        "frequency": 18
+        "frequency": 18,
+        "gender": "m"
       },
       {
         "hebrew": "רֹאשׁ",
         "english": "head, top, summit, upper part, chief, total, sum, height, front, beginning",
-        "frequency": 18
+        "frequency": 18,
+        "gender": "m"
       },
       {
         "hebrew": "שָׁנִי",
         "english": "scarlet, crimson",
-        "frequency": 16
+        "frequency": 16,
+        "gender": "m"
       },
       {
         "hebrew": "אַרְבַּע",
         "english": "four",
-        "frequency": 16
+        "frequency": 16,
+        "gender": "f"
       },
       {
         "hebrew": "מִלְחָמָה",
         "english": "battle, war",
-        "frequency": 15
+        "frequency": 15,
+        "gender": "f"
       },
       {
         "hebrew": "יָשַׁב",
         "english": "to dwell, remain, sit, abide",
-        "frequency": 12
+        "frequency": 12,
+        "gender": null
       },
       {
         "hebrew": "הֵם",
         "english": "abundance, clamour (meaning uncertain)",
-        "frequency": 12
+        "frequency": 12,
+        "gender": "mf"
       }
     ]
   },
@@ -2564,37 +3030,44 @@
       {
         "hebrew": "כֹּהֵן",
         "english": "priest, principal officer or chief ruler",
-        "frequency": 30
+        "frequency": 30,
+        "gender": "m"
       },
       {
         "hebrew": "עַיִן",
         "english": "eye",
-        "frequency": 19
+        "frequency": 19,
+        "gender": "f"
       },
       {
         "hebrew": "מָלַךְ",
         "english": "to be or become king or queen, reign",
-        "frequency": 18
+        "frequency": 18,
+        "gender": null
       },
       {
         "hebrew": "חֵיל",
         "english": "rampart, fortress, wall",
-        "frequency": 17
+        "frequency": 17,
+        "gender": "m"
       },
       {
         "hebrew": "נָתַן",
         "english": "to give, put, set",
-        "frequency": 16
+        "frequency": 16,
+        "gender": null
       },
       {
         "hebrew": "עָמַד",
         "english": "to stand, remain, endure, take one's stand",
-        "frequency": 16
+        "frequency": 16,
+        "gender": null
       },
       {
         "hebrew": "יָשַׁב",
         "english": "to dwell, remain, sit, abide",
-        "frequency": 16
+        "frequency": 16,
+        "gender": null
       }
     ]
   }
